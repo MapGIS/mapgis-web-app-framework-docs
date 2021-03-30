@@ -110,5 +110,10 @@ module.exports = {
       lang: 'zh-CN',
       description: 'Web应用框架'
     }
-  }
+  },
+  plugins: [
+    '@vuepress/plugin-medium-zoom',
+    '@vuepress/plugin-back-to-top',
+    'vuepress-plugin-viewer'
+  ]
 }

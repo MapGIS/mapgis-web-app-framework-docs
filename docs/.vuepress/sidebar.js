@@ -1,7 +1,17 @@
 const sidebar = {
   introduction: ['/guide/', '/guide/introduction/config'],
-  development: ['/guide/development/relation', '/guide/development/base'],
-  advanced: ['/guide/advanced/style-guide', '/guide/advanced/uset-typescript'],
+  development: [
+    '/guide/development/base',
+    '/guide/development/style',
+    '/guide/development/svg'
+  ],
+  advanced: [
+    '/guide/advanced/theme-custom',
+    '/guide/advanced/widget-custom',
+    '/guide/advanced/panel-custom',
+    '/guide/advanced/style-guide',
+    '/guide/advanced/uset-typescript'
+  ],
   other: ['/guide/other/faq', '/guide/other/from-community'],
   api: [
     '/api/reference/manager',

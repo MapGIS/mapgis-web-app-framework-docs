@@ -1,6 +1,6 @@
 {
   "name": "@mapgis/web-app-framework-docs",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "private": true,
   "author": "MapGIS",
   "scripts": {
@@ -9,9 +9,12 @@
     "lint": "prettier --write 'docs/**/*.md'"
   },
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "lint-staged": "9.2.1",
     "prettier": "1.18.2",
     "vuepress": "1.0.3",
-    "lint-staged": "9.2.1"
+    "vuepress-plugin-viewer": "^1.0.0"
   },
   "bugs": {
     "url": "https://github.com/mapgis/mapgis-web-app-framework-docs/issues"

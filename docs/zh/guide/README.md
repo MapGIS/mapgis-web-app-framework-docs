@@ -80,6 +80,40 @@ const components = [
 ]
 ```
 
+## 加载应用
+
+```html
+<template>
+  <mp-app-loader :application="application" />
+</template>
+```
+
+```js
+<script>
+import { AppManager } from '@mapgis/web-app-framework'
+
+export default {
+  data() {
+    return {
+      application: {},
+      baseURL: '',
+      configPath: '',
+      assetsPath: '',
+    }
+  },
+  async created() {
+    await AppManager.getInstance().loadConfig(
+      this.baseURL,
+      this.configPath,
+      this.assetsPath
+    )
+
+    this.application = AppManager.getInstance().getApplication()
+  }
+}
+</script>
+```
+
 ## Vue 生态圈
 
 **首先了解这些 vue 生态圈的东西，会对你上手本项目有很大的帮助。**
