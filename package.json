@@ -1,0 +1,45 @@
+{
+  "name": "@mapgis/web-app-framework-docs",
+  "version": "0.0.2",
+  "private": true,
+  "author": "MapGIS",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "lint": "prettier --write 'docs/**/*.md'"
+  },
+  "devDependencies": {
+    "prettier": "1.18.2",
+    "vuepress": "1.0.3",
+    "lint-staged": "9.2.1"
+  },
+  "bugs": {
+    "url": "https://github.com/mapgis/mapgis-web-app-framework-docs/issues"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "keywords": [
+    "vue",
+    "typescript",
+    "mapgis",
+    "mapgis-web-app-framework",
+    "web-app-framework",
+    "waf",
+    "map"
+  ],
+  "lint-staged": {
+    "*.{js,json,css,md,vue}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapgis/mapgis-web-app-framework-docs.git"
+  }
+}
