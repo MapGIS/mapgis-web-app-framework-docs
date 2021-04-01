@@ -38,6 +38,14 @@
 
 - **详细**：应用文档，支持设置。
 
+### baseUrl
+
+- **类型**：`string`
+
+- **详细**：
+
+应用基础 url，与 baseAPI 相关。
+
 ### appConfigUrl
 
 - **类型**：`string`
