@@ -15,6 +15,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
   themeConfig: {
+    logo: '/logo.png',
     repo: 'mapgis/mapgis-web-app-framework',
     docsRepo: 'mapgis/mapgis-web-app-framework-docs',
     docsDir: 'docs',
