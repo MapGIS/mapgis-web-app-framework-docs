@@ -25,7 +25,9 @@ AppManager.getInstance()
 - **用法：**
 
 ```js
-AppManager.getInstance().loadConfig('/', 'config.json', '')
+AppManager.getInstance().loadConfig('', '/config.json', '/')
+// 或
+AppManager.getInstance().loadConfig('/api', '/config.json', '/')
 // 或
 AppManager.getInstance().loadConfig(
   'http://localhost:9015',
