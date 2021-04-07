@@ -136,7 +136,7 @@ Panel | Panel是展示widget内容的UI窗口。可以定制特定主题上，�
     },
     {
       "name": "dark",
-      "description": "暗黑",
+      "description": "暗蓝",
       "color": "#1890ff",
       "theme": "night"
     }
