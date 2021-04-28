@@ -132,27 +132,3 @@ const props3 = this.mergeProps(props1, props2)
 - **详细**：
 
 地图模式发生改变后调用，混入者可覆盖该方法实现自己的业务。
-
-### openAttributeTable
-
-- **类型**：`Function`
-
-- **详细**：
-
-打开属性表。
-
-### closeAttributeTable
-
-- **类型**：`Function`
-
-- **详细**：
-
-关闭属性表。
-
-### switchAttributeTable
-
-- **类型**：`Function`
-
-- **详细**：
-
-切换属性表的开关状态。
