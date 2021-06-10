@@ -12,7 +12,11 @@ const sidebar = {
     '/guide/advanced/style-guide',
     '/guide/advanced/uset-typescript'
   ],
-  other: ['/guide/other/faq', '/guide/other/from-community'],
+  other: [
+    '/guide/other/change-log',
+    '/guide/other/faq',
+    '/guide/other/from-community'
+  ],
   api: [
     '/api/reference/manager',
     '/api/reference/app-mixin',
@@ -30,6 +34,7 @@ const sidebar = {
     '/components/map-container',
     '/components/icon',
     '/components/map-widget-button',
+    '/components/toolbar',
     '/components/placement',
     '/components/window',
     '/components/window-wrapper',

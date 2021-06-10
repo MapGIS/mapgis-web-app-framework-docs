@@ -68,7 +68,9 @@
     // 如果有setting页，settingUiComponent表示设置页ui的组件名
     "settingUiComponent": "",
     // 确定widget的窗口大小，默认为normal，可设置为normal（常规的，由panel决定）、max（最大化）
-    "windowSize": "max"
+    "windowSize": "max",
+    // 确定widget的窗口是否有边距，默认为true，可设置为false
+    "hasPadding": false
   }
 }
 ```

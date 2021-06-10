@@ -18,13 +18,15 @@
 
 ### MpMapWidgetButton
 
+#### 属性
+
 参数同[WidgetInfoMixin](/zh/api/reference/widget-info-mixin.html)，核心参数为 widget。
 
 | 参数   | 说明     | 类型   | 默认值 |
 | ------ | -------- | ------ | ------ |
 | widget | 微件对象 | Object | -      |
 
-### 事件
+#### 事件
 
 | 事件名称 | 说明           | 回调参数 |
 | -------- | -------------- | -------- |
