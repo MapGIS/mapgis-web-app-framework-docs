@@ -64,7 +64,7 @@ module.exports = {
           },
           {
             text: '组件',
-            link: '/zh/components/app-loader'
+            link: '/zh/components/common/icon'
           }
         ],
         sidebar: {
@@ -88,14 +88,50 @@ module.exports = {
           ],
           '/zh/api/': [
             {
-              title: 'API',
-              children: getSidebarByCategory('api', 'zh')
+              title: '工具',
+              children: getSidebarByCategory('utils', 'zh')
+            },
+            {
+              title: '对象',
+              children: getSidebarByCategory('objects', 'zh')
+            },
+            {
+              title: '文档',
+              children: getSidebarByCategory('document', 'zh')
+            },
+            {
+              title: '要素',
+              children: getSidebarByCategory('feature', 'zh')
+            },
+            {
+              title: '元数据',
+              children: getSidebarByCategory('metadata', 'zh')
+            },
+            {
+              title: '分析',
+              children: getSidebarByCategory('analysis', 'zh')
+            },
+            {
+              title: '覆盖物',
+              children: getSidebarByCategory('overlay', 'zh')
+            },
+            {
+              title: '搭建',
+              children: getSidebarByCategory('builder', 'zh')
             }
           ],
           '/zh/components/': [
             {
-              title: '组件',
-              children: getSidebarByCategory('components', 'zh')
+              title: '常规组件',
+              children: getSidebarByCategory('common-components', 'zh')
+            },
+            {
+              title: '地图组件',
+              children: getSidebarByCategory('map-components', 'zh')
+            },
+            {
+              title: '搭建组件',
+              children: getSidebarByCategory('builder-components', 'zh')
             }
           ]
         }

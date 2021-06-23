@@ -1,4 +1,4 @@
-# MpWindowWrapper 窗口包装器
+# 窗口容器
 
 提供一种能力，可将窗口（类似[MpWindow](/zh/components/window.html)），在任意组件中展示到地图指定位置显示。
 

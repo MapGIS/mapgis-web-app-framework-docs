@@ -17,7 +17,7 @@ const sidebar = {
     '/guide/other/faq',
     '/guide/other/from-community'
   ],
-  api: [
+  builder: [
     '/api/reference/manager',
     '/api/reference/app-mixin',
     '/api/reference/map-mixin',
@@ -27,19 +27,32 @@ const sidebar = {
     '/api/reference/widget-info-mixin',
     '/api/reference/widget-mixin'
   ],
-  components: [
-    '/components/app-loader',
-    '/components/mapbox-view',
-    '/components/cesium-view',
-    '/components/map-container',
-    '/components/icon',
-    '/components/map-widget-button',
-    '/components/toolbar',
-    '/components/placement',
-    '/components/window',
-    '/components/window-wrapper',
-    '/components/map-widget-panel',
-    '/components/content-widget-panel'
+  utils: ['/api/reference/utils/utils'],
+  objects: ['/api/reference/objects/objects'],
+  document: ['/api/reference/document/document'],
+  feature: ['/api/reference/feature/feature'],
+  metadata: ['/api/reference/metadata/metadata'],
+  analysis: ['/api/reference/analysis/analysis'],
+  overlay: ['/api/reference/overlay/overlay'],
+  'common-components': [
+    '/components/common/icon',
+    '/components/common/button',
+    '/components/common/placement',
+    '/components/common/toolbar',
+    '/components/common/window'
+  ],
+  'map-components': [
+    '/components/map/map-pro',
+    '/components/map/draw-pro',
+    '/components/map/marker-pro',
+    '/components/map/marker-plotting'
+  ],
+  'builder-components': [
+    '/components/builder/app-loader',
+    '/components/builder/map-container',
+    '/components/builder/map-panel',
+    '/components/builder/map-widget-indicator',
+    '/components/builder/window-wrapper'
   ]
 }
 

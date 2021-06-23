@@ -1,16 +1,12 @@
-# MpMapWidgetButton 微件按钮
+# 微件指示器
 
-混入[WidgetInfoMixin](/zh/api/reference/widget-info-mixin.html)，具有 WidgetInfoMixin 一切选项，内部依赖于 [MpIcon](/zh/components/icon.html) 组件，会自动显示微件图标，并提示微件名称，您可以在自己的微件里面轻松地使用！
+标识微件的组件，比如：图标、按钮或其他元素，这里提供`MpMapWidgetButton`，它基于[MpButton](/zh/components/common/button.html)和[WidgetInfoMixin](/zh/api/reference/widget-info-mixin.html)实现。
 
 ## 代码演示
 
 ```html
 <template>
-  <mp-map-widget-button
-    class="mp-widget-zoom-in"
-    :widget="widget"
-    @click="onClickWidget"
-  />
+  <mp-map-widget-button :widget="..." />
 </template>
 ```
 

@@ -2,6 +2,11 @@
 
 > 这里记录了一些框架的版本改动项
 
+### 0.2.0
+
+- 😄 调整[组件](/zh/components/common/icon.html)分类，新增更多常规组件、地图组件和搭建组件
+- 😄 集成更多[API](/zh/api/reference/manager.html)，包括工具、对象、目录、元数据、要素、分析、覆盖物等模块
+
 ### 0.1.0
 
 - 🔨 调整[微件目录和微件名](/zh/guide/introduction/config.html#目录结构)全小写用横线连接(kebab-case)

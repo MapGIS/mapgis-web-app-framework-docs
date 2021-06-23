@@ -9,31 +9,70 @@ MapGIS Web App Framework 是一个面向 WebGIS 应用的的解决方案，它�
 ## 功能
 
 ```txt
-- 应用管理
-  - 配置加载
-  - 微件管理
-  - 面板管理
+- 常规组件
+  - 组件
+    - 图标
+    - 按钮
+    - 工具栏
+    - 定位容器
+    - 窗口
 
-- 组件
-  - 应用加载器
-  - 定位容器 / 窗口
-  - 按钮 / 图标
-  - 微件容器
-    - 微件按钮
-    - 微件图标
-    - 微件占位符
-  - 面板
-  - 地图容器
-    - MapBox子图层
-    - Cesium子图层
+- 地图组件
+  - 组件
+    - 地图
+      - 地图
+      - 场景
+    - 绘制
+      - 绘制
+      - 3d绘制
+    - 标注
+      - 标注
+      - 3d标注
+    - 标绘
+      - 标绘
+      - 3d标绘
 
-- 混入
-  - 应用混入
-  - 主题混入
-  - 主题区域混入
-  - 面板混入
-  - 微件信息混入
-  - 微件混入
+- 搭建组件
+  - 组件
+    - 应用加载器
+    - 地图容器
+    - 微件指示器
+      - 微件按钮
+    - 地图面板
+      - 地图面板
+      - 内容面板
+    - 窗口容器
+
+  - 应用管理
+    - 配置加载
+    - 微件管理
+    - 面板管理
+
+  - 混入
+    - 应用混入
+    - 主题混入
+    - 主题区域混入
+    - 面板混入
+    - 微件信息混入
+    - 微件混入
+
+- 模型
+  - 对象
+  - 文档
+  - 目录
+  - 要素
+  - 元数据
+  - 分析
+  - 标绘
+
+- 工具
+  - 常规工具
+  - 字符串工具
+  - 数组工具
+  - 对象工具
+  - 时间工具
+  - 颜色工具
+  - DOM工具
 ```
 
 ## 前序准备
@@ -66,17 +105,35 @@ new Vue({
 
 ```js
 const components = [
+  // common components
+  MpIcon,
+  MpButton,
+  MpToolbar,
+  MpToolbarSpace,
+  MpToolbarCommand,
+  MpToolbarCommandGroup,
+  MpPlacement,
+  MpWindow,
+
+  // map components
+  MpWebMapPro,
+  MpWebScenePro,
+  MpDrawPro,
+  Mp3dDrawPro,
+  MpMarkerPro,
+  Mp3dMarkerPro,
+  MpMarkerSetPro,
+  Mp3dMarkerSetPro,
+  MpMarkerPlotting,
+  Mp3dMarkerPlotting,
+
+  // builder components
   MpAppLoader,
   MpMapContainer,
-  MpMapboxView,
-  MpCesiumView,
-  MpPlacement,
-  MpIcon,
   MpMapWidgetButton,
-  MpWindow,
-  MpWindowWrapper,
   MpContentWidgetPanel,
-  MpMapWidgetPanel
+  MpMapWidgetPanel,
+  MpWindowWrapper
 ]
 ```
 

@@ -1,6 +1,6 @@
-# MpWindow 窗口
+# 窗口
 
-基于 [MpPlacement](/zh/components/placement.html) 提供的专用于显示微件的窗口，支持大小调整、拖拽、收缩等操作，并且窗口大小能随着微件大小进行自适应调整。
+基于 [MpPlacement](/zh/components/common/placement.html) 提供的专用于显示微件的窗口，支持大小调整、拖拽、收缩等操作，并且窗口大小能随着微件大小进行自适应调整。
 
 :::tip
 

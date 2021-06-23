@@ -1,4 +1,4 @@
-# MpIcon 图标
+# 图标
 
 不同于 Ant Design Vue 的[Icon](https://www.antdv.com/components/icon-cn/)组件，它支持内联 svg 和外部的图片地址，在大小上与 font-size 一致，对于 svg，还支持颜色与字体 color 一致。
 
