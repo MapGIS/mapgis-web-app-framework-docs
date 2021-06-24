@@ -15,9 +15,9 @@ Feature.FeatureEdit.xxx
 
 Feature.ArcGISFeatureQuery.xxx
 
-Feature.getGeoJsonFeatureCenter()
-Feature.getGeoJsonFeaturesCenter()
-Feature.getGeoJsonFeatureBound()
+Feature.getGeoJSONFeatureCenter()
+Feature.getGeoJSONFeaturesCenter()
+Feature.getGeoJSONFeatureBound()
 ```
 
 ## FeatureConvert
