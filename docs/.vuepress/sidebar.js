@@ -39,7 +39,9 @@ const sidebar = {
     '/components/common/button',
     '/components/common/placement',
     '/components/common/toolbar',
-    '/components/common/window'
+    '/components/common/window',
+    '/components/common/group-tab',
+    '/components/common/setting-form'
   ],
   'map-components': [
     '/components/map/map-pro',
