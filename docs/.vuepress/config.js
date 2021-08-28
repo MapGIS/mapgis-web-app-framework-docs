@@ -116,6 +116,10 @@ module.exports = {
               children: getSidebarByCategory('overlay', 'zh')
             },
             {
+              title: '展示',
+              children: getSidebarByCategory('exhibition', 'zh')
+            },
+            {
               title: '搭建',
               children: getSidebarByCategory('builder', 'zh')
             }

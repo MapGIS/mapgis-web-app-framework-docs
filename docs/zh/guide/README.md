@@ -35,6 +35,7 @@ MapGIS Web App Framework 是一个面向 WebGIS 应用的的解决方案，它�
 - 搭建组件
   - 组件
     - 应用加载器
+    - 应用搭建器
     - 地图容器
     - 微件指示器
       - 微件按钮
@@ -129,6 +130,7 @@ const components = [
 
   // builder components
   MpAppLoader,
+  MpAppBuilder,
   MpMapContainer,
   MpMapWidgetButton,
   MpContentWidgetPanel,

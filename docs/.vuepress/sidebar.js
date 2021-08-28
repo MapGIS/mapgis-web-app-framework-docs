@@ -2,6 +2,7 @@ const sidebar = {
   introduction: ['/guide/', '/guide/introduction/config'],
   development: [
     '/guide/development/base',
+    '/guide/development/exhibition',
     '/guide/development/style',
     '/guide/development/svg'
   ],
@@ -25,7 +26,9 @@ const sidebar = {
     '/api/reference/theme-content-mixin',
     '/api/reference/panel-mixin',
     '/api/reference/widget-info-mixin',
-    '/api/reference/widget-mixin'
+    '/api/reference/widget-mixin',
+    '/api/reference/exhibition-mixin',
+    '/api/reference/exhibition-controller-mixin'
   ],
   utils: ['/api/reference/utils/utils'],
   objects: ['/api/reference/objects/objects'],
@@ -34,6 +37,7 @@ const sidebar = {
   metadata: ['/api/reference/metadata/metadata'],
   analysis: ['/api/reference/analysis/analysis'],
   overlay: ['/api/reference/overlay/overlay'],
+  exhibition: ['/api/reference/exhibition/exhibition'],
   'common-components': [
     '/components/common/icon',
     '/components/common/button',
@@ -51,6 +55,7 @@ const sidebar = {
   ],
   'builder-components': [
     '/components/builder/app-loader',
+    '/components/builder/app-builder',
     '/components/builder/map-container',
     '/components/builder/map-panel',
     '/components/builder/map-widget-indicator',
