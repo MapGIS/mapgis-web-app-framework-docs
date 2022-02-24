@@ -51,7 +51,10 @@ const sidebar = {
     '/components/map/map-pro',
     '/components/map/draw-pro',
     '/components/map/marker-pro',
-    '/components/map/marker-plotting'
+    '/components/map/marker-plotting',
+    '/components/map/attribute-statistics',
+    '/components/map/field-calculator',
+    '/components/map/filter'
   ],
   'builder-components': [
     '/components/builder/app-loader',
@@ -59,7 +62,8 @@ const sidebar = {
     '/components/builder/map-container',
     '/components/builder/map-panel',
     '/components/builder/map-widget-indicator',
-    '/components/builder/window-wrapper'
+    '/components/builder/window-wrapper',
+    '/components/builder/exhibition-panel'
   ]
 }
 

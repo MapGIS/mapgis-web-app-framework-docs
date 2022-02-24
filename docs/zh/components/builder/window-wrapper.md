@@ -6,7 +6,7 @@
 
 ## 代码演示
 
-```html
+```vue
 <template>
   <div>
     <a-button type="primary" @click="onClick">按钮1</a-button>
@@ -33,9 +33,7 @@
     </mp-window-wrapper>
   </div>
 </template>
-```
 
-```js
 <script>
 export default {
   data() {

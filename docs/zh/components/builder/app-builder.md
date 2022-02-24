@@ -4,7 +4,7 @@
 
 ## 代码演示
 
-```html
+```vue
 <template>
   <mp-app-builder
     :baseAPI="baseAPI"
@@ -16,9 +16,7 @@
     @save="onSaveApp"
   />
 </template>
-```
 
-```js
 <script>
 export default {
   data() {
