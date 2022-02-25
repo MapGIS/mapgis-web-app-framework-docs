@@ -45,7 +45,19 @@ const sidebar = {
     '/components/common/toolbar',
     '/components/common/window',
     '/components/common/group-tab',
-    '/components/common/setting-form'
+    '/components/common/setting-form',
+    '/components/common/card',
+    '/components/common/checkbox',
+    '/components/common/collapse-button',
+    '/components/common/color-picker',
+    '/components/common/color-picker-confirm',
+    '/components/common/editable-table',
+    '/components/common/file-preview',
+    '/components/common/mask',
+    '/components/common/popup-content',
+    '/components/common/row-flex',
+    '/components/common/tree-select',
+    '/components/common/widget-routers'
   ],
   'map-components': [
     '/components/map/map-pro',

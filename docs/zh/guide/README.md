@@ -37,11 +37,7 @@ MapGIS Web App Framework 是一个面向 WebGIS 应用的的解决方案，它�
     - 设置表单(setting-form)
     - 树选择(tree-select)
     - 微件跳转路由(widget-routers)
-    - (adjust-line)
-    - (group-tab)
-    - (row-flex)
-    - (spin)
-    - (portal)
+    - flex布局的行控件(row-flex)
 
 - 地图组件
   - 组件
