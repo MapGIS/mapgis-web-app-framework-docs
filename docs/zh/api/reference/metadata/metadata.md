@@ -8,6 +8,8 @@ Metadata.MetaDataQuery.xxx
 Metadata.OGCMetadataQuery.xxx
 
 Metadata.ArcGISMetadataQuery.xxx
+
+Metadata.VectorTileMetadataQuery.xxx
 ```
 
 ## MetaDataQuery
@@ -15,3 +17,5 @@ Metadata.ArcGISMetadataQuery.xxx
 ## OGCMetadataQuery
 
 ## ArcGISMetadataQuery
+
+## VectorTileMetadataQuery

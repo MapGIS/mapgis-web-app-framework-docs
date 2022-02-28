@@ -11,11 +11,8 @@ Objects.AngleConvert.xxx
 
 Objects.ProjectionTransformation.xxx
 
-Objects.SceneController.getInstance(
-  this.Cesium,
-  this.CesiumZondy,
-  this.webGlobe
-).xxx
+Objects.SceneController.getInstance(this.Cesium, this.vueCesium, this.viewer)
+  .xxx
 ```
 
 ## GeometryExp

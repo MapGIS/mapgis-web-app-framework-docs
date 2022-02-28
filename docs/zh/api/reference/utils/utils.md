@@ -8,7 +8,8 @@ import {
   ArrayUtil,
   TimeUtil,
   ColorUtil,
-  DomUtil
+  DomUtil,
+  UrlUtil
 } from '@mapgis/web-app-framework'
 
 CommonUtil.xxx
@@ -18,6 +19,7 @@ ArrayUtil.xxx
 TimeUtil.xxx
 ColorUtil.xxx
 DomUtil.xxx
+UrlUtil.xxx
 ```
 
 ## CommonUtil
@@ -33,3 +35,5 @@ DomUtil.xxx
 ## ColorUtil
 
 ## DomUtil
+
+## UrlUtil
