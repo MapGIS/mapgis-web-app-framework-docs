@@ -4,7 +4,7 @@
 
 ## provide
 
-提供 map、mapbox、webGlobe、Cesium 给所有的子组件使用，通常微件会混入[MapMixin](/zh/api/reference/map-mixin.html)，这样可以直接拿到这几个对象。
+提供 map、mapbox、viewer、Cesium,vueCesium 给所有的子组件使用，通常微件会混入[MapMixin](/zh/api/reference/map-mixin.html)，这样可以直接拿到这几个对象。
 
 ### map
 
@@ -16,7 +16,7 @@
 - **类型**：`Object`
 - **详细**：MapBox 库。
 
-### webGlobe
+### viewer
 
 - **类型**：`Object`
 - **详细**：三维场景对象。
@@ -25,6 +25,11 @@
 
 - **类型**：`Object`
 - **详细**：Ceisum 库。
+
+### vueCesium
+
+- **类型**：`Object`
+- **详细**：Ceisum vue 对象。
 
 ## methods
 

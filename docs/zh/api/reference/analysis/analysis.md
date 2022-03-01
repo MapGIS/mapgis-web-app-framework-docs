@@ -5,7 +5,7 @@ import {
 Analysis,
 } from '@mapgis/web-app-framework'
 
-Analysis.SceneAnlysis sceneAnalysis = new Analysis.SceneAnlysis(this.Cesium, this.CesiumZondy, this.webGlobe)
+Analysis.SceneAnlysis sceneAnalysis = new Analysis.SceneAnlysis(this.Cesium, this.vueCesium, this.viewer)
 
 sceneAnalysis.xxx
 

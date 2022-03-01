@@ -104,24 +104,54 @@ Panel | Panel是展示widget内容的UI窗口。可以定制特定主题上，�
 ```javascript
 {
   // theme的名称
-  "name": "启动器主题",
+  "name": "全空间一张图经典主题",
   // theme的作者
   "author": "MapGIS",
   // theme的描述
   "description": "",
   // theme的组件名
-  "component": "LaunchpadTheme",
+  "component": "MpPanSpatialMapClassicTheme",
 
   // theme的样式集合
   "styles": [
     {
       // 样式名称
-      "name": "blue",
+      "name": "dust-red",
       // 样式描述
-      "description": "蓝色风格",
+      "description": "薄暮",
       // 主题颜色
-      "color": "#1890ff",
+      "color": "#f5222d",
       // 主题，描述布局、模式等
+      "theme": "dark"
+    },
+    {
+      "name": "volcano",
+      "description": "火山",
+      "color": "#fa541c",
+      "theme": "dark"
+    },
+    {
+      "name": "sunrise-yellow",
+      "description": "日出",
+      "color": "#fadb14",
+      "theme": "dark"
+    },
+    {
+      "name": "polar-green",
+      "description": "极光绿",
+      "color": "#3eaf7c",
+      "theme": "dark"
+    },
+    {
+      "name": "cyan",
+      "description": "明青",
+      "color": "#13c2c2",
+      "theme": "dark"
+    },
+    {
+      "name": "daybreak-blue",
+      "description": "拂晓蓝",
+      "color": "#1890ff",
       "theme": "dark"
     },
     {
@@ -147,13 +177,28 @@ Panel | Panel是展示widget内容的UI窗口。可以定制特定主题上，�
   "contents": [
     {
       // 对应的组名
-      "name": "launch",
+      "name": "header",
       // 描述
-      "description": "发射台",
+      "description": "头部导航条",
       // 组件名称
-      "component": "",
+      "component": "MpPanSpatialMapClassicHeader"
+    },
+    {
+      "name": "toolbar",
+      "description": "工具条",
+      "component": "MpPanSpatialMapClassicToolbar",
       // widget最大数目，如果未设置，数目不限制
-      "maxWidgets": 1
+      "maxWidgets": 6
+    },
+    {
+      "name": "left",
+      "description": "左侧导航条",
+      "component": "MpPanSpatialMapClassicLeft"
+    },
+    {
+      "name": "footer",
+      "description": "底部展示区域",
+      "component": "MpPanSpatialMapFooter"
     }
   ]
 }
@@ -175,7 +220,7 @@ Panel | Panel是展示widget内容的UI窗口。可以定制特定主题上，�
   "contents": [
     {
       // 对应的组名
-      "name": "launch",
+      "name": "toolbar",
     }
   ]
   ...
@@ -192,7 +237,7 @@ Panel | Panel是展示widget内容的UI窗口。可以定制特定主题上，�
     "groups": [
       {
         // 组名
-        "content": "launch",
+        "content": "toolbar",
         ...
       }
     ]
@@ -267,55 +312,80 @@ widget_2 | folder_1
 {
   "mapWidgets": {
     "widgets": [
+      // 默认该主题布局配置了地图模式切换按钮，在地图容器的左下角，距离左边10px，距离下边36px
       {
         "uri": "widgets/map-mode-picker",
+        "position": {
+          "anchor": "bottom-left",
+          "horizontalOffset": 10,
+          "verticalOffset": 36
+        }
+      },
+      // 默认该主题布局配置了缩放按钮，在地图容器的左下角，距离左边10px，距离下边78px
+      {
+        "uri": "widgets/zoom",
+        "position": {
+          "anchor": "bottom-left",
+          "horizontalOffset": 10,
+          "verticalOffset": 78
+        }
+      },
+      // 默认该主题布局配置了比例尺，在地图容器的右下角
+      {
+        "uri": "widgets/legend",
+        "position": {
+          "anchor": "bottom-right",
+          "horizontalOffset": 10,
+          "verticalOffset": 0
+        }
+      },
+      // 默认该主题布局配置了综合查询，在地图容器的左下角
+      {
+        "uri": "widgets/comprehensive-query",
         "position": {
           "anchor": "top-left",
           "horizontalOffset": 10,
           "verticalOffset": 10
         }
       },
-      // 默认该主题布局配置了缩放按钮，在地图容器的左上角，距离左边10px，距离上边50px
+      // 下面5个是占位空间
       {
-        "uri": "widgets/zoom",
         "position": {
           "anchor": "top-left",
           "horizontalOffset": 10,
-          "verticalOffset": 50
-        }
-      },
-      // 默认该主题布局配置了导航仪，在地图容器的右下角，且不允许拖拽改变位置
-      {
-        "uri": "widgets/Globe",
-        "position": {
-          "author": "bottom-right",
-          "horizontalOffset": 0,
-          "verticalOffset": 0
-        },
-        "dragable": false
-      },
-      // 下面3个是占位空间
-      {
-        "position": {
-          "author": "top-right",
-          "horizontalOffset": 20,
-          "verticalOffset": 20
+          "verticalOffset": 52
         },
         "placeholder": true
       },
       {
         "position": {
-          "author": "top-right",
-          "horizontalOffset": 20,
-          "verticalOffset": 60
+          "anchor": "top-left",
+          "horizontalOffset": 52,
+          "verticalOffset": 52
         },
         "placeholder": true
       },
       {
         "position": {
-          "author": "top-right",
-          "horizontalOffset": 20,
-          "verticalOffset": 100
+          "anchor": "top-left",
+          "horizontalOffset": 94,
+          "verticalOffset": 52
+        },
+        "placeholder": true
+      },
+      {
+        "position": {
+          "anchor": "top-left",
+          "horizontalOffset": 136,
+          "verticalOffset": 52
+        },
+        "placeholder": true
+      },
+      {
+        "position": {
+          "anchor": "top-left",
+          "horizontalOffset": 178,
+          "verticalOffset": 52
         },
         "placeholder": true
       }
@@ -325,7 +395,18 @@ widget_2 | folder_1
   "contentWidgets": {
     "groups": [
       {
-        "name": "launch",
+        "content": "header",
+        "widgets": []
+      },
+      {
+        "content": "left",
+        "widgets": [],
+        "panel": {
+          "relativeTo": "content"
+        }
+      },
+      {
+        "content": "toolbar",
         "widgets": []
       }
     ]
@@ -341,81 +422,12 @@ widget_2 | folder_1
 ```javascript
 // 这个文件描述应用配置信息
 {
-  //可选，地图名称
-  "name": "黑夜地图",
-  //可选，当前激活图层
-  "current": {
-    "id": "地铁注记",
-    "type": "VectorTile",
-    "name": "地铁"
-  },
-  // 可选，背景图层
-  "backgrounds": [
-    {
-      "title": "OSM地图",
-      "name": "OSM街道地图",
-      "id": "osmstreets",
-      "key": "osmstreets",
-      "icon": "icon-background",
-      "type": "background",
-      "tileUrl": "https://map.geoq.cn/arcgis/rest/services/ChinaOnlineStreetPurplishBlue/MapServer/tile/{z}/{y}/{x}",
-      "imgUrl": "https://user-images.githubusercontent.com/23654117/56859980-16e31c80-69c4-11e9-9e15-0980bd7ff947.png"
-    }
-  ],
-  // 可选，图标配置
-  "sprite": "http://localhost:6163/igs/rest/mrms/vtiles/sprite",
-  // 可选，字体配置
-  "glyphs": "http://localhost:6163/igs/rest/mrms/vtiles/fonts/{fontstack}/{range}.pbf",
-  // 可选，地图引擎，默认值为mapboxgl
-  "maprender": "mapboxgl",
-  // 可选，地图范围
-  "bounds": {
-    "west": 140.633011765174,
-    "south": 70.06446685647148,
-    "east": 73.8138337900829,
-    "north": 80.58786997831027
-  },
-  // 可选，地图坐标参考系统
-  "crs": {
-    "epsg": "EPSG:4326"
-  },
-  // 可选，地图图层列表
-  "layers": [
-    {
-      "title": "栅格瓦片",
-      "name": "栅格瓦片",
-      "key": "栅格瓦片组图层",
-      "id": "栅格瓦片组图层",
-      "description": "栅格瓦片",
-      "info": "栅格瓦片",
-      "icon": "icon-group",
-      "type": "GroupLayer",
-      "children": [{}],
-      "layout": {
-        "visible": false
-      }
-    }
-  ],
-  // 可选，地图数据源
-  "sources": {
-    "IGServer": {
-      "name": "IGServer",
-      "type": "VectorTile",
-      "url": "http://localhost:6163/igs/rest/mrms/tile/OSM全中国经纬度/{z}/{y}/{x}?type=cpbf&returnError=false",
-      "min": 0,
-      "max": 24,
-      "description": "IGServer矢量瓦片数据源测试案例."
-    }
-  },
-  // 可选，服务集合
-  "service": {},
-
   // 可选，应用logo，默认值为images/app-logo.svg
   "logo": "images/logo.png",
   // 可选，应用标题
-  "title": "MapGIS Web Application",
+  "title": "MapGIS全空间一张图",
   // 可选，应用副标题
-  "subtitle": "A configurable web application",
+  "subtitle": "",
 
   //可选. 应用包含的外链列表
   "links": [
@@ -428,15 +440,15 @@ widget_2 | folder_1
   // 必须，主题
   "theme": {
     // 主题名称，指向themes/name主题
-    "name": "launchpad-theme",
+    "name": "pan-spatial-map-classic-theme",
 
     // 可选，系统主题风格，如果不存在，则使用customStyle
-    "style": "blue",
+    "style": "night",
 
     // 可选，自定义主题风格，必须跟style至少存在一个
     "customStyle": {
       "color": "#1890ff",
-      "theme": "dark"
+      "theme": "night"
     }
   },
 

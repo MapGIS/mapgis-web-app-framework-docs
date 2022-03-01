@@ -4,7 +4,7 @@
 
 ## 代码演示
 
-```html
+```vue
 <template>
   <mp-map-container
     cesium-lib-path="cesium/Cesium.js"
@@ -12,9 +12,7 @@
     :map-options="mapOptions"
   />
 </template>
-```
 
-```js
 <script>
 export default {
   data() {
@@ -31,7 +29,7 @@ export default {
 
 ## API
 
-### MpCesiumView
+### MpMapContainer
 
 #### 属性
 
@@ -40,3 +38,4 @@ export default {
 | mapOptions       | 地图选型，{center,zoom} | Object | -      |
 | cesiumLibPath    | Cesium 库的路径         | String | -      |
 | cesiumPluginPath | Cesium 插件的路径       | String | -      |
+| dataFlowList     | 数据流列表对象          | Object | -      |

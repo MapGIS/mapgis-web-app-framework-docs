@@ -16,7 +16,7 @@
 
 - **详细**：MapBox 库。
 
-### webGlobe
+### viewer
 
 - **类型**：`Object`
 
@@ -27,3 +27,9 @@
 - **类型**：`Object`
 
 - **详细**：Ceisum 库。
+
+### vueCesium
+
+- **类型**：`Object`
+
+- **详细**：Ceisum vue 对象。
