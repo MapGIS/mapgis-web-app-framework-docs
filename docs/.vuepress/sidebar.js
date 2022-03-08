@@ -19,23 +19,81 @@ const sidebar = {
     '/guide/other/from-community'
   ],
   builder: [
-    '/api/reference/manager',
-    '/api/reference/app-mixin',
-    '/api/reference/map-mixin',
-    '/api/reference/theme-mixin',
-    '/api/reference/theme-content-mixin',
-    '/api/reference/panel-mixin',
-    '/api/reference/widget-info-mixin',
-    '/api/reference/widget-mixin',
-    '/api/reference/exhibition-mixin',
-    '/api/reference/exhibition-controller-mixin'
+    '/api/reference/builder/manager',
+    '/api/reference/builder/app-mixin',
+    '/api/reference/builder/map-mixin',
+    '/api/reference/builder/theme-mixin',
+    '/api/reference/builder/theme-content-mixin',
+    '/api/reference/builder/panel-mixin',
+    '/api/reference/builder/widget-info-mixin',
+    '/api/reference/builder/widget-mixin',
+    '/api/reference/builder/exhibition-mixin',
+    '/api/reference/builder/exhibition-controller-mixin'
   ],
-  utils: ['/api/reference/utils/utils'],
-  objects: ['/api/reference/objects/objects'],
-  document: ['/api/reference/document/document'],
-  feature: ['/api/reference/feature/feature'],
-  metadata: ['/api/reference/metadata/metadata'],
-  analysis: ['/api/reference/analysis/analysis'],
+  utils: [
+    '/api/reference/utils/common-util',
+    '/api/reference/utils/string-util',
+    '/api/reference/utils/object-util',
+    '/api/reference/utils/array-util',
+    '/api/reference/utils/time-util',
+    '/api/reference/utils/color-util',
+    '/api/reference/utils/dom-util',
+    '/api/reference/utils/url-util'
+  ],
+  objects: [
+    '/api/reference/objects/scene-controller',
+    '/api/reference/objects/geometry',
+    '/api/reference/objects/spatial-ref'
+  ],
+  document: [
+    '/api/reference/document/document',
+    '/api/reference/document/map',
+    '/api/reference/document/spatial-reference',
+    '/api/reference/document/layer/3d-layer',
+    '/api/reference/document/layer/amap-layer',
+    '/api/reference/document/layer/arcgis-map-image-layer',
+    '/api/reference/document/layer/arcgis-tile-layer',
+    '/api/reference/document/layer/data-flow-layer',
+    '/api/reference/document/layer/feature-layer',
+    '/api/reference/document/layer/geo-json-layer',
+    '/api/reference/document/layer/graphics-layer',
+    '/api/reference/document/layer/group-layer',
+    '/api/reference/document/layer/igs-feature-layer',
+    '/api/reference/document/layer/igs-map-image-layer',
+    '/api/reference/document/layer/igs-scene-layer',
+    '/api/reference/document/layer/igs-tile-layer',
+    '/api/reference/document/layer/igs-vector-layer',
+    '/api/reference/document/layer/layer',
+    '/api/reference/document/layer/map-image-layer',
+    '/api/reference/document/layer/model-cache-layer',
+    '/api/reference/document/layer/ogc-wms-layer',
+    '/api/reference/document/layer/ogc-wmts-layer',
+    '/api/reference/document/layer/scene-layer',
+    '/api/reference/document/layer/tile-layer',
+    '/api/reference/document/layer/vector-tile-layer',
+    '/api/reference/document/layer/web-tile-layer'
+  ],
+  feature: [
+    '/api/reference/feature/feature-query',
+    '/api/reference/feature/feature-edit',
+    '/api/reference/feature/feature-convert',
+    '/api/reference/feature/arcgis-feature-query'
+  ],
+  metadata: [
+    '/api/reference/metadata/metadata-query',
+    '/api/reference/metadata/arcgis-metadata-query',
+    '/api/reference/metadata/ogc-metadata-query',
+    '/api/reference/metadata/vector-tile-metadata-query'
+  ],
+  catalog: [
+    '/api/reference/catalog/document',
+    '/api/reference/catalog/data-source',
+    '/api/reference/catalog/system-library'
+  ],
+  analysis: [
+    '/api/reference/analysis/stat-analysis',
+    '/api/reference/analysis/workflow-analysis'
+  ],
   overlay: ['/api/reference/overlay/overlay'],
   exhibition: ['/api/reference/exhibition/exhibition'],
   'common-components': [

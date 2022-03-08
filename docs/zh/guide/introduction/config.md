@@ -210,7 +210,7 @@ Panel | Panel是展示widget内容的UI窗口。可以定制特定主题上，�
 
 ### 主题内容区域
 
-一个主题布局内部可能有多个内容区域，每个内容区域都可以放置多个 widget，来进行导航，可设置最大的 widget 数目，内容区域与在 App 的配置 config.json 中 contentWidgets.groups 下同名的组对应。
+一个主题布局内部可能有多个内容区域，每个内容区域都可以放置多个 widget，来进行导航，可设置最大的 widget 数目，内容区域与在 App 的配置 app.json 中 contentWidgets.groups 下同名的组对应。
 
 ```javascript
 // 比如manifest定义的content为launch，它将会对contentWidgets.groups下content名为launch的组提供导航能力
@@ -228,7 +228,7 @@ Panel | Panel是展示widget内容的UI窗口。可以定制特定主题上，�
 ```
 
 ```javascript
-// 应用config.json
+// 应用app.json
 {
   ...
   // 内容widgets，由布局的内容区域去使用
