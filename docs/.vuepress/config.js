@@ -88,16 +88,16 @@ module.exports = {
           ],
           '/zh/api/': [
             {
-              title: '工具',
-              children: getSidebarByCategory('utils', 'zh')
-            },
-            {
-              title: '对象',
-              children: getSidebarByCategory('objects', 'zh')
+              title: '搭建',
+              children: getSidebarByCategory('builder', 'zh')
             },
             {
               title: '文档',
               children: getSidebarByCategory('document', 'zh')
+            },
+            {
+              title: '展示',
+              children: getSidebarByCategory('exhibition', 'zh')
             },
             {
               title: '要素',
@@ -108,20 +108,20 @@ module.exports = {
               children: getSidebarByCategory('metadata', 'zh')
             },
             {
-              title: '分析',
-              children: getSidebarByCategory('analysis', 'zh')
-            },
-            {
               title: '覆盖物',
               children: getSidebarByCategory('overlay', 'zh')
             },
             {
-              title: '展示',
-              children: getSidebarByCategory('exhibition', 'zh')
+              title: '工具',
+              children: getSidebarByCategory('utils', 'zh')
             },
             {
-              title: '搭建',
-              children: getSidebarByCategory('builder', 'zh')
+              title: '对象',
+              children: getSidebarByCategory('objects', 'zh')
+            },
+            {
+              title: '分析',
+              children: getSidebarByCategory('analysis', 'zh')
             }
           ],
           '/zh/components/': [
