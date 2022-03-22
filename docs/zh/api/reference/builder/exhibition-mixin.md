@@ -1,41 +1,35 @@
 # ExhibitionMixin
 
-## resizeExhibition
+## methods
 
-- **类型**：`Function`
-- **详细**：调整展示大小，由展示面板调用
+### resizeExhibition
 
-## activateExhibition
+- **描述**：调整展示大小，由展示面板调用
 
-- **类型**：`Function`
-- **详细**：激活展示，由展示面板调用
+### activateExhibition
 
-## deActivateExhibition
+- **描述**：激活展示，由展示面板调用
 
-- **类型**：`Function`
-- **详细**：不激活展示，由展示面板调用
+### deActivateExhibition
 
-## closeExhibition
+- **描述**：不激活展示，由展示面板调用
 
-- **类型**：`Function`
-- **详细**：关闭展示，由展示面板调用
+### closeExhibition
 
-## onResize
+- **描述**：关闭展示，由展示面板调用
 
-- **类型**：`Function`
-- **详细**：大小调整时，展示组件内部响应
+### onResize
 
-## onActive
+- **描述**：大小调整时，展示组件内部响应
 
-- **类型**：`Function`
-- **详细**：激活时，展示组件内部响应
+### onActive
 
-## onDeActive
+- **描述**：激活时，展示组件内部响应
 
-- **类型**：`Function`
-- **详细**：不激活时，展示组件内部响应
+### onDeActive
 
-## onClose
+- **描述**：不激活时，展示组件内部响应
 
-- **类型**：`Function`
-- **详细**：关闭时，展示组件内部响应
+### onClose
+
+- **描述**：关闭时，展示组件内部响应

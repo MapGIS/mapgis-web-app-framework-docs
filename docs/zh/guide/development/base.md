@@ -10,7 +10,7 @@
 
 ### 加载应用配置
 
-[app.json](<(/zh/guide/introduction/config.html#app-json)>) 是应用全局配置，**包含应用基础配置、文档配置、微件配置等，可通过 [AppManager](/zh/api/reference/manager.html#appmanager) 进行加载，一次性加载完毕**，作为整个应用的数据流，贯穿于整个应用中。
+[app.json](<(/zh/guide/introduction/config.html#app-json)>) 是应用全局配置，**包含应用基础配置、文档配置、微件配置等，可通过 [AppManager](/zh/api/reference/builder/manager.html#appmanager) 进行加载，一次性加载完毕**，作为整个应用的数据流，贯穿于整个应用中。
 
 ### 启动应用
 

@@ -4,11 +4,13 @@
 
 应用管理，负责应用的加载。
 
+```js
+import { AppManager } from '@mapgis/web-app-framework'
+```
+
 ### getInstance
 
-- **类型**：`Function`
-- **详细**：获取全局单例
-- **用法：**
+- **描述**：获取全局单例
 
 ```js
 AppManager.getInstance()
@@ -16,13 +18,14 @@ AppManager.getInstance()
 
 ### loadConfig
 
-- **类型**：`Function`
-- **参数**：
-  - `{string} baseAPI` API 基地址。
-  - `{string} appConfigPath` 应用配置相对于基地址的 url。
-  - `{string} appAssetsPath` 应用资源相对于基地址的 url。
-- **详细**：异步加载配置。
-- **用法：**
+- **描述**：异步加载配置。
+- **参数**
+
+  | 参数          | 描述                       | 类型   | 默认值 |
+  | :------------ | :------------------------- | :----- | :----- |
+  | baseAPI       | API 基地址                 | string | -      |
+  | appConfigPath | 应用配置相对于基地址的 url | string | -      |
+  | appAssetsPath | 应用资源相对于基地址的 url | string | -      |
 
 ```js
 AppManager.getInstance().loadConfig('', '/config.json', '/')
@@ -38,29 +41,30 @@ AppManager.getInstance().loadConfig(
 
 ### getApplication
 
-- **类型**：`Function`
+- **描述**：返回加载后的应用对象。
 - **返回值**：应用对象。
-- **详细**：
 
-返回加载后的应用对象。
+### getAppConfig
+
+- **描述**：返回应用配置。
+- **返回值**：应用配置。
 
 ### getRequest
 
-- **类型**：`Function`
+- **描述**：返回基于 `baseAPI` 的请求对象。
 - **返回值**：请求对象（axios）。
-- **详细**：
-
-返回基于 `baseAPI` 的请求对象。
 
 ## WidgetManager
 
 微件管理，负责微件状态的管理，应用全局只有一个微件处于激活状态。
 
+```js
+import { WidgetManager } from '@mapgis/web-app-framework'
+```
+
 ### getInstance
 
-- **类型**：`Function`
-- **详细**： 获取全局单例。
-- **用法：**
+- **描述**： 获取全局单例。
 
 ```js
 WidgetManager.getInstance()
@@ -68,61 +72,58 @@ WidgetManager.getInstance()
 
 ### openWidget
 
-- **类型**：`Function`
-- **参数**：
-  - `{Object} widget` 微件。
-- **详细**：
+- **描述**：打开并激活微件，先设置微件状态为 `OPENED`，再设置微件状态为 `ACTIVE`。
+- **参数**
 
-打开并激活微件，先设置微件状态为 `OPENED`，再设置微件状态为 `ACTIVE`。
+  | 参数   | 描述 | 类型   | 默认值 |
+  | :----- | :--- | :----- | :----- |
+  | widget | 微件 | Object | -      |
 
 ### activateWidget
 
-- **类型**：`Function`
-- **参数**：
-  - `{Object} widget` 微件。
-- **详细**：
+- **描述**：激活微件，只处理打开状态下的微件，设置其状态为 `ACTIVE`。
+- **参数**
 
-激活微件，只处理打开状态下的微件，设置其状态为 `ACTIVE`。
+  | 参数   | 描述 | 类型   | 默认值 |
+  | :----- | :--- | :----- | :----- |
+  | widget | 微件 | Object | -      |
 
 ### deActivateWidget
 
-- **类型**：`Function`
-- **详细**：
-
-将激活微件设置为打开状态`OPENED`。
+- **描述**：将激活微件设置为打开状态`OPENED`。
 
 ### isWidgetActive
 
-- **类型**：`Function`
-- **参数**：
-  - `{Object} widget` 微件。
-- **详细**：
+- **描述**：判断微件状态是否为 `ACTIVE`。
+- **参数**
 
-判断微件状态是否为 `ACTIVE`。
+  | 参数   | 描述 | 类型   | 默认值 |
+  | :----- | :--- | :----- | :----- |
+  | widget | 微件 | Object | -      |
 
 ### isWidgetVisible
 
-- **类型**：`Function`
-- **参数**：
-  - `{Object} widget` 微件。
-- **详细**：
+- **描述**：判断微件状态是否为 `OPENED`。
+- **参数**
 
-判断微件状态是否为 `OPENED`。
+  | 参数   | 描述 | 类型   | 默认值 |
+  | :----- | :--- | :----- | :----- |
+  | widget | 微件 | Object | -      |
 
 ### closeWidget
 
-- **类型**：`Function`
-- **参数**：
-  - `{Object} widget` 微件。
-- **详细**：
+- **描述**：设置微件状态为 `CLOSED`，如果该微件处于激活状态，会先设置其状态为`OPENED`，然后再设置为 `CLOSED`。
+- **参数**
 
-设置微件状态为 `CLOSED`，如果该微件处于激活状态，会先设置其状态为`OPENED`，然后再设置为 `CLOSED`。
+  | 参数   | 描述 | 类型   | 默认值 |
+  | :----- | :--- | :----- | :----- |
+  | widget | 微件 | Object | -      |
 
 ### triggerWidgetOpen
 
-- **类型**：`Function`
-- **参数**：
-  - `{Object} widget` 微件。
-- **详细**：
+- **描述**：切换微件打开和关闭。
+- **参数**
 
-切换微件打开和关闭。
+  | 参数   | 描述 | 类型   | 默认值 |
+  | :----- | :--- | :----- | :----- |
+  | widget | 微件 | Object | -      |

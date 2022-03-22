@@ -1,36 +1,37 @@
 # ExhibitionControllerMixin
 
-## exhibitions
+## computed
+
+### exhibitions
 
 - **类型**：`Object`
-- **详细**：只能 get，展示列表
+- **描述**：展示列表，只能 get。
 
-## activeExhibitionId
+### activeExhibitionId
 
 - **类型**：`String`
-- **详细**：激活的展示 Id，支持 get 和 set
+- **描述**：激活的展示 Id，支持 get 和 set
 
-## addExhibition
+## methods
 
-- **类型**：`Function`
-- **详细**：添加展示
+### addExhibition
 
-## removeExhibition
+- **描述**：添加展示
+- **参数**：展示对象
 
-- **类型**：`Function`
-- **详细**：根据展示 Id 移除展示
+### removeExhibition
 
-## openExhibitionPanel
+- **描述**：根据展示 Id 移除展示
+- **参数**：展示对象 Id
 
-- **类型**：`Function`
-- **详细**：打开展示面板
+### openExhibitionPanel
 
-## closeExhibitionPanel
+- **描述**：打开展示面板
 
-- **类型**：`Function`
-- **详细**：关闭展示面板
+### closeExhibitionPanel
 
-## switchExhibitionPanel
+- **描述**：关闭展示面板
 
-- **类型**：`Function`
-- **详细**：切换展示面板打开和关闭
+### switchExhibitionPanel
+
+- **描述**：切换展示面板打开和关闭
