@@ -9,7 +9,7 @@
 ### 0.2.0
 
 - 😄 调整[组件](/zh/components/common/icon.html)分类，新增更多常规组件、地图组件和搭建组件
-- 😄 集成更多[API](/zh/api/reference/manager.html)，包括工具、对象、目录、元数据、要素、分析、覆盖物等模块
+- 😄 集成更多[API](/zh/api/reference/builder/manager.html)，包括工具、对象、目录、元数据、要素、分析、覆盖物等模块
 
 ### 0.1.0
 

@@ -60,7 +60,7 @@ module.exports = {
           },
           {
             text: 'API',
-            link: '/zh/api/reference/manager'
+            link: '/zh/api/reference/builder/manager'
           },
           {
             text: '组件',

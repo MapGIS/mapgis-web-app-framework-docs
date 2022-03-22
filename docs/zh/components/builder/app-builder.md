@@ -54,13 +54,13 @@ export default {
 
 #### 属性
 
-| 参数          | 说明                                                                    | 类型   | 默认值 |
-| ------------- | ----------------------------------------------------------------------- | ------ | ------ |
-| baseAPI       | API 基地址，参考[AppManager](/zh/api/reference/manager.html#loadconfig) | String | -      |
-| appConfigPath | 应用配置相对于基地址的 url，同上                                        | String | -      |
-| appConfigPath | 应用资源相对于基地址的 url，同上                                        | String | -      |
-| themes        | 可搭建的主题列表，`[{name:xx}, {name:yy}, ...`                          | Array  | -      |
-| widgets       | 可搭建的微件列表，`[{name:xx}, {name:yy}, ...`]                         | Array  | -      |
+| 参数          | 说明                                                                            | 类型   | 默认值 |
+| ------------- | ------------------------------------------------------------------------------- | ------ | ------ |
+| baseAPI       | API 基地址，参考[AppManager](/zh/api/reference/builder/manager.html#loadconfig) | String | -      |
+| appConfigPath | 应用配置相对于基地址的 url，同上                                                | String | -      |
+| appConfigPath | 应用资源相对于基地址的 url，同上                                                | String | -      |
+| themes        | 可搭建的主题列表，`[{name:xx}, {name:yy}, ...`                                  | Array  | -      |
+| widgets       | 可搭建的微件列表，`[{name:xx}, {name:yy}, ...`]                                 | Array  | -      |
 
 #### 事件
 

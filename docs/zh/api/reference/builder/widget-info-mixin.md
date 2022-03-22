@@ -7,16 +7,14 @@
 ### widget
 
 - **类型**：`Object`
-- **详细**：微件。
+- **描述**：微件。
 
 ## computed
 
 ### widgetInfo
 
 - **类型**：`Object`
-- **详细**：
-
-微件信息，包括 id、uri、label、icon、config、assetsUrl、position、openAtStart、visible、dragable、properties 等
+- **描述**：微件信息，包括 id、uri、label、icon、config、assetsUrl、position、openAtStart、visible、dragable、properties 等。可参考 [app.json](/zh/guide/introduction/config.html#app-json)
 
 ```js
 {
@@ -38,5 +36,3 @@
     properties
 }
 ```
-
-可参考 [app.json](/zh/guide/introduction/config.html#app-json)
