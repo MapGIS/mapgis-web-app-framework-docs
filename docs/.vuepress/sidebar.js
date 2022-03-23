@@ -49,7 +49,6 @@ const sidebar = {
     '/api/reference/document/document',
     '/api/reference/document/map',
     '/api/reference/document/layer/3d-layer',
-    '/api/reference/document/layer/amap-layer',
     '/api/reference/document/layer/arcgis-map-image-layer',
     '/api/reference/document/layer/arcgis-tile-layer',
     '/api/reference/document/layer/data-flow-layer',
