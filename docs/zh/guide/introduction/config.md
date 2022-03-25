@@ -188,7 +188,9 @@ Panel | Panel是展示widget内容的UI窗口。可以定制特定主题上，�
       "description": "工具条",
       "component": "MpPanSpatialMapClassicToolbar",
       // widget最大数目，如果未设置，数目不限制
-      "maxWidgets": 6
+      "maxWidgets": 6,
+      // 描述不同内容区域微件是否支持分组，以及所放置的树状节点的最大深度。默认为1，不支持分组。
+      "subNodeMaxDepth": 2
     },
     {
       "name": "left",
@@ -200,13 +202,18 @@ Panel | Panel是展示widget内容的UI窗口。可以定制特定主题上，�
       "description": "底部展示区域",
       "component": "MpPanSpatialMapFooter"
     }
-  ]
+  ],
+   // 默认的应用配置，可在主题中定义应用默认的标题、副标题
+  "defaultAppConfig": {
+    "title": "MapGIS CIM基础平台",
+    "subtitle": ""
+  }
 }
 ```
 
 ### 主题样式
 
-定义样式名称、描述和背景、字体。其中 color 指向主题颜色， theme 指向主题风格，这里的样式 name，会在 App 的配置 config.json 中用到。
+定义样式名称、描述和背景、字体。其中 color 指向主题颜色， theme 指向主题风格，这里的样式 name，会在 App 的配置 app.json 中用到。
 
 ### 主题内容区域
 
