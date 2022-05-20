@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> ArcGISMapImageLayer</title>
+
+  <script src="../cdn/run_prettify.js"></script>
+  <script src="../cdn/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="../cdn/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="../cdn/googleapis.css" rel="stylesheet">
+  <link href="../cdn/prettify.css" rel="stylesheet">
+  <link rel="stylesheet" href="../cdn/all.css" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="../cdn/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="../cdn/mapgis.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="../cdn/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+             
+                <a class="image" href="/">
+                    <img class="mapgis-webclient-logo" src="/images/mapgis_blue.png" alt="logo">
+                </a>
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API
+                </a>
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        帮助向导
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            
+                                <a class="dropdown-item" href="tutorial-1.快速入门.html">
+                                    1.快速入门
+                                </a>
+                            
+                        
+                        </div>
+                    </div>
+                </div>
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="/mapgis-web-app-framework-docs/api/index.html"
+                        >
+                            MapGIS-Web-App-Framework
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            <div>
+                <span class="mapgis-api-document-span"><a href="index.html">API文档</a></span>
+            </div>
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="搜索文档..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <div class="category"><div class="mapgis-menu-span">类名</div><ul class="mapgis-sidebar-menus"><li><a href="AMapMercatorEMapLayer.html">AMapMercatorEMapLayer</a></li><li><a href="AMapMercatorEMapLayer.exports.AMapMercatorEMapLayer.html">exports.AMapMercatorEMapLayer</a></li><li><a href="AMapMercatorSatelliteAnnMapLayer.html">AMapMercatorSatelliteAnnMapLayer</a></li><li><a href="AMapMercatorSatelliteAnnMapLayer.exports.AMapMercatorSatelliteAnnMapLayer.html">exports.AMapMercatorSatelliteAnnMapLayer</a></li><li><a href="AMapMercatorSatelliteMapLayer.html">AMapMercatorSatelliteMapLayer</a></li><li><a href="AMapMercatorSatelliteMapLayer.exports.AMapMercatorSatelliteMapLayer.html">exports.AMapMercatorSatelliteMapLayer</a></li><li><a href="ArcGISMapImageLayer.html">ArcGISMapImageLayer</a></li><li><a href="ArcGISMapImageLayer.exports.ArcGISMapImageLayer.html">exports.ArcGISMapImageLayer</a></li><li><a href="ArcGISSublayer.html">ArcGISSublayer</a></li><li><a href="ArcGISTileLayer.html">ArcGISTileLayer</a></li><li><a href="ArcGISTileLayer.exports.ArcGISTileLayer.html">exports.ArcGISTileLayer</a></li><li><a href="CoordinateTransformation.html">CoordinateTransformation</a></li><li><a href="DataFlowLayer.exports.DataFlowLayer.html">exports.DataFlowLayer</a></li><li><a href="Document.html">Document</a></li><li><a href="ElevationInfo.html">ElevationInfo</a></li><li><a href="FeatureExpressionInfo.html">FeatureExpressionInfo</a></li><li><a href="FeatureLayer.html">FeatureLayer</a></li><li><a href="FeatureLayer.exports.FeatureLayer.html">exports.FeatureLayer</a></li><li><a href="FeatureLayer.exports.IGSFeatureLayer.html">exports.IGSFeatureLayer</a></li><li><a href="GeoJsonLayer.html">GeoJsonLayer</a></li><li><a href="GeoJsonLayer.exports.GeoJsonLayer.html">exports.GeoJsonLayer</a></li><li><a href="GraphicsLayer.html">GraphicsLayer</a></li><li><a href="GraphicsLayer.exports.GraphicsLayer.html">exports.GraphicsLayer</a></li><li><a href="GroupLayer.html">GroupLayer</a></li><li><a href="GroupLayer.exports.GroupLayer.html">exports.GroupLayer</a></li><li><a href="IGSMapImageLayer.exports.IGSMapImageLayer.html">exports.IGSMapImageLayer</a></li><li><a href="IGSSceneLayer.html">IGSSceneLayer</a></li><li><a href="IGSSceneLayer.exports.IGSSceneLayer.html">exports.IGSSceneLayer</a></li><li><a href="IGSSublayer.html">IGSSublayer</a></li><li><a href="IGSTileLayer.html">IGSTileLayer</a></li><li><a href="IGSTileLayer.exports.IGSTileLayer.html">exports.IGSTileLayer</a></li><li><a href="IGSVectorLayer.exports.IGSVectorLayer.html">exports.IGSVectorLayer</a></li><li><a href="Layer.html">Layer</a></li><li><a href="Layer3D.html">Layer3D</a></li><li><a href="Layer.exports.Layer.html">exports.Layer</a></li><li><a href="LOD.html">LOD</a></li><li><a href="Map.html">Map</a></li><li><a href="MapImageLayer.html">MapImageLayer</a></li><li><a href="ModelCacheLayer.html">ModelCacheLayer</a></li><li><a href="ModelCacheLayer.exports.ModelCacheLayer.html">exports.ModelCacheLayer</a></li><li><a href="OGCWMSLayer.html">OGCWMSLayer</a></li><li><a href="OGCWMSLayer.exports.OGCWMSLayer.html">exports.OGCWMSLayer</a></li><li><a href="OGCWMTSLayer.html">OGCWMTSLayer</a></li><li><a href="OGCWMTSLayer.exports.OGCWMTSLayer.html">exports.OGCWMTSLayer</a></li><li><a href="Point3D.html">Point3D</a></li><li><a href="Point3D.exports.Point3D.html">exports.Point3D</a></li><li><a href="Rectangle3D.html">Rectangle3D</a></li><li><a href="Rectangle3D.exports.Rectangle3D.html">exports.Rectangle3D</a></li><li><a href="SceneLayer.html">SceneLayer</a></li><li><a href="SceneLayer.exports.SceneLayer.html">exports.SceneLayer</a></li><li><a href="Size.html">Size</a></li><li><a href="SpatialReference.html">SpatialReference</a></li><li><a href="SpatialReference.exports.SpatialReference.html">exports.SpatialReference</a></li><li><a href="STKTerrainLayer.html">STKTerrainLayer</a></li><li><a href="STKTerrainLayer.exports.STKTerrainLayer.html">exports.STKTerrainLayer</a></li><li><a href="Sublayer.html">Sublayer</a></li><li><a href="TileInfo.html">TileInfo</a></li><li><a href="TileLayer.html">TileLayer</a></li><li><a href="TileLayer.exports.MapImageLayer.html">exports.MapImageLayer</a></li><li><a href="TileLayer.exports.TileLayer.html">exports.TileLayer</a></li><li><a href="TileMatrixSet.html">TileMatrixSet</a></li><li><a href="VectorTileLayer.exports.VectorTileLayer.html">exports.VectorTileLayer</a></li><li><a href="WebTileLayer.html">WebTileLayer</a></li><li><a href="WebTileLayer.exports.WebTileLayer.html">exports.WebTileLayer</a></li><li><a href="WMSSublayer.html">WMSSublayer</a></li><li><a href="WMTSStyle.html">WMTSStyle</a></li><li><a href="WMTSSublayer.html">WMTSSublayer</a></li></ul><div class="mapgis-menu-span">全局</div><ul class="mapgis-sidebar-menus"><li><a href="global.html#addClass">addClass</a></li><li><a href="global.html#byteLength">byteLength</a></li><li><a href="global.html#clean">clean</a></li><li><a href="global.html#colorObjectToRgba">colorObjectToRgba</a></li><li><a href="global.html#CoordinateSystemType">CoordinateSystemType</a></li><li><a href="global.html#CoordinateSystemType%255Bundefined%255D">CoordinateSystemType[undefined]</a></li><li><a href="global.html#createUniqueString">createUniqueString</a></li><li><a href="global.html#dataStoreEsGeoCode">dataStoreEsGeoCode</a></li><li><a href="global.html#dataStorePgQueryFeature">dataStorePgQueryFeature</a></li><li><a href="global.html#debounce">debounce</a></li><li><a href="global.html#deepClone">deepClone</a></li><li><a href="global.html#disposeDocInfo">disposeDocInfo</a></li><li><a href="global.html#ElevationMode">ElevationMode</a></li><li><a href="global.html#ElevationMode%255Bundefined%255D">ElevationMode[undefined]</a></li><li><a href="global.html#executeWorkflow">executeWorkflow</a></li><li><a href="global.html#featureGeoJSONTofeatureIGS">featureGeoJSONTofeatureIGS</a></li><li><a href="global.html#featureIGSToFeatureGeoJSON">featureIGSToFeatureGeoJSON</a></li><li><a href="global.html#formatTime">formatTime</a></li><li><a href="global.html#getColorObject">getColorObject</a></li><li><a href="global.html#getDataBase">getDataBase</a></li><li><a href="global.html#getDataSource">getDataSource</a></li><li><a href="global.html#getDocs">getDocs</a></li><li><a href="global.html#getGDBData">getGDBData</a></li><li><a href="global.html#getGeoJSONFeatureBound">getGeoJSONFeatureBound</a></li><li><a href="global.html#getGeoJSONFeatureCenter">getGeoJSONFeatureCenter</a></li><li><a href="global.html#getGeoJSONFeaturesCenter">getGeoJSONFeaturesCenter</a></li><li><a href="global.html#getLayerFileds">getLayerFileds</a></li><li><a href="global.html#getLayerIndexesByNames">getLayerIndexesByNames</a></li><li><a href="global.html#getLayerIndexesByNamesOrCodes">getLayerIndexesByNamesOrCodes</a></li><li><a href="global.html#getLayerInfo">getLayerInfo</a></li><li><a href="global.html#getLayersByExtentOrName">getLayersByExtentOrName</a></li><li><a href="global.html#getLayersByIndexes">getLayersByIndexes</a></li><li><a href="global.html#getLayerUrlsByNamesOrCodes">getLayerUrlsByNamesOrCodes</a></li><li><a href="global.html#getMapInfoService">getMapInfoService</a></li><li><a href="global.html#getMapServiceInfo">getMapServiceInfo</a></li><li><a href="global.html#getTiles">getTiles</a></li><li><a href="global.html#getTotal">getTotal</a></li><li><a href="global.html#getWorkflowList">getWorkflowList</a></li><li><a href="global.html#getWorkflowResult">getWorkflowResult</a></li><li><a href="global.html#getWorkflowStatus">getWorkflowStatus</a></li><li><a href="global.html#hasClass">hasClass</a></li><li><a href="global.html#hexToRgba">hexToRgba</a></li><li><a href="global.html#html2Text">html2Text</a></li><li><a href="global.html#igsCombineQueryFeature">igsCombineQueryFeature</a></li><li><a href="global.html#igsQuery">igsQuery</a></li><li><a href="global.html#igsQuery3DFeature">igsQuery3DFeature</a></li><li><a href="global.html#igsQueryFeature">igsQueryFeature</a></li><li><a href="global.html#IGSSceneSublayerType">IGSSceneSublayerType</a></li><li><a href="global.html#isNumeric">isNumeric</a></li><li><a href="global.html#isValidArrayIndex">isValidArrayIndex</a></li><li><a href="global.html#LayerType">LayerType</a></li><li><a href="global.html#LayerType%255Bundefined%255D">LayerType[undefined]</a></li><li><a href="global.html#LengthUnit">LengthUnit</a></li><li><a href="global.html#LengthUnit%255Bundefined%255D">LengthUnit[undefined]</a></li><li><a href="global.html#LoadStatus">LoadStatus</a></li><li><a href="global.html#LoadStatus%255Bundefined%255D">LoadStatus[undefined]</a></li><li><a href="global.html#ModelCacheFormat">ModelCacheFormat</a></li><li><a href="global.html#ModelCacheFormat%255Bundefined%255D">ModelCacheFormat[undefined]</a></li><li><a href="global.html#objectMerge">objectMerge</a></li><li><a href="global.html#oneOf">oneOf</a></li><li><a href="global.html#outFullScreen">outFullScreen</a></li><li><a href="global.html#parseTime">parseTime</a></li><li><a href="global.html#query">query</a></li><li><a href="global.html#remove">remove</a></li><li><a href="global.html#removeClass">removeClass</a></li><li><a href="global.html#removeViewshedAnalysis">removeViewshedAnalysis</a></li><li><a href="global.html#removeVisiblityAnalysis">removeVisiblityAnalysis</a></li><li><a href="global.html#rgbaToHex">rgbaToHex</a></li><li><a href="global.html#rgbToHex">rgbToHex</a></li><li><a href="global.html#statisticField">statisticField</a></li><li><a href="global.html#statisticFieldByDS">statisticFieldByDS</a></li><li><a href="global.html#throttle">throttle</a></li><li><a href="global.html#toArray">toArray</a></li><li><a href="global.html#toggleClass">toggleClass</a></li><li><a href="global.html#toNumber">toNumber</a></li><li><a href="global.html#unique">unique</a></li><li><a href="global.html#update">update</a></li><li><a href="global.html#uuid">uuid</a></li><li><a href="global.html#viewshedAnalysis">viewshedAnalysis</a></li><li><a href="global.html#visiblityAnalysis">visiblityAnalysis</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <span class="page-title-sub">ArcGISMapImageLayer</span>
+                    <span class="page-title-main">Class</span>
+                </header>
+                
+
+
+
+
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>ArcGISMapImageLayer<span class="signature">()</span><span class="type-signature"></span></h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class='vertical-section'>
+                <div class="members">
+                    <div class="member">
+                        <div class=name>
+                            <span class="mapgis-api-function">Fx</span><span class="mapgis-api-function-title">构造函数</span>
+                        </div>
+                        
+
+
+    
+    <h4 class="name" id="ArcGISMapImageLayer">
+        <a class="href-link" href="#ArcGISMapImageLayer">#</a>
+        
+        <span class="code-name">
+            
+                new ArcGISMapImageLayer<span class="signature">()</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        <p>ArcGIS地图服务图层</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html" class="button">查看源代码</a>
+            <span>
+                <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html">dist/src/model/document/layer/arcgis-map-image-layer.js</a>, <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html#line6">line 6</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        
+    
+    </div>
+    
+    
+        <h3 class="subsection-title">继承关系</h3>
+
+        
+
+
+    <ul>
+        <li><a href="TileLayer.html">TileLayer</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">类名</h3>
+
+        <div>
+          <div class="module-list-info">
+            <span class="module-class-name"><a href="ArcGISMapImageLayer.exports.ArcGISMapImageLayer.html">exports.ArcGISMapImageLayer</a></span>
+            <span class="module-summary"></span>
+            <span class="module-classdesc"></span>
+          </div>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+        <div class='vertical-section'>
+            <h1>成员变量</h1>
+            <div class="members">
+            
+                <div class="member">
+
+<h4 class="name" id=".capabilities">
+    <a class="href-link" href="#.capabilities">#</a>
+    
+        
+            <span class='tag'>static</span>
+        
+    
+    <span class="code-name">
+        capabilities
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>表示该图层支持的能力。如：&quot;Map,Query,Data&quot;</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html" class="button">查看源代码</a>
+            <span>
+                <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html">dist/src/model/document/layer/arcgis-map-image-layer.js</a>, <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html#line36">line 36</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id=".imageMaxHeight">
+    <a class="href-link" href="#.imageMaxHeight">#</a>
+    
+        
+            <span class='tag'>static</span>
+        
+    
+    <span class="code-name">
+        imageMaxHeight
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>该服务可生成的图片的最大高度，单位：像素</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html" class="button">查看源代码</a>
+            <span>
+                <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html">dist/src/model/document/layer/arcgis-map-image-layer.js</a>, <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html#line43">line 43</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id=".imageMaxWidth">
+    <a class="href-link" href="#.imageMaxWidth">#</a>
+    
+        
+            <span class='tag'>static</span>
+        
+    
+    <span class="code-name">
+        imageMaxWidth
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>该服务可生成的图片的最大宽度，单位：像素</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html" class="button">查看源代码</a>
+            <span>
+                <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html">dist/src/model/document/layer/arcgis-map-image-layer.js</a>, <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html#line50">line 50</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id=".maxScale">
+    <a class="href-link" href="#.maxScale">#</a>
+    
+        
+            <span class='tag'>static</span>
+        
+    
+    <span class="code-name">
+        maxScale
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>支持的最大比例尺，值为比例尺的分母</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html" class="button">查看源代码</a>
+            <span>
+                <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html">dist/src/model/document/layer/arcgis-map-image-layer.js</a>, <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html#line57">line 57</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id=".minScale">
+    <a class="href-link" href="#.minScale">#</a>
+    
+        
+            <span class='tag'>static</span>
+        
+    
+    <span class="code-name">
+        minScale
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>支持的最小比例尺，值为比例尺的分母</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html" class="button">查看源代码</a>
+            <span>
+                <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html">dist/src/model/document/layer/arcgis-map-image-layer.js</a>, <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html#line64">line 64</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id=".url">
+    <a class="href-link" href="#.url">#</a>
+    
+        
+            <span class='tag'>static</span>
+        
+    
+    <span class="code-name">
+        url
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>服务基地址
+约定URL格式如下：http://[ip]/arcgis/rest/services/{mapName}/MapServer</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html" class="button">查看源代码</a>
+            <span>
+                <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html">dist/src/model/document/layer/arcgis-map-image-layer.js</a>, <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html#line78">line 78</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+                <div class="member">
+
+<h4 class="name" id=".version">
+    <a class="href-link" href="#.version">#</a>
+    
+        
+            <span class='tag'>static</span>
+        
+    
+    <span class="code-name">
+        version
+    </span>
+    
+</h4>
+
+
+
+
+<div class="description">
+    <p>服务的版本</p>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html" class="button">查看源代码</a>
+            <span>
+                <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html">dist/src/model/document/layer/arcgis-map-image-layer.js</a>, <a href="dist_src_model_document_layer_arcgis-map-image-layer.js.html#line71">line 71</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+</div>
+            
+            </div>
+        </div>
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>文档生成<a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="http://develop.smaryun.com:8899/" target="_blank">MapGIS Web App Framework</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+</body>
+</html>

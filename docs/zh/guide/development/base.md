@@ -1,38 +1,77 @@
 # 基础
 
-## 组件关系
+## 框架混入关系图
 
-<img :src="$withBase('/images/components-relation.png')" alt="组件之间的关系">
+<img :src="$withBase('/images/framework框架混入关系图.png')" alt="框架混入关系图">
 
 ## 应用流程
 
-<img :src="$withBase('/images/app-flow.png')" alt="组件之间的关系">
+<img :src="$withBase('/images/framework框架应用流程图.png')" alt="框架应用流程图">
 
-### 加载应用配置
+### 应用流程解析
+
+#### 启动应用并加载应用配置
+
+[mp-app-loader](/zh/components/builder/app-loader.html) 组件负责接收 application，然后提供给所有的子组件，只要任何组件混入 [app-mixin](/zh/api/reference/builder/app-mixin.html)，或者自己 inject getApplication，都可以拿到 application，以及 app-mixin 属性信息里的其他配置相关数据，比如 theme、document 等。
 
 [app.json](<(/zh/guide/introduction/config.html#app-json)>) 是应用全局配置，**包含应用基础配置、文档配置、微件配置等，可通过 [AppManager](/zh/api/reference/builder/manager.html#appmanager) 进行加载，一次性加载完毕**，作为整个应用的数据流，贯穿于整个应用中。
 
-### 启动应用
+> 在引用 MpAppLoader 组件时，会同时引用 AppManager 来获取应用全局配置，并赋值给 application 参数，再将 application 参数赋值给 MpAppLoader 组件。
+> MpAppLoader 组件接收到 application，然后提供给所有的子组件。
 
-[MpAppLoader](/zh/components/app-loader.html) 组件负责接收 application，然后提供给所有的子组件，只要任何组件混入 [AppMixin](/zh/api/reference/app-mixin.html)，或者自己 inject getApplication，都可以拿到 application，以及其他的 theme、document 等所有跟配置相关的数据。
+```vue
+<template>
+  <mp-app-loader :application="application" />
+</template>
 
-### 解析主题和布局
+<script>
+import { AppManager } from '@mapgis/web-app-framework'
+import { getAppInfo } from '@/services/user'
+import { BASE_URL } from '@/services/api'
+import { request } from '@/utils/request'
 
-获取 theme 对象关联的主题清单中的组件名称，动态创建该组件，该组件作为应用根组件，负责承载所有的内容区域布局和地图微件以及弹框面板的布局，其中地图微件和弹框面板由插槽引入。
+export default {
+  data() {
+    return {
+      application: {}
+    }
+  },
+  async created() {
+    try {
+      const appInfo = await getAppInfo()
+      await AppManager.getInstance().loadConfig(
+        BASE_URL,
+        appInfo.data.configPath,
+        appInfo.data.assetsPath,
+        request
+      )
+      // 通过 AppManager 获取应用全局配置，并赋值给 application 参数
+      this.application = AppManager.getInstance().getApplication()
+    } catch (error) {
+      console.log(error)
+    }
+  }
+}
+</script>
+```
 
-### 内容区域解析
+#### 主题和布局
 
-当动态给主题组件传入跟 theme 的 contents 有关的 contentWidgets 后，主题组件会动态创建这些内容区域组件，并同时传入 widgets、widgetStructure 等数据，由内容区域组件自己负责布局和管理。
+\_themeComponent\_表示 theme 对象`(从 app.json 中获取)`所关联的主题清单中的组件。通过获取这个主题组件名称，动态创建该组件，并将该组件作为应用根组件，负责承载所有的内容区域布局、地图微件以及弹框面板的布局，其中地图微件和弹框面板由插槽引入。**主题组件可自定义。**
 
-### 地图微件解析
+#### 地图微件
 
-MpMapWidgetContainer 组件负责各类地图微件的管理，包括不带面板的微件、带面板的微件和占位微件。
+[mp-map-widget-indicator](/zh/components/builder/map-widget-indicator.html) 组件负责各类地图微件的管理，包括不带面板的微件、带面板的微件和占位微件，比如放大、缩小、二三维切换、综合查询等。
 
-### 地图微件面板解析
+#### 地图微件面板
 
 识别出 mapWidgets 中 panel 的组件名称，动态创建该组件，传入所有 widgets。该面板组件需要根据微件的位置计算出合适的面板位置。
 
-### 内容区域微件面板解析
+#### 内容区域
+
+当动态给主题组件传入跟 theme 的 contents 有关的 contentWidgets 后，主题组件会动态创建这些内容区域组件，并同时传入 widgets、widgetStructure 等数据，由内容区域组件自己负责布局和管理。
+
+#### 内容区域微件面板
 
 识别出 contentWidgets.group[n]中 panel 的组件名称，动态创建该组件，传入所有 widgets。该面板组件需要根据配置的位置来进行展示，并考虑 relativeTo 和 mode 属性，如果 relativeTo 为 map，则展示在地图窗口上，如果为 content，则由内容区域组件自己去布局；对于 mode 属性，默认的内容区域面板为 single 模式，如果要支持 multi，需要自己提供面板来实现。
 

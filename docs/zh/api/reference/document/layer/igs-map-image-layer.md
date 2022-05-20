@@ -1,10 +1,12 @@
-# IGS 矢量地图文档子图层
+# IGS 矢量地图文档图层
+
+> src/model/document/igs-map-image-layer.ts
 
 构建 IGSMapImageLayer 对象
 
 ```js
 import { IGSMapImageLayer } from '@mapgis/web-app-framework'
-const layer = new IGSMapImageLayer()
+const layer = new IGSMapImageLayer({ url })
 ```
 
 ## 属性
@@ -50,7 +52,7 @@ const layer = new IGSMapImageLayer()
   | port    | 数据服务 port | string | -      |
   | docName | 地图文档名    | string | -      |
 
-# IGS 矢量地图文档子图层
+# IGS 矢量地图文档图层子图层
 
 构建 IGSSublayer 对象
 

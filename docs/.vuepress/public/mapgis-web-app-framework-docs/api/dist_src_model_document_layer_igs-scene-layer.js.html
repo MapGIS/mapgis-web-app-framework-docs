@@ -1,0 +1,818 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> dist/src/model/document/layer/igs-scene-layer.js</title>
+
+  <script src="../cdn/run_prettify.js"></script>
+  <script src="../cdn/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="../cdn/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="../cdn/googleapis.css" rel="stylesheet">
+  <link href="../cdn/prettify.css" rel="stylesheet">
+  <link rel="stylesheet" href="../cdn/all.css" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="../cdn/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="../cdn/mapgis.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="../cdn/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+             
+                <a class="image" href="/">
+                    <img class="mapgis-webclient-logo" src="/images/mapgis_blue.png" alt="logo">
+                </a>
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API
+                </a>
+                <div class="dropdown is-hoverable is-right">
+                    <a class="dropdown-trigger link">
+                        帮助向导
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-content">
+                        
+                            
+                                <a class="dropdown-item" href="tutorial-1.快速入门.html">
+                                    1.快速入门
+                                </a>
+                            
+                        
+                        </div>
+                    </div>
+                </div>
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="/mapgis-web-app-framework-docs/api/index.html"
+                        >
+                            MapGIS-Web-App-Framework
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            <div>
+                <span class="mapgis-api-document-span"><a href="index.html">API文档</a></span>
+            </div>
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="搜索文档..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <div class="category"><div class="mapgis-menu-span">类名</div><ul class="mapgis-sidebar-menus"><li><a href="AMapMercatorEMapLayer.html">AMapMercatorEMapLayer</a></li><li><a href="AMapMercatorEMapLayer.exports.AMapMercatorEMapLayer.html">exports.AMapMercatorEMapLayer</a></li><li><a href="AMapMercatorSatelliteAnnMapLayer.html">AMapMercatorSatelliteAnnMapLayer</a></li><li><a href="AMapMercatorSatelliteAnnMapLayer.exports.AMapMercatorSatelliteAnnMapLayer.html">exports.AMapMercatorSatelliteAnnMapLayer</a></li><li><a href="AMapMercatorSatelliteMapLayer.html">AMapMercatorSatelliteMapLayer</a></li><li><a href="AMapMercatorSatelliteMapLayer.exports.AMapMercatorSatelliteMapLayer.html">exports.AMapMercatorSatelliteMapLayer</a></li><li><a href="ArcGISMapImageLayer.html">ArcGISMapImageLayer</a></li><li><a href="ArcGISMapImageLayer.exports.ArcGISMapImageLayer.html">exports.ArcGISMapImageLayer</a></li><li><a href="ArcGISSublayer.html">ArcGISSublayer</a></li><li><a href="ArcGISTileLayer.html">ArcGISTileLayer</a></li><li><a href="ArcGISTileLayer.exports.ArcGISTileLayer.html">exports.ArcGISTileLayer</a></li><li><a href="CoordinateTransformation.html">CoordinateTransformation</a></li><li><a href="DataFlowLayer.exports.DataFlowLayer.html">exports.DataFlowLayer</a></li><li><a href="Document.html">Document</a></li><li><a href="ElevationInfo.html">ElevationInfo</a></li><li><a href="FeatureExpressionInfo.html">FeatureExpressionInfo</a></li><li><a href="FeatureLayer.html">FeatureLayer</a></li><li><a href="FeatureLayer.exports.FeatureLayer.html">exports.FeatureLayer</a></li><li><a href="FeatureLayer.exports.IGSFeatureLayer.html">exports.IGSFeatureLayer</a></li><li><a href="GeoJsonLayer.html">GeoJsonLayer</a></li><li><a href="GeoJsonLayer.exports.GeoJsonLayer.html">exports.GeoJsonLayer</a></li><li><a href="GraphicsLayer.html">GraphicsLayer</a></li><li><a href="GraphicsLayer.exports.GraphicsLayer.html">exports.GraphicsLayer</a></li><li><a href="GroupLayer.html">GroupLayer</a></li><li><a href="GroupLayer.exports.GroupLayer.html">exports.GroupLayer</a></li><li><a href="IGSMapImageLayer.exports.IGSMapImageLayer.html">exports.IGSMapImageLayer</a></li><li><a href="IGSSceneLayer.html">IGSSceneLayer</a></li><li><a href="IGSSceneLayer.exports.IGSSceneLayer.html">exports.IGSSceneLayer</a></li><li><a href="IGSSublayer.html">IGSSublayer</a></li><li><a href="IGSTileLayer.html">IGSTileLayer</a></li><li><a href="IGSTileLayer.exports.IGSTileLayer.html">exports.IGSTileLayer</a></li><li><a href="IGSVectorLayer.exports.IGSVectorLayer.html">exports.IGSVectorLayer</a></li><li><a href="Layer.html">Layer</a></li><li><a href="Layer3D.html">Layer3D</a></li><li><a href="Layer.exports.Layer.html">exports.Layer</a></li><li><a href="LOD.html">LOD</a></li><li><a href="Map.html">Map</a></li><li><a href="MapImageLayer.html">MapImageLayer</a></li><li><a href="ModelCacheLayer.html">ModelCacheLayer</a></li><li><a href="ModelCacheLayer.exports.ModelCacheLayer.html">exports.ModelCacheLayer</a></li><li><a href="OGCWMSLayer.html">OGCWMSLayer</a></li><li><a href="OGCWMSLayer.exports.OGCWMSLayer.html">exports.OGCWMSLayer</a></li><li><a href="OGCWMTSLayer.html">OGCWMTSLayer</a></li><li><a href="OGCWMTSLayer.exports.OGCWMTSLayer.html">exports.OGCWMTSLayer</a></li><li><a href="Point3D.html">Point3D</a></li><li><a href="Point3D.exports.Point3D.html">exports.Point3D</a></li><li><a href="Rectangle3D.html">Rectangle3D</a></li><li><a href="Rectangle3D.exports.Rectangle3D.html">exports.Rectangle3D</a></li><li><a href="SceneLayer.html">SceneLayer</a></li><li><a href="SceneLayer.exports.SceneLayer.html">exports.SceneLayer</a></li><li><a href="Size.html">Size</a></li><li><a href="SpatialReference.html">SpatialReference</a></li><li><a href="SpatialReference.exports.SpatialReference.html">exports.SpatialReference</a></li><li><a href="STKTerrainLayer.html">STKTerrainLayer</a></li><li><a href="STKTerrainLayer.exports.STKTerrainLayer.html">exports.STKTerrainLayer</a></li><li><a href="Sublayer.html">Sublayer</a></li><li><a href="TileInfo.html">TileInfo</a></li><li><a href="TileLayer.html">TileLayer</a></li><li><a href="TileLayer.exports.MapImageLayer.html">exports.MapImageLayer</a></li><li><a href="TileLayer.exports.TileLayer.html">exports.TileLayer</a></li><li><a href="TileMatrixSet.html">TileMatrixSet</a></li><li><a href="VectorTileLayer.exports.VectorTileLayer.html">exports.VectorTileLayer</a></li><li><a href="WebTileLayer.html">WebTileLayer</a></li><li><a href="WebTileLayer.exports.WebTileLayer.html">exports.WebTileLayer</a></li><li><a href="WMSSublayer.html">WMSSublayer</a></li><li><a href="WMTSStyle.html">WMTSStyle</a></li><li><a href="WMTSSublayer.html">WMTSSublayer</a></li></ul><div class="mapgis-menu-span">全局</div><ul class="mapgis-sidebar-menus"><li><a href="global.html#addClass">addClass</a></li><li><a href="global.html#byteLength">byteLength</a></li><li><a href="global.html#clean">clean</a></li><li><a href="global.html#colorObjectToRgba">colorObjectToRgba</a></li><li><a href="global.html#CoordinateSystemType">CoordinateSystemType</a></li><li><a href="global.html#CoordinateSystemType%255Bundefined%255D">CoordinateSystemType[undefined]</a></li><li><a href="global.html#createUniqueString">createUniqueString</a></li><li><a href="global.html#dataStoreEsGeoCode">dataStoreEsGeoCode</a></li><li><a href="global.html#dataStorePgQueryFeature">dataStorePgQueryFeature</a></li><li><a href="global.html#debounce">debounce</a></li><li><a href="global.html#deepClone">deepClone</a></li><li><a href="global.html#disposeDocInfo">disposeDocInfo</a></li><li><a href="global.html#ElevationMode">ElevationMode</a></li><li><a href="global.html#ElevationMode%255Bundefined%255D">ElevationMode[undefined]</a></li><li><a href="global.html#executeWorkflow">executeWorkflow</a></li><li><a href="global.html#featureGeoJSONTofeatureIGS">featureGeoJSONTofeatureIGS</a></li><li><a href="global.html#featureIGSToFeatureGeoJSON">featureIGSToFeatureGeoJSON</a></li><li><a href="global.html#formatTime">formatTime</a></li><li><a href="global.html#getColorObject">getColorObject</a></li><li><a href="global.html#getDataBase">getDataBase</a></li><li><a href="global.html#getDataSource">getDataSource</a></li><li><a href="global.html#getDocs">getDocs</a></li><li><a href="global.html#getGDBData">getGDBData</a></li><li><a href="global.html#getGeoJSONFeatureBound">getGeoJSONFeatureBound</a></li><li><a href="global.html#getGeoJSONFeatureCenter">getGeoJSONFeatureCenter</a></li><li><a href="global.html#getGeoJSONFeaturesCenter">getGeoJSONFeaturesCenter</a></li><li><a href="global.html#getLayerFileds">getLayerFileds</a></li><li><a href="global.html#getLayerIndexesByNames">getLayerIndexesByNames</a></li><li><a href="global.html#getLayerIndexesByNamesOrCodes">getLayerIndexesByNamesOrCodes</a></li><li><a href="global.html#getLayerInfo">getLayerInfo</a></li><li><a href="global.html#getLayersByExtentOrName">getLayersByExtentOrName</a></li><li><a href="global.html#getLayersByIndexes">getLayersByIndexes</a></li><li><a href="global.html#getLayerUrlsByNamesOrCodes">getLayerUrlsByNamesOrCodes</a></li><li><a href="global.html#getMapInfoService">getMapInfoService</a></li><li><a href="global.html#getMapServiceInfo">getMapServiceInfo</a></li><li><a href="global.html#getTiles">getTiles</a></li><li><a href="global.html#getTotal">getTotal</a></li><li><a href="global.html#getWorkflowList">getWorkflowList</a></li><li><a href="global.html#getWorkflowResult">getWorkflowResult</a></li><li><a href="global.html#getWorkflowStatus">getWorkflowStatus</a></li><li><a href="global.html#hasClass">hasClass</a></li><li><a href="global.html#hexToRgba">hexToRgba</a></li><li><a href="global.html#html2Text">html2Text</a></li><li><a href="global.html#igsCombineQueryFeature">igsCombineQueryFeature</a></li><li><a href="global.html#igsQuery">igsQuery</a></li><li><a href="global.html#igsQuery3DFeature">igsQuery3DFeature</a></li><li><a href="global.html#igsQueryFeature">igsQueryFeature</a></li><li><a href="global.html#IGSSceneSublayerType">IGSSceneSublayerType</a></li><li><a href="global.html#isNumeric">isNumeric</a></li><li><a href="global.html#isValidArrayIndex">isValidArrayIndex</a></li><li><a href="global.html#LayerType">LayerType</a></li><li><a href="global.html#LayerType%255Bundefined%255D">LayerType[undefined]</a></li><li><a href="global.html#LengthUnit">LengthUnit</a></li><li><a href="global.html#LengthUnit%255Bundefined%255D">LengthUnit[undefined]</a></li><li><a href="global.html#LoadStatus">LoadStatus</a></li><li><a href="global.html#LoadStatus%255Bundefined%255D">LoadStatus[undefined]</a></li><li><a href="global.html#ModelCacheFormat">ModelCacheFormat</a></li><li><a href="global.html#ModelCacheFormat%255Bundefined%255D">ModelCacheFormat[undefined]</a></li><li><a href="global.html#objectMerge">objectMerge</a></li><li><a href="global.html#oneOf">oneOf</a></li><li><a href="global.html#outFullScreen">outFullScreen</a></li><li><a href="global.html#parseTime">parseTime</a></li><li><a href="global.html#query">query</a></li><li><a href="global.html#remove">remove</a></li><li><a href="global.html#removeClass">removeClass</a></li><li><a href="global.html#removeViewshedAnalysis">removeViewshedAnalysis</a></li><li><a href="global.html#removeVisiblityAnalysis">removeVisiblityAnalysis</a></li><li><a href="global.html#rgbaToHex">rgbaToHex</a></li><li><a href="global.html#rgbToHex">rgbToHex</a></li><li><a href="global.html#statisticField">statisticField</a></li><li><a href="global.html#statisticFieldByDS">statisticFieldByDS</a></li><li><a href="global.html#throttle">throttle</a></li><li><a href="global.html#toArray">toArray</a></li><li><a href="global.html#toggleClass">toggleClass</a></li><li><a href="global.html#toNumber">toNumber</a></li><li><a href="global.html#unique">unique</a></li><li><a href="global.html#update">update</a></li><li><a href="global.html#uuid">uuid</a></li><li><a href="global.html#viewshedAnalysis">viewshedAnalysis</a></li><li><a href="global.html#visiblityAnalysis">visiblityAnalysis</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <span class="page-title-sub">dist/src/model/document/layer/igs-scene-layer.js</span>
+                    <span class="page-title-main">Source</span>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { G3D } from '@mapgis/webclient-es6-service';
+import { LoadStatus, LayerType } from './layer';
+import { SceneLayer } from './scene-layer';
+import { Rectangle3D, Point3D, Size } from './3d-layer';
+import { ObjectTool } from '../../utils/object-tool';
+import axios from 'axios';
+/**
+ * IGServer发布的三维场景服务
+ *
+ * url格式：[protocol]://[ip]:[port]/igs/rest/g3d/{docName}
+ *
+ * @date 24/05/2021
+ * @export
+ * @class IGSSceneLayer
+ * @extends {IGSSceneLayer}
+ */
+export class IGSSceneLayer extends SceneLayer {
+    /**
+     * Creates an instance of IGSSceneLayer.
+     * @date 24/05/2021
+     * @param {Record&lt;string, any>} [properties]
+     * @memberof IGSSceneLayer
+     */
+    constructor(properties) {
+        super(properties);
+        this.type = LayerType.IGSScene;
+        if (!properties)
+            return;
+        if (properties.url)
+            this.url = properties.url;
+        if (properties.extendedPropKeys)
+            this.extendedPropKeys = properties.extendedPropKeys;
+    }
+    /**
+     * 场景文档中的
+     *
+     * @date 25/05/2021
+     * @type {Scene[]}
+     * @memberof IGSSceneLayer
+     */
+    scenes = [];
+    /**
+     * 当前激活的scene
+     *
+     * @date 25/05/2021
+     * @type {(Scene | undefined)}
+     * @memberof IGSSceneLayer
+     */
+    activeScene;
+    /**
+     * 扩展属性的key列表，多个用","分隔，"*"为获取所有
+     *
+     * @date 27/12/2021
+     * @type {string[]}
+     * @memberof IGSSceneLayer
+     */
+    extendedPropKeys = undefined;
+    /**
+     * 全图范围
+     *
+     * @author Yuanye Ma
+     * @date 12/03/2021
+     * @type {Rectangle}
+     * @memberof Layer
+     */
+    get fullExtent() {
+        if (this.activeScene &amp;&amp; this.activeScene.sceneRange)
+            return this.activeScene.sceneRange;
+        return this._fullExtent;
+    }
+    /**
+     * 是否支持拾取
+     *
+     * @date 04/01/2022
+     * @memberof IGSSceneLayer
+     */
+    popupEnabled = false;
+    /**
+     * popup选项
+     * popup 弹窗时的配置参数,popupOptions 对象中 title 指弹窗的标题，
+     * 展示 geojson 数据中的某一个字段属性，fields 展示列表，
+     * 由传参者决定展示哪些字段值。
+     *
+     * @date 04/01/2022
+     * @type {(Record&lt;string, any> | undefined)}
+     * @memberof IGSSceneLayer
+     * @todo 预留参数，webClient-vue的mapgis-3d-g3d-layer暂未实现该功能,2022年1月4日
+     */
+    popupOptions;
+    /**
+     * 要素高亮时的显示样式。
+     *
+     * 示例代码：
+     * import { Style } from "@mapgis/webclient-es6-service";
+     * const { MarkerStyle, LineStyle, PointStyle, FillStyle } = Style;
+     *
+     * let highlightStyle  = new FillStyle()
+     *
+     * @date 04/01/2022
+     * @type {(Record&lt;string, any> | undefined)}
+     * @memberof IGSSceneLayer
+     */
+    highlightStyle;
+    /**
+     * JSX 风格的自定义  popup 样式内容, (features) => {}, features 为选中或者点击的要素
+     *
+     * @date 04/01/2022
+     * @type {(Function | undefined)}
+     * @memberof IGSSceneLayer
+     */
+    customPopup;
+    /**
+     * 是否开启 tooltip 弹窗
+     *
+     * @date 04/01/2022
+     * @type {boolean}
+     * @memberof IGSSceneLayer
+     */
+    tipsEnabled = false;
+    /**
+     * tooltip 弹窗时的配置参数，tipsOptions 对象中 title 指弹窗的标题，
+     * 展示 geojson 数据中的某一个字段属性，fields 展示列表，由传参者决定展示哪些字段值
+     *
+     * @date 04/01/2022
+     * @type {(Record&lt;string, any> | undefined)}
+     * @memberof IGSSceneLayer
+     */
+    tipsOptions;
+    /**
+     * JSX 风格的自定义 tips 样式内容, (features) => {}, features 为选中或者点击的要素
+     *
+     * @date 04/01/2022
+     * @type {(Function | undefined)}
+     * @memberof IGSSceneLayer
+     */
+    customTips;
+    /**
+     * 根据服务地址判断服务类型
+     * g3d
+     * sceneServer
+     * @date 10/01/2022
+     * @param {string} url
+     * @return {*}  {number}
+     * @memberof IGSSceneLayer
+     */
+    checkServiceVersion(url) {
+        const serverType = 'igs/rest/g3d/';
+        const indexServer = url.search(serverType);
+        if (indexServer === -1) {
+            return 'sceneServer';
+        }
+        return 'g3d';
+    }
+    load() {
+        // 只有加载状态是没有加载过时，才会真正进行请求。
+        if (this.loadStatus !== LoadStatus.notLoaded) {
+            return new Promise((resolve) => {
+                resolve(this);
+            }).then((data) => {
+                return this;
+            });
+        }
+        const serviceVersion = this.checkServiceVersion(this.url);
+        if (serviceVersion === 'sceneServer') {
+            // sceneServer服务
+            // 1.拼接服务地址
+            // 获取场景信息的url
+            const sceneInfoUrl = `${this.url}?f=json`;
+            // 获取场景子图层的url
+            const layerInfoUrl = `${this.url}/layers?f=json`;
+            const promise = new Promise((resolve, reject) => {
+                this.loadStatus = LoadStatus.loading;
+                // 2.请求场景信息
+                // 2.1 发请求
+                axios.get(sceneInfoUrl).then((res) => {
+                    const { data } = res;
+                    if (!data) {
+                        resolve(undefined);
+                    }
+                    else {
+                        // 2.2 解析请求结果
+                        const scene = new Scene();
+                        scene.layer = this;
+                        scene.fromJSON(data);
+                        this.scenes.push(scene);
+                        if (this.scenes.length > 0)
+                            this.activeScene = this.scenes[0];
+                        resolve(this);
+                    }
+                }, (error) => {
+                    this.loadStatus = LoadStatus.failed;
+                    reject(error);
+                });
+            });
+            return promise.then((sceneLayer) => {
+                const promise = new Promise((resolve, reject) => {
+                    // 3.请求图层信息
+                    // 3.1 发请求
+                    axios.get(layerInfoUrl).then((res) => {
+                        const { data } = res;
+                        if (data) {
+                            // 3.2 解析请求结果
+                            this.activeScene?.fromJSON(data);
+                            this.loadStatus = LoadStatus.loaded;
+                            resolve(this);
+                        }
+                    }, (error) => {
+                        this.loadStatus = LoadStatus.failed;
+                        reject(error);
+                    });
+                });
+                return promise.then((sceneLayer) => {
+                    return this;
+                });
+            });
+        }
+        else {
+            // G3D服务
+            // 1.从URL中解析出ip、port、serverName参数
+            const parmsBase = this._parseUrl(this.url);
+            // 1.1 扩展属性的key列表参数
+            const parms = { ...parmsBase, extendedPropKeys: this.extendedPropKeys };
+            const promise = new Promise((resolve, reject) => {
+                // 2.调用es6service中的接口进行网络请求。
+                const g3dMapDoc = new G3D.G3DMapDoc(parms);
+                this.loadStatus = LoadStatus.loading;
+                g3dMapDoc.GetDocInfo((res) => {
+                    if (res &amp;&amp; res.sceneInfos) {
+                        if (res.sceneInfos.length > 0) {
+                            res.sceneInfos.forEach((sceneInfo) => {
+                                const scene = new Scene();
+                                scene.layer = this;
+                                scene.fromJSON(sceneInfo);
+                                this.scenes.push(scene);
+                            });
+                        }
+                    }
+                    if (this.scenes.length > 0)
+                        this.activeScene = this.scenes[0];
+                    this.loadStatus = LoadStatus.loaded;
+                    resolve(this);
+                }, (failInfo) => {
+                    this.loadStatus = LoadStatus.failed;
+                    reject(failInfo);
+                });
+            });
+            return promise.then((data) => {
+                return this;
+            });
+        }
+    }
+    clone() {
+        const result = new IGSSceneLayer();
+        Object.entries(this).forEach((element) => {
+            const key = element[0];
+            const valueIndex = 1;
+            if (key === 'activeScene') {
+            }
+            else if (key === 'scenes') {
+                const scenes = element[valueIndex];
+                const scenesCopy = [];
+                let sceneCopy;
+                scenes.forEach((scene) => {
+                    sceneCopy = scene.clone(result);
+                    if (sceneCopy) {
+                        scenesCopy.push(sceneCopy);
+                    }
+                });
+                result[key] = scenesCopy;
+            }
+            else {
+                result[key] = ObjectTool.deepClone(element[valueIndex]);
+            }
+        });
+        let avtiveScene;
+        result.scenes.forEach((scene) => {
+            if (scene.sceneIndex === this.activeScene?.sceneIndex)
+                avtiveScene = scene;
+        });
+        result.activeScene = avtiveScene;
+        return result;
+    }
+    /**
+     * url解析,提取对应的ip、port、docName
+     * 约定URL格式如下：[protocol]://[ip]:[port]/igs/rest/g3d/{docName}
+     *
+     * @date 23/03/2021
+     * @private
+     * @param {*} url
+     * @return {*}  {{ ip; port; docName }}
+     * @memberof IGSTileLayer
+     */
+    _parseUrl(url) {
+        const ipReg = '/://[a-zA-Z0-9]+:*/g';
+        const portReg = '/:+[0-9]+//g';
+        const serverType = 'igs/rest/g3d/';
+        const indexServer = url.search(serverType);
+        const indexName = indexServer + serverType.length;
+        const docName = url.substr(indexName);
+        const ips = url.match(/:\/\/[a-zA-Z0-9.]+:*/g);
+        const ports = url.match(/:+[0-9]+\//g);
+        const matchIp = ips ? ips[0] : '://localhost';
+        const matchPort = ports ? ports[0] : ':6163';
+        let ip = '';
+        let port = '';
+        if (matchIp &amp;&amp; matchIp.length > 3) {
+            ip = matchIp.slice(3, matchIp.length - 1);
+        }
+        if (matchPort &amp;&amp; matchPort.length > 2) {
+            port = matchPort.slice(1, matchPort.length - 1);
+        }
+        return { ip, port, docName };
+    }
+}
+/**
+ * 三场景服务图层子图层类型枚举
+ *
+ * @date 25/05/2021
+ * @export
+ * @enum {number}
+ */
+export var IGSSceneSublayerType;
+(function (IGSSceneSublayerType) {
+    IGSSceneSublayerType[IGSSceneSublayerType["unknow"] = -1] = "unknow";
+    IGSSceneSublayerType[IGSSceneSublayerType["vector3D"] = 1] = "vector3D";
+    IGSSceneSublayerType[IGSSceneSublayerType["model"] = 2] = "model";
+    IGSSceneSublayerType[IGSSceneSublayerType["elevation"] = 3] = "elevation";
+    IGSSceneSublayerType[IGSSceneSublayerType["label3D"] = 4] = "label3D";
+    IGSSceneSublayerType[IGSSceneSublayerType["cloud"] = 5] = "cloud";
+    IGSSceneSublayerType[IGSSceneSublayerType["panorama"] = 6] = "panorama";
+    IGSSceneSublayerType[IGSSceneSublayerType["mapRef"] = 7] = "mapRef";
+    IGSSceneSublayerType[IGSSceneSublayerType["modelCache"] = 10] = "modelCache"; // m3d模型缓存图层
+})(IGSSceneSublayerType || (IGSSceneSublayerType = {}));
+export var IGSSceneSublayerRenderType;
+(function (IGSSceneSublayerRenderType) {
+    IGSSceneSublayerRenderType[IGSSceneSublayerRenderType["unknow"] = -1] = "unknow";
+    IGSSceneSublayerRenderType[IGSSceneSublayerRenderType["covering"] = 0] = "covering";
+    IGSSceneSublayerRenderType[IGSSceneSublayerRenderType["cloud"] = 1] = "cloud";
+    IGSSceneSublayerRenderType[IGSSceneSublayerRenderType["elevation"] = 2] = "elevation";
+    IGSSceneSublayerRenderType[IGSSceneSublayerRenderType["model"] = 3] = "model";
+    IGSSceneSublayerRenderType[IGSSceneSublayerRenderType["label"] = 4] = "label";
+    IGSSceneSublayerRenderType[IGSSceneSublayerRenderType["panorama"] = 5] = "panorama";
+    IGSSceneSublayerRenderType[IGSSceneSublayerRenderType["modelCache"] = 10] = "modelCache"; // m3d模型缓存图层
+})(IGSSceneSublayerRenderType || (IGSSceneSublayerRenderType = {}));
+export class Scene {
+    /**
+     * 该场景在场景文档中的索引
+     *
+     * @date 25/05/2021
+     * @memberof Scene
+     */
+    sceneIndex = -1;
+    /**
+     * 场景名
+     *
+     * @date 25/05/2021
+     * @memberof Scene
+     */
+    sceneName = '';
+    /**
+     * 场景类型
+     *
+     * @date 26/10/2021
+     * @memberof SceneLayer
+     */
+    sceneMode = '';
+    /**
+     * 场景包围盒
+     *
+     * @date 25/05/2021
+     * @type {(Rectangle3D | undefined)}
+     * @memberof Scene
+     */
+    sceneRange;
+    /**
+     * 场景中包含的图层列表
+     *
+     * @date 25/05/2021
+     * @type {IGSSceneSublayer[]}
+     * @memberof Scene
+     */
+    sublayers = [];
+    /**
+     * 场景所属的场景服务图层
+     *
+     * @date 26/05/2021
+     * @type {(IGSSceneLayer | undefined)}
+     * @memberof Scene
+     */
+    layer;
+    /**
+     * 扩展属性
+     *
+     * @date 27/12/2021
+     * @type {(Array&lt;Record&lt;string, any>> | undefined)}
+     * @memberof Scene
+     */
+    extendedProps;
+    /**
+     * 通过json对象初始化该对象
+     *
+     * @date 30/03/2021
+     * @param {Record&lt;string, any>} jsonObject
+     * @memberof Scene
+     */
+    fromJSON(jsonObject) {
+        if (jsonObject.sceneIndex !== undefined)
+            this.sceneIndex = jsonObject.sceneIndex;
+        if (jsonObject.sceneName !== undefined)
+            this.sceneName = jsonObject.sceneName;
+        if (jsonObject.sceneMode !== undefined)
+            this.sceneMode = jsonObject.sceneMode;
+        if (jsonObject.sceneRange)
+            this.sceneRange = new Rectangle3D(jsonObject.sceneRange.xMin, jsonObject.sceneRange.yMin, jsonObject.sceneRange.zMin, jsonObject.sceneRange.xMax, jsonObject.sceneRange.yMax, jsonObject.sceneRange.zMax);
+        if (jsonObject.layers) {
+            jsonObject.layers.forEach((layer) => {
+                const sceneSublayer = new IGSSceneSublayer();
+                sceneSublayer.layer = this.layer;
+                sceneSublayer.fromJSON(layer);
+                this.sublayers.push(sceneSublayer);
+            });
+        }
+        if (jsonObject.extendedProps) {
+            this.extendedProps = jsonObject.extendedProps;
+        }
+    }
+    /**
+     * 将该对象转换为json对象
+     *
+     * @date 30/03/2021
+     * @return {*}  {Record&lt;string, any>}
+     * @memberof Scene
+     */
+    toJSON() {
+        return {};
+    }
+    /**
+     * 创建一个深度克隆的sublayer
+     *
+     * @date 02/04/2021
+     * @return {*}  {Scene}
+     * @memberof Scene
+     */
+    clone(layer) {
+        const result = new Scene();
+        result.layer = layer;
+        Object.entries(this).forEach((element) => {
+            const key = element[0];
+            const valueIndex = 1;
+            if (key === 'layer') {
+            }
+            else if (key === 'sublayers') {
+                const sublayers = element[valueIndex];
+                const sublayersCopy = [];
+                let sublayerCopy;
+                sublayers.forEach((sublayer) => {
+                    sublayerCopy = sublayer.clone(result);
+                    if (sublayerCopy) {
+                        sublayersCopy.push(sublayerCopy);
+                    }
+                });
+                result[key] = sublayersCopy;
+            }
+            else {
+                result[key] = ObjectTool.deepClone(element[valueIndex]);
+            }
+        });
+        return result;
+    }
+}
+export class IGSSceneSublayer {
+    /**
+     * 图层唯一id
+     *
+     * @author Yuanye Ma
+     * @date 12/03/2021
+     * @type {string}
+     * @memberof IGSSceneSublayer
+     */
+    id = '';
+    /**
+     * 最大屏幕几何异常
+     *
+     * @author 龚瑞强
+     * @date 2021/11/26
+     * @type {number}
+     * @memberof IGSSceneSublayer
+     */
+    maximumScreenSpaceError = 16;
+    /**
+     * 子图层的索引
+     *
+     * @date 25/05/2021
+     * @memberof IGSSceneSublayer
+     */
+    layerIndex = -1;
+    /**
+     * 子图层名称
+     *
+     * @date 25/05/2021
+     * @memberof IGSSceneSublayer
+     */
+    title = '';
+    /**
+     * 子图层gdbp地址,如果是模型缓存图层的话，为mcj文件的路径。
+     *
+     * @date 25/05/2021
+     * @memberof IGSSceneSublayer
+     */
+    url = '';
+    /**
+     * 子图层是否可见
+     *
+     * @date 25/05/2021
+     * @memberof IGSSceneSublayer
+     */
+    visible = true;
+    /**
+     * 子图层类型
+     *
+     * @date 25/05/2021
+     * @type {IGSSceneSublayerType}
+     * @memberof IGSSceneSublayer
+     */
+    type = IGSSceneSublayerType.unknow;
+    /**
+     * 子图层渲染类型
+     *
+     * @date 25/05/2021
+     * @type {IGSSceneSublayerRenderType}
+     * @memberof IGSSceneSublayer
+     */
+    renderType = IGSSceneSublayerRenderType.unknow;
+    /**
+     * 子图层的外包范围
+     *
+     * @date 25/05/2021
+     * @type {(Rectangle3D | undefined)}
+     * @memberof IGSSceneSublayer
+     */
+    range;
+    /**
+     * 开始级别
+     *
+     * @date 25/05/2021
+     * @memberof IGSSceneSublayer
+     */
+    beginLevel = -1;
+    /**
+     * 结束级别
+     *
+     * @date 25/05/2021
+     * @memberof IGSSceneSublayer
+     */
+    endLevel = -1;
+    /**
+     * 网格划分的源点
+     *
+     * @date 25/05/2021
+     * @type {(Point3D | undefined)}
+     * @memberof IGSSceneSublayer
+     */
+    originPoint;
+    /**
+     * 最大网格大小
+     *
+     * @date 25/05/2021
+     * @type {(Size | undefined)}
+     * @memberof IGSSceneSublayer
+     */
+    maxFrameSize;
+    /**
+     * 子图层所属的场景服务图层
+     *
+     * @date 26/05/2021
+     * @type {(IGSSceneLayer | undefined)}
+     * @memberof IGSSceneSublayer
+     */
+    layer;
+    /**
+     * 扩展属性
+     *
+     * @date 27/12/2021
+     * @type {(Array&lt;Record&lt;string, any>> | undefined)}
+     * @memberof IGSSceneSublayer
+     */
+    extendedProps;
+    /**
+     * 通过json对象初始化该对象
+     *
+     * @date 30/03/2021
+     * @param {Record&lt;string, any>} jsonObject
+     * @memberof IGSSceneSublayer
+     */
+    fromJSON(jsonObject) {
+        if (jsonObject.layerRenderIndex !== undefined)
+            this.layerIndex = jsonObject.layerIndex;
+        if (jsonObject.layerName !== undefined)
+            this.title = jsonObject.layerName;
+        if (jsonObject.gdbpUrl !== undefined)
+            this.url = jsonObject.gdbpUrl;
+        if (jsonObject.isVisible !== undefined)
+            this.visible = jsonObject.isVisible;
+        if (jsonObject.layerType !== undefined)
+            this.type = parseInt(jsonObject.layerType); // 字符转数字。
+        if (jsonObject.layerRenderType !== undefined)
+            this.renderType = jsonObject.layerRenderType;
+        if (jsonObject.range3D !== undefined) {
+            /**
+             * @修改说明 这里为了处理高斯动态投影到经纬度的情况，range3D任然是原始坐标，这里使用range的坐标作为替代
+             * @修改人 龚瑞强
+             * @date 2021/10/25
+             */
+            this.range = new Rectangle3D(jsonObject.range.xMin, jsonObject.range.yMin, jsonObject.range3D.zMin, jsonObject.range.xMax, jsonObject.range.yMax, jsonObject.range3D.zMax);
+        }
+        if (jsonObject.beginLevel !== undefined)
+            this.beginLevel = jsonObject.beginLevel;
+        if (jsonObject.endLevel !== undefined)
+            this.endLevel = jsonObject.endLevel;
+        if (jsonObject.originalPoints) {
+            this.originPoint = new Point3D(jsonObject.originalPoints.x, jsonObject.originalPoints.y, 0);
+        }
+        if (jsonObject.frameSizes &amp;&amp; jsonObject.frameSizes.length > 0) {
+            this.maxFrameSize = new Size(jsonObject.frameSizes[0].wid, jsonObject.frameSizes[0].hel);
+        }
+        if (jsonObject.extendedProps) {
+            this.extendedProps = jsonObject.extendedProps;
+        }
+        if (this.layer)
+            this.id = `${this.layer.id}:${this.layerIndex}`;
+    }
+    /**
+     * 将该对象转换为json对象
+     *
+     * @date 30/03/2021
+     * @return {*}  {Record&lt;string, any>}
+     * @memberof IGSSceneSublayer
+     */
+    toJSON() {
+        return {};
+    }
+    /**
+     * 创建一个深度克隆的sublayer
+     *
+     * @date 02/04/2021
+     * @return {*}  {IGSSceneSublayer}
+     * @memberof IGSSceneSublayer
+     */
+    clone(scene) {
+        const result = new IGSSceneSublayer();
+        Object.entries(this).forEach((element) => {
+            const key = element[0];
+            const valueIndex = 1;
+            if (key === 'layer') {
+                if (scene)
+                    result[key] = scene.layer;
+            }
+            else {
+                result[key] = ObjectTool.deepClone(element[valueIndex]);
+            }
+        });
+        return result;
+    }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>文档生成<a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="http://develop.smaryun.com:8899/" target="_blank">MapGIS Web App Framework</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+</body>
+</html>

@@ -1,5 +1,6 @@
 const sidebar = {
-  introduction: ['/guide/', '/guide/introduction/config'],
+  introduction: ['/guide/'],
+  start: ['/guide/start/start'],
   development: [
     '/guide/development/base',
     '/guide/development/exhibition',
@@ -10,14 +11,11 @@ const sidebar = {
     '/guide/advanced/theme-custom',
     '/guide/advanced/widget-custom',
     '/guide/advanced/panel-custom',
-    '/guide/advanced/style-guide',
-    '/guide/advanced/uset-typescript'
+    '/guide/advanced/style-guide'
   ],
-  other: [
-    '/guide/other/change-log',
-    '/guide/other/faq',
-    '/guide/other/from-community'
-  ],
+  version: ['/guide/version/change-log'],
+  other: ['/guide/other/faq', '/guide/other/from-community'],
+  config: ['/config/base', '/config/theme', '/config/widget', '/config/app'],
   builder: [
     '/api/reference/builder/manager',
     '/api/reference/builder/app-mixin',
