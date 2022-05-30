@@ -146,6 +146,10 @@ module.exports = {
           ],
           '/zh/components/': [
             {
+              title: '混入',
+              children: getSidebarByCategory('builder', 'zh')
+            },
+            {
               title: '搭建组件',
               children: getSidebarByCategory('builder-components', 'zh')
             },
