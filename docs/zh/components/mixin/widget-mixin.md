@@ -1,6 +1,6 @@
 # WidgetMixin
 
-继承自 [WidgetInfoMixin](/zh/api/reference/widget-info-mixin.html) 和 [MapMixin](/zh/api/reference/map-mixin.html)，微件混入，提供微件的状态管理功能。
+继承自 [WidgetInfoMixin](/zh/components/mixin/widget-info-mixin.html) 和 [MapMixin](/zh/components/mixin/map-mixin.html)，微件混入，提供微件的状态管理功能。
 
 ## events
 

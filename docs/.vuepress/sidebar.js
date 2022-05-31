@@ -16,18 +16,6 @@ const sidebar = {
   version: ['/guide/version/change-log'],
   other: ['/guide/other/faq', '/guide/other/from-community'],
   config: ['/config/base', '/config/theme', '/config/widget', '/config/app'],
-  builder: [
-    '/api/reference/builder/manager',
-    '/api/reference/builder/app-mixin',
-    '/api/reference/builder/map-mixin',
-    '/api/reference/builder/theme-mixin',
-    '/api/reference/builder/theme-content-mixin',
-    '/api/reference/builder/panel-mixin',
-    '/api/reference/builder/widget-info-mixin',
-    '/api/reference/builder/widget-mixin',
-    '/api/reference/builder/exhibition-mixin',
-    '/api/reference/builder/exhibition-controller-mixin'
-  ],
   utils: [
     '/api/reference/utils/common-util',
     '/api/reference/utils/string-util',
@@ -92,6 +80,18 @@ const sidebar = {
   ],
   overlay: ['/api/reference/overlay/overlay'],
   exhibition: ['/api/reference/exhibition/exhibition'],
+  mixin: [
+    '/components/mixin/manager',
+    '/components/mixin/app-mixin',
+    '/components/mixin/map-mixin',
+    '/components/mixin/theme-mixin',
+    '/components/mixin/theme-content-mixin',
+    '/components/mixin/panel-mixin',
+    '/components/mixin/widget-info-mixin',
+    '/components/mixin/widget-mixin',
+    '/components/mixin/exhibition-mixin',
+    '/components/mixin/exhibition-controller-mixin'
+  ],
   'common-components': [
     '/components/common/icon',
     '/components/common/button',

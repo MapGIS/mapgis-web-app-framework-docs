@@ -108,10 +108,6 @@ module.exports = {
           ],
           '/zh/api/': [
             {
-              title: '搭建',
-              children: getSidebarByCategory('builder', 'zh')
-            },
-            {
               title: '文档',
               children: getSidebarByCategory('document', 'zh')
             },
@@ -147,7 +143,7 @@ module.exports = {
           '/zh/components/': [
             {
               title: '混入',
-              children: getSidebarByCategory('builder', 'zh')
+              children: getSidebarByCategory('mixin', 'zh')
             },
             {
               title: '搭建组件',

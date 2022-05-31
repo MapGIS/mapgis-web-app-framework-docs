@@ -1,9 +1,9 @@
 # 主题定制
 
-主题包含主题清单和主题布局，依据[主题规范](/zh/guide/introduction/config.html#主题)，需要在 themes 下定义主题目录，提供图标、布局和清单文件，定义主题的关键在于主题的内容区域，他决定了可供配置的布局元素，需要指定 content 的名称、描述和 content 的组件名称，在布局 layout.json 可进一步描述内置的 mapWidgets 和 contentWidgets，包括微件的样式和面板的样式。
+主题包含主题清单和主题布局，依据[主题规范](/zh/config/theme.html)，需要在 themes 下定义主题目录，提供图标、布局和清单文件，定义主题的关键在于主题的内容区域，他决定了可供配置的布局元素，需要指定 content 的名称、描述和 content 的组件名称，在布局 layout.json 可进一步描述内置的 mapWidgets 和 contentWidgets，包括微件的样式和面板的样式。
 
 以全空间一张图布局为例：
-它提供了 header、toolbar 、left 和 footer 四个内容区域，并且对于 toolbar 还指定了属性 maxWidgets，这些都可以通过混入 [ThemeMixin](/zh/api/reference/theme-mixin.html) 被设置进去
+它提供了 header、toolbar 、left 和 footer 四个内容区域，并且对于 toolbar 还指定了属性 maxWidgets，这些都可以通过混入 [ThemeMixin](/zh/components/mixin/theme-mixin.html) 被设置进去。
 
 ## MpPanSpatialMapClassicTheme（混入 ThemeMixin）
 

@@ -12,9 +12,9 @@
 
 #### 启动应用并加载应用配置
 
-[mp-app-loader](/zh/components/builder/app-loader.html) 组件负责接收 application，然后提供给所有的子组件，只要任何组件混入 [app-mixin](/zh/api/reference/builder/app-mixin.html)，或者自己 inject getApplication，都可以拿到 application，以及 app-mixin 属性信息里的其他配置相关数据，比如 theme、document 等。
+[mp-app-loader](/zh/components/builder/app-loader.html) 组件负责接收 application，然后提供给所有的子组件，只要任何组件混入 [app-mixin](/zh/components/mixin/app-mixin.html)，或者自己 inject getApplication，都可以拿到 application，以及 app-mixin 属性信息里的其他配置相关数据，比如 theme、document 等。
 
-[app.json](/zh/config/app.html) 是应用全局配置，**包含应用基础配置、文档配置、微件配置等，可通过 [AppManager](/zh/api/reference/builder/manager.html#appmanager) 进行加载，一次性加载完毕**，作为整个应用的数据流，贯穿于整个应用中。**可以先熟悉 app.json 内部结构，再回来看后面的内容。**
+[app.json](/zh/config/app.html) 是应用全局配置，**包含应用基础配置、文档配置、微件配置等，可通过 [AppManager](/zh/components/mixin/manager.html) 进行加载，一次性加载完毕**，作为整个应用的数据流，贯穿于整个应用中。**可以先熟悉 app.json 内部结构，再回来看后面的内容。**
 
 > 在引用 MpAppLoader 组件时，会同时引用 AppManager 来获取应用全局配置，并赋值给 application 参数，再将 application 参数赋值给 MpAppLoader 组件。
 > MpAppLoader 组件接收到 application，然后提供给所有的子组件。
@@ -198,11 +198,11 @@ export default {
 
 ## 地图模式
 
-地图模式分为二维和三维，目前，二维地图模式下引擎为 mapbox，三维模式下为 cesium，只要混入了 [AppMixin](/zh/api/reference/builder/app-mixin.html)，就可以通过获取 mapRender 来得到当前的引擎，或者通过 `is2DMapMode` 来判断当前是二维还是三维，如果要切换模式，调用 `switchMapMode` 可以轻松办到。
+地图模式分为二维和三维，目前，二维地图模式下引擎为 mapbox，三维模式下为 cesium，只要混入了 [AppMixin](/zh/components/mixin/app-mixin.html)，就可以通过获取 mapRender 来得到当前的引擎，或者通过 `is2DMapMode` 来判断当前是二维还是三维，如果要切换模式，调用 `switchMapMode` 可以轻松办到。
 
 ## 地图对象
 
-默认主题混入对象，会监听地图容器对象地图的加载，不管是二维还是三维，监听完毕后会将二三维地图对象提供给主题的所有子组件，只要混入 [MapMixin](/zh/api/reference/builder/map-mixin.html)，就可以拿到这些对象，对于 [WidgetMixin](/zh/api/reference/builder/widget-mixin.html)，已经混入 [MapMixin](/zh/api/reference/builder/map-mixin.html)，所以任意微件，均可拿到这些对象进行使用。
+默认主题混入对象，会监听地图容器对象地图的加载，不管是二维还是三维，监听完毕后会将二三维地图对象提供给主题的所有子组件，只要混入 [MapMixin](/zh/components/mixin/map-mixin.html)，就可以拿到这些对象，对于 [WidgetMixin](/zh/components/mixin/widget-mixin.html)，已经混入 [MapMixin](/zh/components/mixin/map-mixin.html)，所以任意微件，均可拿到这些对象进行使用。
 
 ## 微件配置
 

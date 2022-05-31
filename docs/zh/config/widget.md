@@ -4,28 +4,28 @@
 
 支持两种类型的 widget：in-panel 和 off-panel，每个 widget 都有一个 openAtStart 控制其是否初始打开。
 
-1. **In-panel**，需要在一个 panel 中打开的
-2. **Off-panel**，不需要在 panel 中打开
+1. **In-panel**，即 inPanel 设置为 true，表示需要在一个 panel 中打开的
+2. **Off-panel**，即 inPanel 设置为 false，表示不需要在 panel 中打开
 
 ## 所需文件
 
-最少情况下，一个 widget 只有 1 个 manifest 文件。
+一般情况下，一个 widget 只有 1 个 manifest 文件。
 
 ## Widget manifest
 
 ```javascript
 {
-  // widget的标识名称，需要与widget文件夹的名称一致
-  "name": "比例尺",
+  // widget的标识名称
+  "name": "底图管理",
   // widget的作者
   "author": "MapGIS",
   // widget的描述
   "description": "",
   // widget的组件名，如果inPanel为false，则表示widget本身UI，
   // 如果inPanel为true，其icon会显示到地图占位区域或内容区域中，widget本身UI会展示到Panel中
-  "component": "",
-  // widget图标,默认使用images/icon.svg
-  "icon": "iconname",
+  "component": "MpBasemapManager",
+  // widget图标
+  "icon": "<svg class=\"icon\" viewBox=\"0 0 1024 1024\" xmlns=\"http://www.w3.org/2000/svg\" width=\"200\" height=\"200\"><defs><style/></defs><path d=\"M64 64h384v384H64zm512 0h384v384H576zM64 576h384v384H64zm512 0h384v384H576z\"/></svg>",
   // widget属性表
   "properties": {
     // 确定widget是否支持2D，默认为true
@@ -40,9 +40,9 @@
     "hasSettingPage": true,
     // 如果有setting页，settingUiComponent表示设置页ui的组件名
     "settingUiComponent": "",
-    // 确定widget的窗口大小，默认为normal，可设置为normal（常规的，由panel决定）、max（最大化）
+    // 确定widget的窗口大小，默认为normal，可设置为normal（常规的，由panel决定）、max（最大化），可不设置
     "windowSize": "max",
-    // 确定widget的窗口是否有边距，默认为true，可设置为false
+    // 确定widget的窗口是否有边距，默认为true，可设置为false，可不设置
     "hasPadding": false
   }
 }

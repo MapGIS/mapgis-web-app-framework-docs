@@ -1,6 +1,6 @@
 # WidgetInfoMixin
 
-继承自 [AppMixin](/zh/api/reference/app-mixin.html)，微件信息混入，提供微件的基础信息。
+继承自 [AppMixin](/zh/components/mixin/app-mixin.html)，微件信息混入，提供微件的基础信息。
 
 ## props
 
@@ -14,7 +14,7 @@
 ### widgetInfo
 
 - **类型**：`Object`
-- **描述**：微件信息，包括 id、uri、label、icon、config、assetsUrl、position、openAtStart、visible、dragable、properties 等。可参考 [app.json](/zh/guide/introduction/config.html#app-json)
+- **描述**：微件信息，包括 id、uri、label、icon、config、assetsUrl、position、openAtStart、visible、dragable、properties 等。可参考 [app.json](/zh/config/app.html)
 
 ```js
 {

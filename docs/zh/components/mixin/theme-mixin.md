@@ -1,10 +1,10 @@
 # ThemeMixin
 
-继承自 [AppMixin](/zh/api/reference/app-mixin.html)，主题混入，提供内容区域列表、内容区域组件和内容区域属性等功能。
+继承自 [AppMixin](/zh/components/mixin/app-mixin.html)，主题混入，提供内容区域列表、内容区域组件和内容区域属性等功能。
 
 ## provide
 
-提供 map、mapbox、viewer、Cesium,vueCesium 给所有的子组件使用，通常微件会混入[MapMixin](/zh/api/reference/map-mixin.html)，这样可以直接拿到这几个对象。
+提供 map、mapbox、viewer、Cesium,vueCesium 给所有的子组件使用，通常微件会混入[MapMixin](/zh/components/mixin/map-mixin.html)，这样可以直接拿到这几个对象。
 
 ### map
 

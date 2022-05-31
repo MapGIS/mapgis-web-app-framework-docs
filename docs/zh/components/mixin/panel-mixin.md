@@ -1,6 +1,6 @@
 # PanelMixin
 
-继承自 [AppMixin](/zh/api/reference/app-mixin.html)，面板混入，提供展示的微件集合、模式、位置、微件的状态和可见性控制等功能。
+继承自 [AppMixin](/zh/components/mixin/app-mixin.html)，面板混入，提供展示的微件集合、模式、位置、微件的状态和可见性控制等功能。
 
 ## props
 
