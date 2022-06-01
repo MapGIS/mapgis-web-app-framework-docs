@@ -13,7 +13,7 @@ mp-map-widget-indicator 组件负责各类地图微件的管理，包括不带�
 </template>
 ```
 
-标识微件的组件，比如：图标、按钮或其他元素，这里提供`MpMapWidgetButton`按钮组件，它基于[MpButton](/zh/components/common/button.html)和[WidgetInfoMixin](/zh/api/reference/builder/widget-info-mixin.html)实现；`MpMapWidgetIcon`图标按钮,它基于[MpButton](/zh/components/common/button.html)和[WidgetInfoMixin](/zh/api/reference/builder/widget-info-mixin.html)实现；`MpMapWidgetPlaceholder`占位符组件，它基于和[WidgetInfoMixin](/zh/api/reference/builder/widget-info-mixin.html)实现。
+标识微件的组件，比如：图标、按钮或其他元素，这里提供`MpMapWidgetButton`按钮组件，它基于[MpButton](/zh/components/common/button.html)和[WidgetInfoMixin](/zh/components/mixin/widget-info-mixin.html)实现；`MpMapWidgetIcon`图标按钮,它基于[MpButton](/zh/components/common/button.html)和[WidgetInfoMixin](/zh/components/mixin/widget-info-mixin.html)实现；`MpMapWidgetPlaceholder`占位符组件，它基于和[WidgetInfoMixin](/zh/components/mixin/widget-info-mixin.html)实现。
 
 ## 代码演示
 
@@ -36,7 +36,7 @@ mp-map-widget-indicator 组件负责各类地图微件的管理，包括不带�
 
 #### 属性
 
-参数同[WidgetInfoMixin](/zh/api/reference/builder/widget-info-mixin.html)，核心参数为 widget。
+参数同[WidgetInfoMixin](/zh/components/mixin/widget-info-mixin.html)，核心参数为 widget。
 
 | 参数   | 说明     | 类型   | 默认值 |
 | ------ | -------- | ------ | ------ |
@@ -56,7 +56,7 @@ mp-map-widget-indicator 组件负责各类地图微件的管理，包括不带�
 
 #### 属性
 
-参数同[WidgetInfoMixin](/zh/api/reference/builder/widget-info-mixin.html)，核心参数为 widget。
+参数同[WidgetInfoMixin](/zh/components/mixin/widget-info-mixin.html)，核心参数为 widget。
 
 | 参数   | 说明     | 类型   | 默认值 |
 | ------ | -------- | ------ | ------ |

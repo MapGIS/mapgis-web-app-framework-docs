@@ -15,7 +15,7 @@ const sidebar = {
   ],
   version: ['/guide/version/change-log'],
   other: ['/guide/other/faq', '/guide/other/from-community'],
-  config: ['/config/base', '/config/theme', '/config/widget', '/config/app'],
+  config: ['/config/base', '/config/app', '/config/theme', '/config/widget'],
   utils: [
     '/api/reference/utils/common-util',
     '/api/reference/utils/string-util',

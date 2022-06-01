@@ -25,7 +25,7 @@
 ### position
 
 - **类型**：`Object`
-- **描述**：面板弹出位置，只有 relativeTo 为 map 才有效。可参考 [app.json](/zh/guide/introduction/config.html#app-json)
+- **描述**：面板弹出位置，只有 relativeTo 为 map 才有效。可参考 [app.json](/zh/config/app.html)
 - **默认值**
 
 ```js
@@ -41,7 +41,7 @@
 ### styles
 
 - **类型**：`Object`
-- **描述**：面板样式。可参考 [app.json](/zh/guide/introduction/config.html#app-json)
+- **描述**：面板样式。可参考 [app.json](/zh/config/app.html)
 - **默认值**：
 
 ```js
