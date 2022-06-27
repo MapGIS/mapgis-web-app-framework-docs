@@ -2,11 +2,11 @@
 
 ## 技术准备
 
-由于本项目技术栈基于 [typescript](https://www.typescriptlang.org/)、[vue](https://cn.vuejs.org/index.html)、[vue-cli](https://github.com/vuejs/vue-cli) 、[axios](https://github.com/axios/axios) 和 [ant-design-vue](https://github.com/vueComponent/ant-design-vue)，因此需提前了解和学习这些相关知识。
+MapGIS Web App Framework 使用了最新的前端技术，比如 [typescript](https://www.typescriptlang.org/)、[vue](https://cn.vuejs.org/index.html)、[vue-cli](https://github.com/vuejs/vue-cli) 、[axios](https://github.com/axios/axios) 和 [ant-design-vue](https://github.com/vueComponent/ant-design-vue)，使用之前，可提前了解和学习这些相关知识。
 
 ## 开发环境
 
-需本地安装 [node.js](https://nodejs.org/zh-cn/)，并且 node 版本为 14.x.x。
+本地需安装 [node.js](https://nodejs.org/zh-cn/)，并且 node 版本为 14.x.x。
 
 ## 安装
 
