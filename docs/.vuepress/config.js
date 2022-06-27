@@ -1,6 +1,8 @@
 const { getNavbarByCategory } = require('./navbar')
 const { getSidebarByCategory } = require('./sidebar')
 
+const apiBaseUrl = 'http://localhost:8080' + '/mapgis-web-app-framework-docs'
+
 module.exports = {
   title: 'MapGIS Web App Framework',
   base: '/mapgis-web-app-framework-docs/',
@@ -59,19 +61,27 @@ module.exports = {
             link: '/zh/guide/'
           },
           {
-            text: 'API',
-            link: '/zh/api/reference/builder/manager'
+            text: '微件规范',
+            link: '/zh/config/base'
           },
           {
             text: '组件',
-            link: '/zh/components/common/icon'
+            link: '/zh/components/builder/app-loader'
+          },
+          {
+            text: 'API',
+            link: apiBaseUrl + '/api/index.html'
           }
         ],
         sidebar: {
           '/zh/guide/': [
             {
-              title: '入门',
+              title: '产品介绍',
               children: getSidebarByCategory('introduction', 'zh')
+            },
+            {
+              title: '入门',
+              children: getSidebarByCategory('start', 'zh')
             },
             {
               title: '开发',
@@ -82,15 +92,21 @@ module.exports = {
               children: getSidebarByCategory('advanced', 'zh')
             },
             {
-              title: '其它',
+              title: '版本',
+              children: getSidebarByCategory('version', 'zh')
+            },
+            {
+              title: '其他',
               children: getSidebarByCategory('other', 'zh')
             }
           ],
-          '/zh/api/': [
+          '/zh/config/': [
             {
-              title: '搭建',
-              children: getSidebarByCategory('builder', 'zh')
-            },
+              title: '微件规范',
+              children: getSidebarByCategory('config', 'zh')
+            }
+          ],
+          '/zh/api/': [
             {
               title: '文档',
               children: getSidebarByCategory('document', 'zh')
@@ -126,16 +142,20 @@ module.exports = {
           ],
           '/zh/components/': [
             {
-              title: '常规组件',
-              children: getSidebarByCategory('common-components', 'zh')
+              title: '混入',
+              children: getSidebarByCategory('mixin', 'zh')
+            },
+            {
+              title: '搭建组件',
+              children: getSidebarByCategory('builder-components', 'zh')
             },
             {
               title: '地图组件',
               children: getSidebarByCategory('map-components', 'zh')
             },
             {
-              title: '搭建组件',
-              children: getSidebarByCategory('builder-components', 'zh')
+              title: '常规组件',
+              children: getSidebarByCategory('common-components', 'zh')
             }
           ]
         }

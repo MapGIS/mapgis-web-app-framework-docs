@@ -1,3 +1,5 @@
+# 编码规范
+
 ## 风格指南
 
 本项目的风格指南主要是参照 `vue` 官方的[风格指南](https://cn.vuejs.org/v2/style-guide/index.html)。在真正开始使用该项目之前建议先阅读一遍指南，这能帮助让你写出更规范和统一的代码。当然每个团队都会有所区别。其中大部分规则也都配置在了[eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)之中，当没有遵循规则的时候会报错。
@@ -24,3 +26,24 @@
 - `src/map/base-layers.ts`
 - `src/result-set/result-set.ts`
 - `src/config/data-catalog.ts`
+
+## 使用 TypeScript
+
+TypeScript 是 Javascript 的超集，它相对于 Javascript，增加了许多实用的新特性:
+
+- 类型批注和编译时类型检查
+- 类型推断
+- 类型擦除
+- 接口
+- 枚举
+- Mixin
+- 泛型编程
+- 名字空间
+- 元组
+- Await
+
+使用 TypeScript 对 IDE 会更加友好，如果你是用 vscode 开发的，那么你的开发体验将会显著提升。 MapGIS Pan-Spatial Map 中自带了 TypeScript 所需的配置文件.
+
+- tsconfig.js
+
+tsconfig 会声明这是一个 TypeScript 的项目，其中会进行一些配置，详细内容可以看[这里](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)。接下来我们就可以开始 TypeScript 开发了。

@@ -6,7 +6,7 @@
 
 - 拖拽和调整大小，会基于父级定位元素（只要父元素的 position 不等于`static`）来操作，如果没有找到，则使用文档元素（`documentElement`）。
 - 窗口整体高度，由内容高度+Header 高度（36px）。
-- 窗口的 position 和 styles 选项和详细说明可查看[app.json](/zh/guide/introduction/config.html#app-json)。
+- 窗口的 position 和 styles 选项和详细说明可查看[app.json](/zh/config/app.html)。
 
 ```js
 "position": {
@@ -104,12 +104,12 @@ export default {
 
 | 参数             | 说明                                                              | 类型    | 默认值      |
 | ---------------- | ----------------------------------------------------------------- | ------- | ----------- |
-| anchor           | 窗口方位，同[position](/zh/components/placement.html#mpplacement) | String  | `top-right` |
+| anchor           | 窗口方位，同[position](/zh/components/common/placement.html)      | String  | `top-right` |
 | horizontalOffset | 水平偏移                                                          | Number  | 0           |
 | verticalOffset   | 垂直偏移                                                          | Number  | 0           |
-| expand           | 是否展开，同[expand](/zh/components/placement.html#mpplacement)   | Boolean | false       |
+| expand           | 是否展开，同[expand](/zh/components/common/placement.html)        | Boolean | false       |
 | title            | 显示标题                                                          | String  | ''          |
-| icon             | 显示图标，同[icon](/zh/components/icon.html#mpicon)               | String  | -           |
+| icon             | 显示图标，同[icon](/zh/components/common/icon.html)               | String  | -           |
 | visible          | 是否显示                                                          | Boolean | -           |
 | isFullScreen     | 是否全屏                                                          | Boolean | false       |
 | width            | 内容宽度                                                          | Number  | -           |
@@ -127,7 +127,7 @@ export default {
 | fullScreenAction | 是否有全屏动作                                                    | Boolean | true        |
 | closeAction      | 是否有关闭动作                                                    | Boolean | true        |
 | hasPadding       | 是否有边距                                                        | Boolean | true        |
-| zIndex           | 层级，同[zIndex](/zh/components/placement.html#mpplacement)       | Number  | 1           |
+| zIndex           | 层级，同[zIndex](/zh/components/common/placement.html)            | Number  | 1           |
 
 #### 事件
 

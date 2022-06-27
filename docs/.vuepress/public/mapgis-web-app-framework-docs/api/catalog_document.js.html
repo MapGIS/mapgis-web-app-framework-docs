@@ -1,0 +1,696 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> catalog/document.js</title>
+
+  <script src="../cdn/run_prettify.js"></script>
+  <script src="../cdn/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="../cdn/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="../cdn/googleapis.css" rel="stylesheet">
+  <link href="../cdn/prettify.css" rel="stylesheet">
+  <link rel="stylesheet" href="../cdn/all.css" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="../cdn/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="../cdn/mapgis.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="../cdn/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+             
+                <a class="image" href="/">
+                    <img class="mapgis-webclient-logo" src="/images/mapgis_blue.png" alt="logo">
+                </a>
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            <div>
+                <span class="mapgis-api-document-span"><a href="index.html">API文档</a></span>
+            </div>
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="搜索文档..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <div class="category"><div class="mapgis-menu-span">类名</div><ul class="mapgis-sidebar-menus"><li><a href="AMapMercatorEMapLayer.html">AMapMercatorEMapLayer</a></li><li><a href="AMapMercatorEMapLayer.exports.AMapMercatorEMapLayer.html">exports.AMapMercatorEMapLayer</a></li><li><a href="AMapMercatorSatelliteAnnMapLayer.html">AMapMercatorSatelliteAnnMapLayer</a></li><li><a href="AMapMercatorSatelliteAnnMapLayer.exports.AMapMercatorSatelliteAnnMapLayer.html">exports.AMapMercatorSatelliteAnnMapLayer</a></li><li><a href="AMapMercatorSatelliteMapLayer.html">AMapMercatorSatelliteMapLayer</a></li><li><a href="AMapMercatorSatelliteMapLayer.exports.AMapMercatorSatelliteMapLayer.html">exports.AMapMercatorSatelliteMapLayer</a></li><li><a href="ArcGISMapImageLayer.html">ArcGISMapImageLayer</a></li><li><a href="ArcGISMapImageLayer.exports.ArcGISMapImageLayer.html">exports.ArcGISMapImageLayer</a></li><li><a href="ArcGISSublayer.html">ArcGISSublayer</a></li><li><a href="ArcGISTileLayer.html">ArcGISTileLayer</a></li><li><a href="ArcGISTileLayer.exports.ArcGISTileLayer.html">exports.ArcGISTileLayer</a></li><li><a href="CoordinateTransformation.html">CoordinateTransformation</a></li><li><a href="DataFlowLayer.exports.DataFlowLayer.html">exports.DataFlowLayer</a></li><li><a href="Document.html">Document</a></li><li><a href="ElevationInfo.html">ElevationInfo</a></li><li><a href="FeatureExpressionInfo.html">FeatureExpressionInfo</a></li><li><a href="FeatureLayer.html">FeatureLayer</a></li><li><a href="FeatureLayer.exports.FeatureLayer.html">exports.FeatureLayer</a></li><li><a href="FeatureLayer.exports.IGSFeatureLayer.html">exports.IGSFeatureLayer</a></li><li><a href="GeoJsonLayer.html">GeoJsonLayer</a></li><li><a href="GeoJsonLayer.exports.GeoJsonLayer.html">exports.GeoJsonLayer</a></li><li><a href="GraphicsLayer.html">GraphicsLayer</a></li><li><a href="GraphicsLayer.exports.GraphicsLayer.html">exports.GraphicsLayer</a></li><li><a href="GroupLayer.html">GroupLayer</a></li><li><a href="GroupLayer.exports.GroupLayer.html">exports.GroupLayer</a></li><li><a href="IGSMapImageLayer.exports.IGSMapImageLayer.html">exports.IGSMapImageLayer</a></li><li><a href="IGSSceneLayer.html">IGSSceneLayer</a></li><li><a href="IGSSceneLayer.exports.IGSSceneLayer.html">exports.IGSSceneLayer</a></li><li><a href="IGSSublayer.html">IGSSublayer</a></li><li><a href="IGSTileLayer.html">IGSTileLayer</a></li><li><a href="IGSTileLayer.exports.IGSTileLayer.html">exports.IGSTileLayer</a></li><li><a href="IGSVectorLayer.exports.IGSVectorLayer.html">exports.IGSVectorLayer</a></li><li><a href="Layer.html">Layer</a></li><li><a href="Layer3D.html">Layer3D</a></li><li><a href="Layer.exports.Layer.html">exports.Layer</a></li><li><a href="LOD.html">LOD</a></li><li><a href="Map.html">Map</a></li><li><a href="MapImageLayer.html">MapImageLayer</a></li><li><a href="ModelCacheLayer.html">ModelCacheLayer</a></li><li><a href="ModelCacheLayer.exports.ModelCacheLayer.html">exports.ModelCacheLayer</a></li><li><a href="OGCWMSLayer.html">OGCWMSLayer</a></li><li><a href="OGCWMSLayer.exports.OGCWMSLayer.html">exports.OGCWMSLayer</a></li><li><a href="OGCWMTSLayer.html">OGCWMTSLayer</a></li><li><a href="OGCWMTSLayer.exports.OGCWMTSLayer.html">exports.OGCWMTSLayer</a></li><li><a href="Point3D.html">Point3D</a></li><li><a href="Point3D.exports.Point3D.html">exports.Point3D</a></li><li><a href="Rectangle3D.html">Rectangle3D</a></li><li><a href="Rectangle3D.exports.Rectangle3D.html">exports.Rectangle3D</a></li><li><a href="SceneLayer.html">SceneLayer</a></li><li><a href="SceneLayer.exports.SceneLayer.html">exports.SceneLayer</a></li><li><a href="Size.html">Size</a></li><li><a href="SpatialReference.html">SpatialReference</a></li><li><a href="SpatialReference.exports.SpatialReference.html">exports.SpatialReference</a></li><li><a href="STKTerrainLayer.html">STKTerrainLayer</a></li><li><a href="STKTerrainLayer.exports.STKTerrainLayer.html">exports.STKTerrainLayer</a></li><li><a href="Sublayer.html">Sublayer</a></li><li><a href="TileInfo.html">TileInfo</a></li><li><a href="TileLayer.html">TileLayer</a></li><li><a href="TileLayer.exports.MapImageLayer.html">exports.MapImageLayer</a></li><li><a href="TileLayer.exports.TileLayer.html">exports.TileLayer</a></li><li><a href="TileMatrixSet.html">TileMatrixSet</a></li><li><a href="VectorTileLayer.exports.VectorTileLayer.html">exports.VectorTileLayer</a></li><li><a href="WebTileLayer.html">WebTileLayer</a></li><li><a href="WebTileLayer.exports.WebTileLayer.html">exports.WebTileLayer</a></li><li><a href="WMSSublayer.html">WMSSublayer</a></li><li><a href="WMTSStyle.html">WMTSStyle</a></li><li><a href="WMTSSublayer.html">WMTSSublayer</a></li></ul><div class="mapgis-menu-span">全局</div><ul class="mapgis-sidebar-menus"><li><a href="global.html#CoordinateSystemType">CoordinateSystemType</a></li><li><a href="global.html#CoordinateSystemType%255Bundefined%255D">CoordinateSystemType[undefined]</a></li><li><a href="global.html#dataStoreEsGeoCode">dataStoreEsGeoCode</a></li><li><a href="global.html#dataStorePgQueryFeature">dataStorePgQueryFeature</a></li><li><a href="global.html#disposeDocInfo">disposeDocInfo</a></li><li><a href="global.html#ElevationMode">ElevationMode</a></li><li><a href="global.html#ElevationMode%255Bundefined%255D">ElevationMode[undefined]</a></li><li><a href="global.html#featureGeoJSONTofeatureIGS">featureGeoJSONTofeatureIGS</a></li><li><a href="global.html#featureIGSToFeatureGeoJSON">featureIGSToFeatureGeoJSON</a></li><li><a href="global.html#getDataBase">getDataBase</a></li><li><a href="global.html#getDataSource">getDataSource</a></li><li><a href="global.html#getDocs">getDocs</a></li><li><a href="global.html#getGDBData">getGDBData</a></li><li><a href="global.html#getGeoJSONFeatureBound">getGeoJSONFeatureBound</a></li><li><a href="global.html#getGeoJSONFeatureCenter">getGeoJSONFeatureCenter</a></li><li><a href="global.html#getGeoJSONFeaturesCenter">getGeoJSONFeaturesCenter</a></li><li><a href="global.html#getLayerFileds">getLayerFileds</a></li><li><a href="global.html#getLayerIndexesByNames">getLayerIndexesByNames</a></li><li><a href="global.html#getLayerIndexesByNamesOrCodes">getLayerIndexesByNamesOrCodes</a></li><li><a href="global.html#getLayerInfo">getLayerInfo</a></li><li><a href="global.html#getLayersByExtentOrName">getLayersByExtentOrName</a></li><li><a href="global.html#getLayersByIndexes">getLayersByIndexes</a></li><li><a href="global.html#getLayerUrlsByNamesOrCodes">getLayerUrlsByNamesOrCodes</a></li><li><a href="global.html#getMapInfoService">getMapInfoService</a></li><li><a href="global.html#getMapServiceInfo">getMapServiceInfo</a></li><li><a href="global.html#getTiles">getTiles</a></li><li><a href="global.html#getTotal">getTotal</a></li><li><a href="global.html#igsCombineQueryFeature">igsCombineQueryFeature</a></li><li><a href="global.html#igsQuery">igsQuery</a></li><li><a href="global.html#igsQuery3DFeature">igsQuery3DFeature</a></li><li><a href="global.html#igsQueryFeature">igsQueryFeature</a></li><li><a href="global.html#IGSSceneSublayerType">IGSSceneSublayerType</a></li><li><a href="global.html#LayerType">LayerType</a></li><li><a href="global.html#LayerType%255Bundefined%255D">LayerType[undefined]</a></li><li><a href="global.html#LengthUnit">LengthUnit</a></li><li><a href="global.html#LengthUnit%255Bundefined%255D">LengthUnit[undefined]</a></li><li><a href="global.html#LoadStatus">LoadStatus</a></li><li><a href="global.html#LoadStatus%255Bundefined%255D">LoadStatus[undefined]</a></li><li><a href="global.html#ModelCacheFormat">ModelCacheFormat</a></li><li><a href="global.html#ModelCacheFormat%255Bundefined%255D">ModelCacheFormat[undefined]</a></li><li><a href="global.html#query">query</a></li><li><a href="global.html#statisticField">statisticField</a></li><li><a href="global.html#statisticFieldByDS">statisticFieldByDS</a></li><li><a href="global.html#update">update</a></li><li><a href="global.html#uuid">uuid</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <span class="page-title-sub">catalog/document.js</span>
+                    <span class="page-title-main">Source</span>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import * as Zondy from '@mapgis/webclient-es6-service';
+import axios from 'axios';
+export default class DocumentCatalog {
+    // 地图文档图层信息
+    static globalDocInfo = {};
+    /**
+     * 获取瓦片列表
+     * @param {Object} param
+     * @param {string} param.ip 服务器IP
+     * @param {Number} param.port 服务端口
+     */
+    static getTiles({ ip, port }) {
+        const url = `http://${ip}:${port}/igs/rest/mrcs/tiles?version=2&amp;f=json`;
+        const promise = new Promise((resolve, reject) => {
+            axios.get(url).then(res => {
+                const { data } = res;
+                if (!data) {
+                    resolve(undefined);
+                }
+                else {
+                    resolve(data);
+                }
+            }, error => {
+                reject(error);
+            });
+        });
+        return promise.then(data => {
+            return data;
+        });
+    }
+    /**
+     * 获取地图列表
+     * @param {Object} param
+     * @param {string} param.ip 服务器IP
+     * @param {Number} param.port 服务端口
+     */
+    static getDocs({ ip, port }) {
+        const url = `http://${ip}:${port}/igs/rest/mrcs/docs?version=2&amp;f=json`;
+        const promise = new Promise((resolve, reject) => {
+            axios.get(url).then(res => {
+                const { data } = res;
+                if (!data) {
+                    resolve(undefined);
+                }
+                else {
+                    resolve(data);
+                }
+            }, error => {
+                reject(error);
+            });
+        });
+        return promise.then(data => {
+            return data;
+        });
+    }
+    static getDocInfo(option) {
+        if (!option.serverName) {
+            return null;
+        }
+        if (this.globalDocInfo[option.serverName]) {
+            return this.globalDocInfo[option.serverName];
+        }
+        let domain = option.domain || null;
+        if (!domain) {
+            const protocol = option.protocol || 'http';
+            const ip = option.ip;
+            const port = option.port;
+            domain = `${protocol}://${ip}:${port}`;
+        }
+        const url = `${domain}/igs/rest/mrcs/docs/${option.serverName}?dataService=${option.serverName}&amp;f=json&amp;tree=true&amp;guid=${option.guid ||
+            '__readonly_user__'}`;
+        const self = this;
+        const promise = new Promise((resolve, reject) => {
+            axios.get(url).then(res => {
+                const { data } = res;
+                if (!data) {
+                    resolve(undefined);
+                }
+                else {
+                    for (let i = 0; i &lt; data.MapInfos.length; i += 1) {
+                        const { CatalogLayer } = data.MapInfos[i];
+                        if (CatalogLayer) {
+                            data.MapInfos[i].CatalogLayer = self.disposeDocInfo(CatalogLayer);
+                        }
+                    }
+                    self.globalDocInfo[option.serverName] = data;
+                    resolve(data);
+                }
+            }, error => {
+                reject(error);
+            });
+        });
+        return promise.then(data => {
+            return data;
+        });
+    }
+    static get3dDocInfo(option) {
+        if (!option.serverName) {
+            return null;
+        }
+        if (this.globalDocInfo[option.serverName]) {
+            return this.globalDocInfo[option.serverName];
+        }
+        let domain = option.domain || null;
+        if (!domain) {
+            const protocol = option.protocol || 'http';
+            const ip = option.ip;
+            const port = option.port;
+            domain = `${protocol}://${ip}:${port}`;
+        }
+        const url = `${domain}/igs/rest/g3d/${option.serverName}/GetDocInfo`;
+        const self = this;
+        const promise = new Promise((resolve, reject) => {
+            axios.get(url).then(res => {
+                const { data } = res;
+                if (!data) {
+                    resolve(undefined);
+                }
+                else {
+                    self.globalDocInfo[option.serverName] = data;
+                    resolve(data);
+                }
+            }, error => {
+                reject(error);
+            });
+        });
+        return promise.then(data => {
+            return data;
+        });
+    }
+    /**
+     * 获取矢量地图或瓦片数据信息
+     * @param {Object} param
+     * @param {string} param.ip 服务器IP
+     * @param {Number} param.port 服务端口
+     * @param {string} param.name 服务名
+     */
+    static getMapInfoService({ ip, port, name }) {
+        const url = `http://${ip}:${port}/igs/rest/mrms/info/${name}?guid=`;
+        const promise = new Promise((resolve, reject) => {
+            axios.get(url).then(res => {
+                const { data } = res;
+                if (!data) {
+                    resolve(undefined);
+                }
+                else {
+                    resolve(data);
+                }
+            }, error => {
+                reject(error);
+            });
+        });
+        return promise.then(data => {
+            return data;
+        });
+    }
+    /**
+     * 递归给地图文档的图层赋值layerIndex
+     * @param vectorInfo
+     * @param layerIndex // 图层组的layerIndex赋值采用多级：上级layerIndex-i
+     */
+    static disposeDocInfo(vectorInfo, layerIndex) {
+        if (!vectorInfo) {
+            return [];
+        }
+        for (let i = 0; i &lt; vectorInfo.length; i += 1) {
+            const tip = layerIndex &amp;&amp; layerIndex !== '' ? `${layerIndex}-${i}` : String(i);
+            if (vectorInfo[i].Type === 'Layer') {
+                vectorInfo[i].layerIndex = tip;
+            }
+            else if (vectorInfo[i].Type === 'Group') {
+                const groupMapLayerInfo = vectorInfo[i].GroupMapLayerInfo;
+                if (groupMapLayerInfo) {
+                    vectorInfo[i].GroupMapLayerInfo = this.disposeDocInfo(groupMapLayerInfo, tip);
+                }
+            }
+        }
+        return vectorInfo;
+    }
+    /**
+     * 获取图层索引列表，匹配图层URL，支持按名称列表和行政区划代码列表
+     * @param data      [in]       MapInfoCatalogLayer类型的数组
+     * @param layerName [in]      图层名称列表：以逗号分隔，匹配图层URL
+     * @param code      [in]      行政区代码列表：以逗号分隔，匹配图层URL
+     * @param array     [out]     图层索引列表
+     * @param urlArray  [int out] 图层URL列表
+     * @returns                   图层索引列表
+     */
+    static getLayerIndexesByNamesOrCodes(data, layerName = '', code = '', array = [], urlArray = []) {
+        array = array || [];
+        urlArray = urlArray || [];
+        if (layerName !== '' || code !== '') {
+            for (let i = 0; i &lt; data.length; i += 1) {
+                const { URL, layerIndex, GroupMapLayerInfo } = data[i];
+                if (data[i].Type === 'Layer') {
+                    if (code === '') {
+                        let layerNames = [];
+                        if (layerName.includes(',')) {
+                            layerNames = layerName.split(',');
+                        }
+                        else {
+                            layerNames = [layerName];
+                        }
+                        for (let j = 0; j &lt; layerNames.length; j += 1) {
+                            if (URL &amp;&amp;
+                                URL.indexOf(layerNames[j]) === URL.length - layerNames[j].length) {
+                                if (!urlArray.includes(URL)) {
+                                    urlArray.push(URL);
+                                    if (layerIndex) {
+                                        array.push(layerIndex);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else if (layerName === '') {
+                        let codes = [];
+                        if (code.includes(',')) {
+                            codes = code.split(',');
+                        }
+                        else {
+                            codes = [code];
+                        }
+                        for (let j = 0; j &lt; codes.length; j += 1) {
+                            if (URL &amp;&amp; URL.includes(codes[j])) {
+                                if (!urlArray.includes(URL)) {
+                                    urlArray.push(URL);
+                                    if (layerIndex) {
+                                        array.push(layerIndex);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else if (URL &amp;&amp;
+                        URL.indexOf(layerName) === URL.length - layerName.length &amp;&amp;
+                        URL.includes(code)) {
+                        if (!urlArray.includes(URL)) {
+                            urlArray.push(URL);
+                            if (layerIndex) {
+                                array.push(layerIndex);
+                            }
+                        }
+                    }
+                }
+                else if (GroupMapLayerInfo &amp;&amp; GroupMapLayerInfo.length > 0) {
+                    array = this.getLayerIndexesByNamesOrCodes(GroupMapLayerInfo, layerName, code, array, urlArray);
+                }
+            }
+        }
+        else {
+            for (let i = 0; i &lt; data.length; i += 1) {
+                const { layerIndex, GroupMapLayerInfo } = data[i];
+                if (data[i].Type === 'Layer') {
+                    if (layerIndex) {
+                        array.push(layerIndex);
+                    }
+                }
+                else if (GroupMapLayerInfo &amp;&amp; GroupMapLayerInfo.length > 0) {
+                    array = this.getLayerIndexesByNamesOrCodes(GroupMapLayerInfo, layerName, code, array, urlArray);
+                }
+            }
+        }
+        return array;
+    }
+    /**
+     * 获取图层URL列表，匹配URL，支持按图层名和行政区划代码
+     * @param data        [in]      MapInfoCatalogLayer类型的数组
+     * @param layerName   [in]      图层名称列表：以逗号分隔，匹配图层URL
+     * @param code        [in]      行政区代码列表:以逗号分隔，匹配图层URL
+     * @param urlArray    [int out] 图层URL(GDBP)列表
+     * @returns                     图层URL(GDBP)列表
+     */
+    static getLayerUrlsByNamesOrCodes(data, layerName, code, urlArray) {
+        urlArray = urlArray || [];
+        if (layerName !== '' || code !== '') {
+            for (let i = 0; i &lt; data.length; i += 1) {
+                const { URL, GroupMapLayerInfo } = data[i];
+                if (data[i].Type === 'Layer') {
+                    if (code === '') {
+                        let layerNames = [];
+                        if (layerName.includes(',')) {
+                            layerNames = layerName.split(',');
+                        }
+                        else {
+                            layerNames = [layerName];
+                        }
+                        for (let j = 0; j &lt; layerNames.length; j += 1) {
+                            if (URL &amp;&amp;
+                                URL.indexOf(layerNames[j]) === URL.length - layerNames[j].length) {
+                                if (!urlArray.includes(URL)) {
+                                    urlArray.push(URL);
+                                }
+                            }
+                        }
+                    }
+                    else if (layerName === '') {
+                        let codes = [];
+                        if (code.includes(',')) {
+                            codes = code.split(',');
+                        }
+                        else {
+                            codes = [code];
+                        }
+                        for (let j = 0; j &lt; codes.length; j += 1) {
+                            if (URL &amp;&amp; URL.includes(codes[j])) {
+                                if (!urlArray.includes(URL)) {
+                                    urlArray.push(URL);
+                                }
+                            }
+                        }
+                    }
+                    else if (URL &amp;&amp;
+                        URL.indexOf(layerName) === URL.length - layerName.length &amp;&amp;
+                        URL.includes(code)) {
+                        if (!urlArray.includes(URL)) {
+                            urlArray.push(URL);
+                        }
+                    }
+                }
+                else if (GroupMapLayerInfo &amp;&amp; GroupMapLayerInfo.length > 0) {
+                    urlArray = this.getLayerUrlsByNamesOrCodes(GroupMapLayerInfo, layerName, code, urlArray);
+                }
+            }
+        }
+        else {
+            for (let i = 0; i &lt; data.length; i += 1) {
+                const { URL, GroupMapLayerInfo } = data[i];
+                if (data[i].Type === 'Layer') {
+                    if (URL) {
+                        urlArray.push(URL);
+                    }
+                }
+                else if (GroupMapLayerInfo &amp;&amp; GroupMapLayerInfo.length > 0) {
+                    urlArray = this.getLayerUrlsByNamesOrCodes(GroupMapLayerInfo, layerName, code, urlArray);
+                }
+            }
+        }
+        return urlArray;
+    }
+    /**
+     * 根据图层索引列表获取图层列表
+     * @param layerIdxs               [in]  图层索引列表，以逗号分隔.图层索引为igs返回的DocInfo中定义的索引,
+     * 对图层进行查询、编辑时,通过该索引指定图层。
+     * @param sourceLayerInfoArray    [in]  源图层信息列表，待过滤的图层
+     * @param destLayerInfoArray      [in out]  目标图层列表，与layerIdxs对应的图层列表。
+     * @returns 目标图层列表，与layerIdxs对应的图层列表。
+     */
+    static getLayersByIndexes(layerIdxs, sourceLayerInfoArray, destLayerInfoArray = []) {
+        // 图层索引号数组
+        if (!layerIdxs || layerIdxs === '' || !sourceLayerInfoArray) {
+            return [];
+        }
+        if (!destLayerInfoArray) {
+            destLayerInfoArray = [];
+        }
+        let layerIdxsArr = [];
+        if (layerIdxs.includes(',')) {
+            layerIdxsArr = layerIdxs.split(',');
+        }
+        else {
+            layerIdxsArr = [layerIdxs];
+        }
+        for (let i = 0; i &lt; sourceLayerInfoArray.length; i += 1) {
+            for (let m = 0; m &lt; layerIdxsArr.length; m += 1) {
+                if (layerIdxsArr[m] === sourceLayerInfoArray[i].layerIndex) {
+                    destLayerInfoArray.push(sourceLayerInfoArray[i]);
+                }
+            }
+            if (sourceLayerInfoArray[i].Type === 'Group') {
+                const { GroupMapLayerInfo } = sourceLayerInfoArray[i];
+                if (GroupMapLayerInfo) {
+                    destLayerInfoArray = this.getLayersByIndexes(layerIdxs, GroupMapLayerInfo, destLayerInfoArray);
+                }
+            }
+        }
+        return destLayerInfoArray;
+    }
+    /**
+     * 获取图层URL列表，匹配URL，支持按图层名
+     * @param data         [in]       MapInfoCatalogLayer类型的数组
+     * @param names        [in]       图层名称列表：以逗号分隔，匹配图层URL
+     * @param urlArray     [int out]  图层URL(GDBP)列表
+     * @returns                       图层URL(GDBP)列表
+     */
+    static getLayerIndexesByNames(data, names, urlArray) {
+        if (names === '') {
+            return [];
+        }
+        urlArray = urlArray || [];
+        let tempNames;
+        if (names.includes(',')) {
+            tempNames = names.split(',');
+        }
+        else {
+            tempNames = [names];
+        }
+        for (let i = 0; i &lt; data.length; i += 1) {
+            if (data[i].Type === 'Layer') {
+                for (let j = 0; j &lt; tempNames.length; j += 1) {
+                    const { URL } = data[i];
+                    if (URL &amp;&amp; URL.indexOf(tempNames[j]) > 0) {
+                        if (!urlArray.includes(URL)) {
+                            urlArray.push(URL);
+                        }
+                    }
+                }
+            }
+            else {
+                const { GroupMapLayerInfo } = data[i];
+                if (GroupMapLayerInfo) {
+                    urlArray = this.getLayerIndexesByNames(GroupMapLayerInfo, names, urlArray);
+                }
+            }
+        }
+        return urlArray;
+    }
+    /**
+     * 根据范围或图层名列表筛选图层
+     * @param {Array} data                    MapInfoCatalogLayer类型的数组
+     * @param {Array|null} extent             范围
+     * @param {Array|null} [layerNames]       图层名数组
+     * @param {Array} [array]                 递归使用，可不传
+     * @param {Array} [gdbps]                 递归使用，可不传
+     * @returns                               图层列表
+     */
+    static getLayersByExtentOrName(data, extent, layerNames, array, gdbps) {
+        if (!array) {
+            array = [];
+        }
+        gdbps = gdbps || [];
+        for (let i = 0; i &lt; data.length; i++) {
+            if (data[i].Type === 'Layer') {
+                const range = data[i].ProjTransRange;
+                if (range &amp;&amp; extent) {
+                    if (range.xmax &lt; extent[0] ||
+                        range.xmin > extent[2] ||
+                        range.ymax &lt; extent[1] ||
+                        range.ymin > extent[3]) {
+                        // eslint-disable-next-line no-continue
+                        continue;
+                    }
+                }
+                if (layerNames) {
+                    for (let j = 0; j &lt; layerNames.length; j++) {
+                        if (data[j].URL.indexOf(layerNames[j]) ===
+                            data[j].URL.length - layerNames[j].length) {
+                            if (gdbps.indexOf(data[j].URL) &lt; 0) {
+                                array.push(data[j]);
+                                gdbps.push(data[j].URL);
+                            }
+                        }
+                    }
+                }
+                else if (gdbps.indexOf(data[i].URL) &lt; 0) {
+                    array.push(data[i]);
+                    gdbps.push(data[i].URL);
+                }
+            }
+            else if (data[i].GroupMapLayerInfo) {
+                array = this.getLayersByExtentOrName(data[i].GroupMapLayerInfo, extent, layerNames, array, gdbps);
+            }
+        }
+        return array;
+    }
+    /**
+     * 获取图层信息
+     * @param queryParam
+     */
+    static getLayerInfo(queryParam) {
+        let { domain } = queryParam;
+        if (!domain) {
+            const protocol = queryParam.protocol;
+            const ip = queryParam.ip;
+            const port = queryParam.port;
+            domain = `${protocol}://${ip}:${port}`;
+        }
+        const { layerType } = queryParam;
+        let promise;
+        if (layerType === 'layer') {
+            const vectorLayer = new Zondy.MRCS.VectorLayer({ domain });
+            const { gdbp } = queryParam;
+            promise = new Promise(resolve => {
+                vectorLayer.getLayerInfo(gdbp, (res) => {
+                    if (!res || !res.Range) {
+                        resolve(null);
+                    }
+                    else {
+                        const obj = {
+                            layerType,
+                            proName: res.SrName,
+                            extent: res.Range,
+                            FieldAtt: res.FieldAtt
+                        };
+                        resolve(obj);
+                    }
+                });
+            });
+        }
+        else if (layerType === 'vector') {
+            const { serverName } = queryParam;
+            const mapdoc = new Zondy.MRCS.MapDoc({
+                domain,
+                docName: serverName
+            });
+            promise = new Promise(resolve => {
+                mapdoc.getMapInfo((res) => {
+                    if (!res || !res.range) {
+                        resolve(null);
+                    }
+                    else {
+                        const r = res.range.split(',');
+                        const extent = {
+                            xmin: Number(r[0]),
+                            ymin: Number(r[1]),
+                            xmax: Number(r[2]),
+                            ymax: Number(r[3])
+                        };
+                        const obj = {
+                            layerType,
+                            proName: res.projtransName,
+                            extent
+                        };
+                        resolve(obj);
+                    }
+                });
+            });
+        }
+        else if (layerType === 'tile') {
+            const { serverName } = queryParam;
+            const tileLayer = new Zondy.MRCS.TileLayer({
+                domain,
+                tileName: serverName
+            });
+            promise = new Promise(resolve => {
+                tileLayer.getTileInfo(res => {
+                    if (!res || !res.TileInfo2) {
+                        resolve(null);
+                    }
+                    else {
+                        const { fullExtent } = res.TileInfo2;
+                        if (fullExtent) {
+                            const extent = {
+                                xmin: fullExtent.xmin,
+                                ymin: fullExtent.ymin,
+                                xmax: fullExtent.xmax,
+                                ymax: fullExtent.ymax
+                            };
+                            const proName = res.TileInfo2.tileInfo.spatialReference.tileSRefInfo.Name;
+                            const tileSize = res.TileInfo2.tileInfo.cols || res.TileInfo2.tileInfo.rows;
+                            const { origin } = res.TileInfo2.tileInfo;
+                            const obj = {
+                                layerType,
+                                proName,
+                                extent,
+                                tileSize,
+                                origin
+                            };
+                            resolve(obj);
+                        }
+                    }
+                });
+            });
+        }
+        if (promise) {
+            return promise.then(Range => {
+                return Range;
+            });
+        }
+        return null;
+    }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>文档生成<a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a></p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+</body>
+</html>

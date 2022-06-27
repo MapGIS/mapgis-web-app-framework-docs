@@ -1,6 +1,6 @@
 # 窗口容器
 
-提供一种能力，可将窗口（类似[MpWindow](/zh/components/window.html)），在任意组件中展示到地图指定位置显示。
+提供一种能力，可将窗口（类似[MpWindow](/zh/components/common/window.html)），在任意组件中展示到地图指定位置显示。
 
 因为被包装的窗口需要具有跟 MpWindow 具有同样的可激活的特性，所以会将 zIndex 属性绑定到插槽上，这样在在父级作用域中，我们可以使用带值的 v-slot 来将属性继续传递给后备内容。
 

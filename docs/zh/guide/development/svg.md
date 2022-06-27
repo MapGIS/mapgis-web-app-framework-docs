@@ -1,4 +1,4 @@
-# svg
+# 图标
 
 ## 图标使用方式
 
@@ -45,7 +45,7 @@
 
 ### 使用图像图标流程
 
-配置好应用图标和微件图标包括其他需要的图标，放到相应的目录内，默认情况下对于微件，在混入[WidgetInfoMixin](/zh/api/reference/widget-info-mixin.html)或[WidgetMixin](/zh/api/reference/widget-mixin.html)后，可以直接`widgetInfo.icon`：
+配置好应用图标和微件图标包括其他需要的图标，放到相应的目录内，默认情况下对于微件，在混入[WidgetInfoMixin](/zh/components/mixin/widget-info-mixin.html)或[WidgetMixin](/zh/components/mixin/widget-mixin.html)后，可以直接`widgetInfo.icon`：
 
 ```js
 <mp-icon :icon="widgetInfo.icon"/>
@@ -64,8 +64,8 @@
 
 #### 2. 放置 svg 内容到相应位置
 
-#### 3. 默认情况下对于微件，在混入[WidgetInfoMixin](/zh/api/reference/widget-info-mixin.html)或[WidgetMixin](/zh/api/reference/widget-mixin.html)后，可以直接`widgetInfo.icon`。
+#### 3. 默认情况下对于微件，在混入[WidgetInfoMixin](/zh/components/mixin/widget-info-mixin.html)或[WidgetMixin](/zh/components/mixin/widget-mixin.html)后，可以直接`widgetInfo.icon`。
 
 ## 更多信息
 
-请参考[MpIcon](/zh/components/icon.html)。
+请参考[MpIcon](/zh/components/common/icon.html)。

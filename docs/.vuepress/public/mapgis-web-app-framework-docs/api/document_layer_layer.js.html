@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> document/layer/layer.js</title>
+
+  <script src="../cdn/run_prettify.js"></script>
+  <script src="../cdn/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="../cdn/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="../cdn/googleapis.css" rel="stylesheet">
+  <link href="../cdn/prettify.css" rel="stylesheet">
+  <link rel="stylesheet" href="../cdn/all.css" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="../cdn/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="../cdn/mapgis.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="../cdn/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+             
+                <a class="image" href="/">
+                    <img class="mapgis-webclient-logo" src="/images/mapgis_blue.png" alt="logo">
+                </a>
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            <div>
+                <span class="mapgis-api-document-span"><a href="index.html">API文档</a></span>
+            </div>
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="搜索文档..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <div class="category"><div class="mapgis-menu-span">类名</div><ul class="mapgis-sidebar-menus"><li><a href="AMapMercatorEMapLayer.html">AMapMercatorEMapLayer</a></li><li><a href="AMapMercatorEMapLayer.exports.AMapMercatorEMapLayer.html">exports.AMapMercatorEMapLayer</a></li><li><a href="AMapMercatorSatelliteAnnMapLayer.html">AMapMercatorSatelliteAnnMapLayer</a></li><li><a href="AMapMercatorSatelliteAnnMapLayer.exports.AMapMercatorSatelliteAnnMapLayer.html">exports.AMapMercatorSatelliteAnnMapLayer</a></li><li><a href="AMapMercatorSatelliteMapLayer.html">AMapMercatorSatelliteMapLayer</a></li><li><a href="AMapMercatorSatelliteMapLayer.exports.AMapMercatorSatelliteMapLayer.html">exports.AMapMercatorSatelliteMapLayer</a></li><li><a href="ArcGISMapImageLayer.html">ArcGISMapImageLayer</a></li><li><a href="ArcGISMapImageLayer.exports.ArcGISMapImageLayer.html">exports.ArcGISMapImageLayer</a></li><li><a href="ArcGISSublayer.html">ArcGISSublayer</a></li><li><a href="ArcGISTileLayer.html">ArcGISTileLayer</a></li><li><a href="ArcGISTileLayer.exports.ArcGISTileLayer.html">exports.ArcGISTileLayer</a></li><li><a href="CoordinateTransformation.html">CoordinateTransformation</a></li><li><a href="DataFlowLayer.exports.DataFlowLayer.html">exports.DataFlowLayer</a></li><li><a href="Document.html">Document</a></li><li><a href="ElevationInfo.html">ElevationInfo</a></li><li><a href="FeatureExpressionInfo.html">FeatureExpressionInfo</a></li><li><a href="FeatureLayer.html">FeatureLayer</a></li><li><a href="FeatureLayer.exports.FeatureLayer.html">exports.FeatureLayer</a></li><li><a href="FeatureLayer.exports.IGSFeatureLayer.html">exports.IGSFeatureLayer</a></li><li><a href="GeoJsonLayer.html">GeoJsonLayer</a></li><li><a href="GeoJsonLayer.exports.GeoJsonLayer.html">exports.GeoJsonLayer</a></li><li><a href="GraphicsLayer.html">GraphicsLayer</a></li><li><a href="GraphicsLayer.exports.GraphicsLayer.html">exports.GraphicsLayer</a></li><li><a href="GroupLayer.html">GroupLayer</a></li><li><a href="GroupLayer.exports.GroupLayer.html">exports.GroupLayer</a></li><li><a href="IGSMapImageLayer.exports.IGSMapImageLayer.html">exports.IGSMapImageLayer</a></li><li><a href="IGSSceneLayer.html">IGSSceneLayer</a></li><li><a href="IGSSceneLayer.exports.IGSSceneLayer.html">exports.IGSSceneLayer</a></li><li><a href="IGSSublayer.html">IGSSublayer</a></li><li><a href="IGSTileLayer.html">IGSTileLayer</a></li><li><a href="IGSTileLayer.exports.IGSTileLayer.html">exports.IGSTileLayer</a></li><li><a href="IGSVectorLayer.exports.IGSVectorLayer.html">exports.IGSVectorLayer</a></li><li><a href="Layer.html">Layer</a></li><li><a href="Layer3D.html">Layer3D</a></li><li><a href="Layer.exports.Layer.html">exports.Layer</a></li><li><a href="LOD.html">LOD</a></li><li><a href="Map.html">Map</a></li><li><a href="MapImageLayer.html">MapImageLayer</a></li><li><a href="ModelCacheLayer.html">ModelCacheLayer</a></li><li><a href="ModelCacheLayer.exports.ModelCacheLayer.html">exports.ModelCacheLayer</a></li><li><a href="OGCWMSLayer.html">OGCWMSLayer</a></li><li><a href="OGCWMSLayer.exports.OGCWMSLayer.html">exports.OGCWMSLayer</a></li><li><a href="OGCWMTSLayer.html">OGCWMTSLayer</a></li><li><a href="OGCWMTSLayer.exports.OGCWMTSLayer.html">exports.OGCWMTSLayer</a></li><li><a href="Point3D.html">Point3D</a></li><li><a href="Point3D.exports.Point3D.html">exports.Point3D</a></li><li><a href="Rectangle3D.html">Rectangle3D</a></li><li><a href="Rectangle3D.exports.Rectangle3D.html">exports.Rectangle3D</a></li><li><a href="SceneLayer.html">SceneLayer</a></li><li><a href="SceneLayer.exports.SceneLayer.html">exports.SceneLayer</a></li><li><a href="Size.html">Size</a></li><li><a href="SpatialReference.html">SpatialReference</a></li><li><a href="SpatialReference.exports.SpatialReference.html">exports.SpatialReference</a></li><li><a href="STKTerrainLayer.html">STKTerrainLayer</a></li><li><a href="STKTerrainLayer.exports.STKTerrainLayer.html">exports.STKTerrainLayer</a></li><li><a href="Sublayer.html">Sublayer</a></li><li><a href="TileInfo.html">TileInfo</a></li><li><a href="TileLayer.html">TileLayer</a></li><li><a href="TileLayer.exports.MapImageLayer.html">exports.MapImageLayer</a></li><li><a href="TileLayer.exports.TileLayer.html">exports.TileLayer</a></li><li><a href="TileMatrixSet.html">TileMatrixSet</a></li><li><a href="VectorTileLayer.exports.VectorTileLayer.html">exports.VectorTileLayer</a></li><li><a href="WebTileLayer.html">WebTileLayer</a></li><li><a href="WebTileLayer.exports.WebTileLayer.html">exports.WebTileLayer</a></li><li><a href="WMSSublayer.html">WMSSublayer</a></li><li><a href="WMTSStyle.html">WMTSStyle</a></li><li><a href="WMTSSublayer.html">WMTSSublayer</a></li></ul><div class="mapgis-menu-span">全局</div><ul class="mapgis-sidebar-menus"><li><a href="global.html#CoordinateSystemType">CoordinateSystemType</a></li><li><a href="global.html#CoordinateSystemType%255Bundefined%255D">CoordinateSystemType[undefined]</a></li><li><a href="global.html#dataStoreEsGeoCode">dataStoreEsGeoCode</a></li><li><a href="global.html#dataStorePgQueryFeature">dataStorePgQueryFeature</a></li><li><a href="global.html#disposeDocInfo">disposeDocInfo</a></li><li><a href="global.html#ElevationMode">ElevationMode</a></li><li><a href="global.html#ElevationMode%255Bundefined%255D">ElevationMode[undefined]</a></li><li><a href="global.html#featureGeoJSONTofeatureIGS">featureGeoJSONTofeatureIGS</a></li><li><a href="global.html#featureIGSToFeatureGeoJSON">featureIGSToFeatureGeoJSON</a></li><li><a href="global.html#getDataBase">getDataBase</a></li><li><a href="global.html#getDataSource">getDataSource</a></li><li><a href="global.html#getDocs">getDocs</a></li><li><a href="global.html#getGDBData">getGDBData</a></li><li><a href="global.html#getGeoJSONFeatureBound">getGeoJSONFeatureBound</a></li><li><a href="global.html#getGeoJSONFeatureCenter">getGeoJSONFeatureCenter</a></li><li><a href="global.html#getGeoJSONFeaturesCenter">getGeoJSONFeaturesCenter</a></li><li><a href="global.html#getLayerFileds">getLayerFileds</a></li><li><a href="global.html#getLayerIndexesByNames">getLayerIndexesByNames</a></li><li><a href="global.html#getLayerIndexesByNamesOrCodes">getLayerIndexesByNamesOrCodes</a></li><li><a href="global.html#getLayerInfo">getLayerInfo</a></li><li><a href="global.html#getLayersByExtentOrName">getLayersByExtentOrName</a></li><li><a href="global.html#getLayersByIndexes">getLayersByIndexes</a></li><li><a href="global.html#getLayerUrlsByNamesOrCodes">getLayerUrlsByNamesOrCodes</a></li><li><a href="global.html#getMapInfoService">getMapInfoService</a></li><li><a href="global.html#getMapServiceInfo">getMapServiceInfo</a></li><li><a href="global.html#getTiles">getTiles</a></li><li><a href="global.html#getTotal">getTotal</a></li><li><a href="global.html#igsCombineQueryFeature">igsCombineQueryFeature</a></li><li><a href="global.html#igsQuery">igsQuery</a></li><li><a href="global.html#igsQuery3DFeature">igsQuery3DFeature</a></li><li><a href="global.html#igsQueryFeature">igsQueryFeature</a></li><li><a href="global.html#IGSSceneSublayerType">IGSSceneSublayerType</a></li><li><a href="global.html#LayerType">LayerType</a></li><li><a href="global.html#LayerType%255Bundefined%255D">LayerType[undefined]</a></li><li><a href="global.html#LengthUnit">LengthUnit</a></li><li><a href="global.html#LengthUnit%255Bundefined%255D">LengthUnit[undefined]</a></li><li><a href="global.html#LoadStatus">LoadStatus</a></li><li><a href="global.html#LoadStatus%255Bundefined%255D">LoadStatus[undefined]</a></li><li><a href="global.html#ModelCacheFormat">ModelCacheFormat</a></li><li><a href="global.html#ModelCacheFormat%255Bundefined%255D">ModelCacheFormat[undefined]</a></li><li><a href="global.html#query">query</a></li><li><a href="global.html#statisticField">statisticField</a></li><li><a href="global.html#statisticFieldByDS">statisticFieldByDS</a></li><li><a href="global.html#update">update</a></li><li><a href="global.html#uuid">uuid</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <span class="page-title-sub">document/layer/layer.js</span>
+                    <span class="page-title-main">Source</span>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { Rectangle } from '@mapgis/webclient-es6-service/common/Rectangle';
+import { ObjectTool } from '../../utils/object-tool';
+/**
+ * 图层加载状态
+ *
+ * @author Yuanye Ma
+ * @date 19/03/2021
+ * @enum {number}
+ */
+export var LoadStatus;
+(function (LoadStatus) {
+    /**
+     * 没有加载过
+     */
+    LoadStatus[LoadStatus["notLoaded"] = 0] = "notLoaded";
+    /**
+     * 正在加载
+     */
+    LoadStatus[LoadStatus["loading"] = 1] = "loading";
+    /**
+     *  加载成功
+     */
+    LoadStatus[LoadStatus["loaded"] = 2] = "loaded";
+    /**
+     * 加载失败
+     */
+    LoadStatus[LoadStatus["failed"] = 3] = "failed";
+})(LoadStatus || (LoadStatus = {}));
+/**
+ * 图层的类型
+ *
+ * @date 19/03/2021
+ * @enum {number}
+ */
+export var LayerType;
+(function (LayerType) {
+    /**
+     * 未知
+     */
+    LayerType[LayerType["Unknown"] = 0] = "Unknown";
+    /**
+     * 组图层
+     */
+    LayerType[LayerType["Group"] = 1] = "Group";
+    /**
+     * 瓦片服务图层
+     */
+    LayerType[LayerType["Tile"] = 2] = "Tile";
+    /**
+     * 地图服务图层
+     */
+    LayerType[LayerType["MapImage"] = 3] = "MapImage";
+    /**
+     * IGServer瓦片服务图层
+     */
+    LayerType[LayerType["IGSTile"] = 4] = "IGSTile";
+    /**
+     * IGServer地图服务图层
+     */
+    LayerType[LayerType["IGSMapImage"] = 5] = "IGSMapImage";
+    /**
+     * IGServer矢量服务图层
+     */
+    LayerType[LayerType["IGSVector"] = 6] = "IGSVector";
+    /**
+     * OGCWMTS服务图层
+     */
+    LayerType[LayerType["OGCWMTS"] = 7] = "OGCWMTS";
+    /**
+     * OGCWMS服务图层
+     */
+    LayerType[LayerType["OGCWMS"] = 8] = "OGCWMS";
+    /**
+     * ArcGIS瓦片服务图层
+     */
+    LayerType[LayerType["ArcGISTile"] = 9] = "ArcGISTile";
+    /**
+     * ArcGIS地图服务图层
+     */
+    LayerType[LayerType["ArcGISMapImage"] = 10] = "ArcGISMapImage";
+    /**
+     * 矢量瓦片图层
+     */
+    LayerType[LayerType["VectorTile"] = 11] = "VectorTile";
+    /**
+     * 互联网服务图层
+     */
+    LayerType[LayerType["WebTile"] = 12] = "WebTile";
+    /**
+     * 自定义瓦片服务图层
+     */
+    LayerType[LayerType["CustomTile"] = 13] = "CustomTile";
+    /**
+     * 自定义地图服务图层
+     */
+    LayerType[LayerType["CustomMapImageLayer"] = 14] = "CustomMapImageLayer";
+    /**
+     * 高德电子地图
+     */
+    LayerType[LayerType["AMapMercatorEMap"] = 15] = "AMapMercatorEMap";
+    /**
+     * 高德卫星影像图层
+     */
+    LayerType[LayerType["AMapMercatorSatelliteMap"] = 16] = "AMapMercatorSatelliteMap";
+    /**
+     * 高德卫星影像图注记图层
+     */
+    LayerType[LayerType["AMapMercatorSatelliteAnnMap"] = 17] = "AMapMercatorSatelliteAnnMap";
+    /**
+     * 三维模型缓存图层,用于显示三维模型缓存。如：m3d(中地定义的模型缓存格式)，osgb(osgb格式的倾斜摄影模型)、3dTileset(cesium标准的模型缓存)
+     */
+    LayerType[LayerType["ModelCache"] = 18] = "ModelCache";
+    /**
+     * 高程图层，用于接入地形服务
+     */
+    LayerType[LayerType["Elevation"] = 19] = "Elevation";
+    /**
+     * IGS高程图层，用于接入IGS三维服务中的地形服务
+     */
+    LayerType[LayerType["IGSElevation"] = 20] = "IGSElevation";
+    /**
+     *IGS场景图层,用于对接IGS的三维场景服务
+     */
+    LayerType[LayerType["Scene"] = 21] = "Scene";
+    /**
+     *IGS场景图层,用于对接IGS的三维场景服务
+     */
+    LayerType[LayerType["IGSScene"] = 22] = "IGSScene";
+    /**
+     * 覆盖物(临时绘制)图层
+     *
+     */
+    LayerType[LayerType["Graphics"] = 23] = "Graphics";
+    /**
+     * 数据流
+     *
+     */
+    LayerType[LayerType["DataFlow"] = 24] = "DataFlow";
+    /**
+  
+     * 地理编码
+     */
+    LayerType[LayerType["EsGeoCode"] = 25] = "EsGeoCode";
+    /**
+     * 要素图层
+     *
+     */
+    LayerType[LayerType["Feature"] = 26] = "Feature";
+    /**
+     * IGServer要素图层
+     *
+     */
+    LayerType[LayerType["IGSFeature"] = 27] = "IGSFeature";
+    /**
+     * geoJson图层
+     */
+    LayerType[LayerType["GeoJson"] = 28] = "GeoJson";
+    /**
+     * STK图层
+     */
+    LayerType[LayerType["STKTerrain"] = 29] = "STKTerrain";
+})(LayerType || (LayerType = {}));
+/**
+ * 图层
+ *
+ * @author Yuanye Ma
+ * @date 12/03/2021
+ * @export
+ * @class Layer
+ */
+export class Layer {
+    /**
+     * Creates an instance of Layer.
+     * @date 22/04/2021
+     * @param {Record&lt;string, any>} [properties]
+     * @memberof Layer
+     */
+    constructor(properties) {
+        if (!properties)
+            return;
+        if (properties.description)
+            this.description = properties.description;
+        if (properties.id)
+            this.id = properties.id;
+        if (properties.loadStatus)
+            this.loadStatus = properties.loadStatus;
+        if (properties.opacity)
+            this.opacity = properties.opacity;
+        if (properties.title)
+            this.title = properties.title;
+        if (properties.type)
+            this.type = properties.type;
+        if (properties.isVisible)
+            this.isVisible = properties.isVisible;
+        if (properties.fullExtent)
+            this.fullExtent = ObjectTool.deepClone(properties.fullExtent);
+    }
+    /**
+     * 图层描述
+     *
+     * @date 22/04/2021
+     * @memberof Layer
+     */
+    description = '';
+    /**
+     * 全图范围
+     *
+     * @author Yuanye Ma
+     * @date 12/03/2021
+     * @type {Rectangle}
+     * @memberof Layer
+     */
+    get fullExtent() {
+        return this._fullExtent;
+    }
+    set fullExtent(rect) {
+        this._fullExtent = rect;
+    }
+    /**
+     * 图层唯一id
+     *
+     * @author Yuanye Ma
+     * @date 12/03/2021
+     * @type {string}
+     * @memberof Layer
+     */
+    id = '';
+    /**
+     * 图层加载状态
+     *
+     * @date 19/03/2021
+     * @type {LoadStatus}
+     * @memberof Layer
+     */
+    loadStatus = LoadStatus.notLoaded;
+    /**
+     * 不透明度
+     * 范围：0——1,0:完全透明，1：完全不透明
+     * 默认值:1.
+     *
+     * @date 19/03/2021
+     * @memberof Layer
+     */
+    opacity = 1;
+    /**
+     * 图层标题
+     * 图层在图层列表或图例中显示的名称
+     *
+     *
+     * @date 19/03/2021
+     * @memberof Layer
+     */
+    title = '';
+    /**
+     * 图层类型
+     *
+     * @date 19/03/2021
+     * @type {LayerType}
+     * @memberof Layer
+     */
+    type = LayerType.Unknown;
+    /**
+     * 是否可见
+     *
+     * @date 19/03/2021
+     * @memberof Layer
+     */
+    isVisible = true;
+    // 定义一个深拷贝函数  接收目标target参数
+    _deepClone(target) {
+        return ObjectTool.deepClone(target);
+    }
+    /**
+     * 根据URL创建对应的图层
+     *
+     * @date 19/03/2021
+     * @return {*}  {Promise&lt;Layer>}
+     * @memberof Layer
+     */
+    //   fromIGServerUrl(): Promise&lt;Layer> {
+    //     new Promise(resolve => {
+    //       setTimeout(() => {
+    //         resolve(new Layer())
+    //       }, 2000)
+    //     }).then(val => {
+    //       console.log(val)
+    //       return val
+    //     })
+    //   }
+    _fullExtent = new Rectangle(0.0, 0.0, 0.0, 0.0);
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>文档生成<a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a></p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+</body>
+</html>
