@@ -1,0 +1,605 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> utils/fit-bound.js</title>
+
+  <script src="../cdn/run_prettify.js"></script>
+  <script src="../cdn/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="../cdn/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="../cdn/googleapis.css" rel="stylesheet">
+  <link href="../cdn/prettify.css" rel="stylesheet">
+  <link rel="stylesheet" href="../cdn/all.css" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="../cdn/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="../cdn/mapgis.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="../cdn/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+             
+                <a class="image" href="/">
+                    <img class="mapgis-webclient-logo" src="../images/mapgis_blue.png" alt="logo">
+                </a>
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            <div>
+                <span class="mapgis-api-document-span"><a href="index.html">API文档</a></span>
+            </div>
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="搜索文档..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <div class="category"><div class="mapgis-menu-span">类名</div><ul class="mapgis-sidebar-menus"><li><a href="AMapMercatorEMapLayer.html">AMapMercatorEMapLayer</a></li><li><a href="AMapMercatorEMapLayer.exports.AMapMercatorEMapLayer.html">exports.AMapMercatorEMapLayer</a></li><li><a href="AMapMercatorSatelliteAnnMapLayer.html">AMapMercatorSatelliteAnnMapLayer</a></li><li><a href="AMapMercatorSatelliteAnnMapLayer.exports.AMapMercatorSatelliteAnnMapLayer.html">exports.AMapMercatorSatelliteAnnMapLayer</a></li><li><a href="AMapMercatorSatelliteMapLayer.html">AMapMercatorSatelliteMapLayer</a></li><li><a href="AMapMercatorSatelliteMapLayer.exports.AMapMercatorSatelliteMapLayer.html">exports.AMapMercatorSatelliteMapLayer</a></li><li><a href="ArcGISMapImageLayer.html">ArcGISMapImageLayer</a></li><li><a href="ArcGISMapImageLayer.exports.ArcGISMapImageLayer.html">exports.ArcGISMapImageLayer</a></li><li><a href="ArcGISSublayer.html">ArcGISSublayer</a></li><li><a href="ArcGISTileLayer.html">ArcGISTileLayer</a></li><li><a href="ArcGISTileLayer.exports.ArcGISTileLayer.html">exports.ArcGISTileLayer</a></li><li><a href="CoordinateTransformation.html">CoordinateTransformation</a></li><li><a href="DataFlowLayer.exports.DataFlowLayer.html">exports.DataFlowLayer</a></li><li><a href="Document.html">Document</a></li><li><a href="ElevationInfo.html">ElevationInfo</a></li><li><a href="FeatureExpressionInfo.html">FeatureExpressionInfo</a></li><li><a href="FeatureLayer.html">FeatureLayer</a></li><li><a href="FeatureLayer.exports.FeatureLayer.html">exports.FeatureLayer</a></li><li><a href="FeatureLayer.exports.IGSFeatureLayer.html">exports.IGSFeatureLayer</a></li><li><a href="GeoJsonLayer.html">GeoJsonLayer</a></li><li><a href="GeoJsonLayer.exports.GeoJsonLayer.html">exports.GeoJsonLayer</a></li><li><a href="GraphicsLayer.html">GraphicsLayer</a></li><li><a href="GraphicsLayer.exports.GraphicsLayer.html">exports.GraphicsLayer</a></li><li><a href="GroupLayer.html">GroupLayer</a></li><li><a href="GroupLayer.exports.GroupLayer.html">exports.GroupLayer</a></li><li><a href="IGSMapImageLayer.exports.IGSMapImageLayer.html">exports.IGSMapImageLayer</a></li><li><a href="IGSSceneLayer.html">IGSSceneLayer</a></li><li><a href="IGSSceneLayer.exports.IGSSceneLayer.html">exports.IGSSceneLayer</a></li><li><a href="IGSSublayer.html">IGSSublayer</a></li><li><a href="IGSTileLayer.html">IGSTileLayer</a></li><li><a href="IGSTileLayer.exports.IGSTileLayer.html">exports.IGSTileLayer</a></li><li><a href="IGSVectorLayer.exports.IGSVectorLayer.html">exports.IGSVectorLayer</a></li><li><a href="Layer.html">Layer</a></li><li><a href="Layer3D.html">Layer3D</a></li><li><a href="Layer.exports.Layer.html">exports.Layer</a></li><li><a href="LOD.html">LOD</a></li><li><a href="Map.html">Map</a></li><li><a href="MapImageLayer.html">MapImageLayer</a></li><li><a href="ModelCacheLayer.html">ModelCacheLayer</a></li><li><a href="ModelCacheLayer.exports.ModelCacheLayer.html">exports.ModelCacheLayer</a></li><li><a href="OGCWMSLayer.html">OGCWMSLayer</a></li><li><a href="OGCWMSLayer.exports.OGCWMSLayer.html">exports.OGCWMSLayer</a></li><li><a href="OGCWMTSLayer.html">OGCWMTSLayer</a></li><li><a href="OGCWMTSLayer.exports.OGCWMTSLayer.html">exports.OGCWMTSLayer</a></li><li><a href="Point3D.html">Point3D</a></li><li><a href="Point3D.exports.Point3D.html">exports.Point3D</a></li><li><a href="Rectangle3D.html">Rectangle3D</a></li><li><a href="Rectangle3D.exports.Rectangle3D.html">exports.Rectangle3D</a></li><li><a href="SceneLayer.html">SceneLayer</a></li><li><a href="SceneLayer.exports.SceneLayer.html">exports.SceneLayer</a></li><li><a href="Size.html">Size</a></li><li><a href="SpatialReference.html">SpatialReference</a></li><li><a href="SpatialReference.exports.SpatialReference.html">exports.SpatialReference</a></li><li><a href="STKTerrainLayer.html">STKTerrainLayer</a></li><li><a href="STKTerrainLayer.exports.STKTerrainLayer.html">exports.STKTerrainLayer</a></li><li><a href="Sublayer.html">Sublayer</a></li><li><a href="TileInfo.html">TileInfo</a></li><li><a href="TileLayer.html">TileLayer</a></li><li><a href="TileLayer.exports.MapImageLayer.html">exports.MapImageLayer</a></li><li><a href="TileLayer.exports.TileLayer.html">exports.TileLayer</a></li><li><a href="TileMatrixSet.html">TileMatrixSet</a></li><li><a href="VectorTileLayer.exports.VectorTileLayer.html">exports.VectorTileLayer</a></li><li><a href="WebTileLayer.html">WebTileLayer</a></li><li><a href="WebTileLayer.exports.WebTileLayer.html">exports.WebTileLayer</a></li><li><a href="WMSSublayer.html">WMSSublayer</a></li><li><a href="WMTSStyle.html">WMTSStyle</a></li><li><a href="WMTSSublayer.html">WMTSSublayer</a></li></ul><div class="mapgis-menu-span">全局</div><ul class="mapgis-sidebar-menus"><li><a href="global.html#CoordinateSystemType">CoordinateSystemType</a></li><li><a href="global.html#CoordinateSystemType%255Bundefined%255D">CoordinateSystemType[undefined]</a></li><li><a href="global.html#dataStoreEsGeoCode">dataStoreEsGeoCode</a></li><li><a href="global.html#dataStorePgQueryFeature">dataStorePgQueryFeature</a></li><li><a href="global.html#disposeDocInfo">disposeDocInfo</a></li><li><a href="global.html#ElevationMode">ElevationMode</a></li><li><a href="global.html#ElevationMode%255Bundefined%255D">ElevationMode[undefined]</a></li><li><a href="global.html#featureGeoJSONTofeatureIGS">featureGeoJSONTofeatureIGS</a></li><li><a href="global.html#featureIGSToFeatureGeoJSON">featureIGSToFeatureGeoJSON</a></li><li><a href="global.html#getDataBase">getDataBase</a></li><li><a href="global.html#getDataSource">getDataSource</a></li><li><a href="global.html#getDocs">getDocs</a></li><li><a href="global.html#getGDBData">getGDBData</a></li><li><a href="global.html#getGeoJSONFeatureBound">getGeoJSONFeatureBound</a></li><li><a href="global.html#getGeoJSONFeatureCenter">getGeoJSONFeatureCenter</a></li><li><a href="global.html#getGeoJSONFeaturesCenter">getGeoJSONFeaturesCenter</a></li><li><a href="global.html#getLayerFileds">getLayerFileds</a></li><li><a href="global.html#getLayerIndexesByNames">getLayerIndexesByNames</a></li><li><a href="global.html#getLayerIndexesByNamesOrCodes">getLayerIndexesByNamesOrCodes</a></li><li><a href="global.html#getLayerInfo">getLayerInfo</a></li><li><a href="global.html#getLayersByExtentOrName">getLayersByExtentOrName</a></li><li><a href="global.html#getLayersByIndexes">getLayersByIndexes</a></li><li><a href="global.html#getLayerUrlsByNamesOrCodes">getLayerUrlsByNamesOrCodes</a></li><li><a href="global.html#getMapInfoService">getMapInfoService</a></li><li><a href="global.html#getMapServiceInfo">getMapServiceInfo</a></li><li><a href="global.html#getTiles">getTiles</a></li><li><a href="global.html#getTotal">getTotal</a></li><li><a href="global.html#igsCombineQueryFeature">igsCombineQueryFeature</a></li><li><a href="global.html#igsQuery">igsQuery</a></li><li><a href="global.html#igsQuery3DFeature">igsQuery3DFeature</a></li><li><a href="global.html#igsQueryFeature">igsQueryFeature</a></li><li><a href="global.html#IGSSceneSublayerType">IGSSceneSublayerType</a></li><li><a href="global.html#LayerType">LayerType</a></li><li><a href="global.html#LayerType%255Bundefined%255D">LayerType[undefined]</a></li><li><a href="global.html#LengthUnit">LengthUnit</a></li><li><a href="global.html#LengthUnit%255Bundefined%255D">LengthUnit[undefined]</a></li><li><a href="global.html#LoadStatus">LoadStatus</a></li><li><a href="global.html#LoadStatus%255Bundefined%255D">LoadStatus[undefined]</a></li><li><a href="global.html#ModelCacheFormat">ModelCacheFormat</a></li><li><a href="global.html#ModelCacheFormat%255Bundefined%255D">ModelCacheFormat[undefined]</a></li><li><a href="global.html#query">query</a></li><li><a href="global.html#statisticField">statisticField</a></li><li><a href="global.html#statisticFieldByDS">statisticFieldByDS</a></li><li><a href="global.html#update">update</a></li><li><a href="global.html#uuid">uuid</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <span class="page-title-sub">utils/fit-bound.js</span>
+                    <span class="page-title-main">Source</span>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { LayerType, IGSSceneSublayerType } from '../document/layer';
+import { CoordinateTransformation } from './coordinate-transformation';
+import * as Objects from '../objects';
+import { CoordinateSystemType } from '../document/spatial-reference';
+import ComputeZoomOffset from '../../utils/map-resolution-util.js';
+class FitBound {
+    // 记录cesium相机高度与层级对应关系的数组
+    _cesiumLevelToHeights = [];
+    get cesiumLevelToHeights() {
+        return this._cesiumLevelToHeights;
+    }
+    /**
+     * 计算该相机距离距离对应的层级与分辨率
+     * @param distance 相机距离该Tile的真实距离
+     * @param viewer cesium对象
+     * @returns 该相机距离距离对应的层级与分辨率
+     */
+    detectZoomLevel(distance, viewer) {
+        const scene = viewer.scene;
+        const tileProvider = scene.globe._surface.tileProvider;
+        const quadtree = tileProvider._quadtree;
+        // 整个屏幕像素高
+        const drawingBufferHeight = viewer.canvas.height;
+        // sseDenominator是相机fovy角度的tan值的2倍
+        const sseDenominator = viewer.camera.frustum.sseDenominator;
+        for (let level = 0; level &lt;= 24; level++) {
+            // maxGeometricError是地球赤道的周长/像素数，一个像素代表多少米(该层级下最大的几何误差)
+            const maxGeometricError = tileProvider.getLevelMaximumGeometricError(level);
+            /** =========以下是公式(maxGeometricError * drawingBufferHeight) / (distance * sseDenominator) 的分解=============== */
+            // 根据三角函数的公式可以算得相机距离屏幕中心的像素距离
+            const far = drawingBufferHeight / sseDenominator;
+            // 相机距离屏幕中心的米单位距离（垂直距离）
+            const L = maxGeometricError * far;
+            //  sse 屏幕空间误差
+            const error = L / distance;
+            // 如果屏幕空间误差小于maximumScreenSpaceError最大屏幕空间误差，则返回当前层级
+            if (error &lt; quadtree.maximumScreenSpaceError) {
+                return level;
+            }
+        }
+        return null;
+    }
+    /**
+     * 获取level与相机高度关系数组
+     * @param viewer
+     * @returns level与相机高度关系数组
+     */
+    getLevelDetails(viewer) {
+        // 如果_cesiumLevelToHeights高度与层级关系已经计算出来了，则直接返回，不用多次计算
+        if (this._cesiumLevelToHeights.length &lt;= 0) {
+            /**
+             * 这里由于高度达到亿级别，普通循环计算量非常大，这里吧高度分为三段分别采用二分法来计算，提高计算速度
+             * @修改人 龚瑞强
+             * @date 2021/8/27
+             */
+            const largeDistances = this.getLevelByStep({
+                step: 100000,
+                initZoomLevel: 0,
+                initHeight: 100000000,
+                viewer
+            });
+            const normalDistances = this.getLevelByStep({
+                step: 100,
+                initZoomLevel: largeDistances[largeDistances.length - 1].level,
+                initHeight: largeDistances[largeDistances.length - 1].minHeight,
+                viewer
+            });
+            const littleDistances = this.getLevelByStep({
+                step: 1,
+                initZoomLevel: normalDistances[normalDistances.length - 1].level,
+                initHeight: normalDistances[normalDistances.length - 1].minHeight,
+                viewer
+            });
+            const levelHeights = [
+                ...largeDistances,
+                ...normalDistances,
+                ...littleDistances
+            ];
+            // 由于这里设置的高度是最小高度，需要给增加一些高度（这里增加的值是最大高度与最小高度的四分之一），才能保证此高度在该层级范围内
+            const arr = [];
+            for (let index = 0; index &lt; levelHeights.length; index++) {
+                const element = levelHeights[index];
+                if (index > 0) {
+                    const nearHeight = element.height +
+                        (levelHeights[index - 1].height - element.height) / 4;
+                    arr.push({
+                        ...element,
+                        height: nearHeight
+                    });
+                }
+                else {
+                    arr.push(element);
+                }
+            }
+            this._cesiumLevelToHeights = arr;
+        }
+        return this._cesiumLevelToHeights;
+    }
+    /**
+     * 计算层级与最低高度的数组
+     * @param step 步进器
+     * @param initZoomLevel 初始层级
+     * @param initHeight 初始高度
+     * @param viewer 三维对象
+     * @returns 层级与最低高度的数组
+     */
+    getLevelByStep({ step, initZoomLevel, initHeight, viewer }) {
+        const result = [];
+        let currentZoomLevel = initZoomLevel;
+        for (let height = initHeight; height >= 0; height -= step) {
+            let currentHeight = height;
+            let preHeight = height + step;
+            /**
+             * @description 当此次算出来的层级与上次算出来的层级不同，则采用去上次高度与此次高度的中间值进行计算，
+             * 直到上次高度与此次高度差值只有1的时候，则可以计算出来临界值。这样采用二分法计算速度比普通的循环速度快很多
+             */
+            let level = this.detectZoomLevel(currentHeight, viewer);
+            let preLevel = this.detectZoomLevel(preHeight, viewer);
+            if (level !== null &amp;&amp;
+                level !== undefined &amp;&amp;
+                level !== currentZoomLevel &amp;&amp;
+                preLevel === currentZoomLevel) {
+                while (preHeight - currentHeight > 1) {
+                    level = this.detectZoomLevel(currentHeight, viewer);
+                    // 当此次算出来的层级与上次算出来的层级不同，则认为当前高度为该层级最小高度
+                    preLevel = this.detectZoomLevel(preHeight, viewer);
+                    if (level !== null &amp;&amp;
+                        level !== undefined &amp;&amp;
+                        level !== currentZoomLevel &amp;&amp;
+                        preLevel === currentZoomLevel) {
+                        preHeight = currentHeight + (preHeight - currentHeight) / 2;
+                    }
+                    else if (level !== null &amp;&amp;
+                        level !== undefined &amp;&amp;
+                        level !== currentZoomLevel &amp;&amp;
+                        preLevel !== currentZoomLevel) {
+                        // 如果两次算得的层级一样，中间值偏大。需要把currentHeight设为此次的高度，然后继续使用二分法进行查找
+                        const num = preHeight - currentHeight;
+                        currentHeight = preHeight;
+                        preHeight = currentHeight + num;
+                    }
+                }
+                result.push({
+                    level: currentZoomLevel,
+                    height: parseInt(preHeight),
+                    minHeight: parseInt(preHeight)
+                });
+                currentZoomLevel++;
+            }
+        }
+        return result;
+    }
+    /**
+     * 通过层级获取相机高度
+     * @param fitLevel 适合的层级
+     * @param viewer
+     * @returns 相机高度
+     */
+    getCameraHeightByLevel(fitLevel, viewer) {
+        fitLevel = fitLevel &lt;= 2 ? 2 : fitLevel;
+        this.getLevelDetails(viewer);
+        return this._cesiumLevelToHeights.find((x) => x.level === fitLevel)?.height;
+    }
+    /**
+     * @param bound 范围
+     * @param mapParams 地图对象参数
+     * @param level 是否带初始缩放级别
+     */
+    fitBound2D(bound, mapParams, level) {
+        const { xmin, ymin, xmax, ymax } = bound;
+        const { map } = mapParams;
+        // TODO mapboxgl在处理+- 85以外的纬度异常,临时处理，等@mapgis/mapbox-gl更新后去除
+        if (ymin &lt; -85 &amp;&amp; ymax > 85) {
+            level = level || 1.25;
+        }
+        if (level !== undefined) {
+            map.flyTo({
+                center: [(xmin + xmax) / 2, (ymin + ymax) / 2],
+                zoom: level
+            });
+        }
+        else {
+            map.fitBounds([
+                [xmin, ymin],
+                [xmax, ymax]
+            ]);
+        }
+    }
+    /**
+     * @param bound 范围
+     * @param mapParams 地图对象参数
+     * @param level 是否带初始缩放级别
+     */
+    fitBound3D(bound, mapParams, level) {
+        const { xmin, ymin, xmax, ymax } = bound;
+        const { viewer, Cesium } = mapParams;
+        // 如果获取不到对应层级的高度则还是用范围缩放
+        if (level !== undefined) {
+            const cameraHeight = this.getCameraHeightByLevel(level, viewer);
+            if (cameraHeight !== undefined) {
+                const center = new Cesium.Cartesian3.fromDegrees((xmin + xmax) / 2, (ymin + ymax) / 2, cameraHeight);
+                viewer.camera.flyTo({
+                    destination: center
+                });
+            }
+        }
+        else {
+            const rectangle = new Cesium.Rectangle.fromDegrees(xmin, ymin, xmax, ymax);
+            viewer.camera.flyTo({
+                destination: rectangle
+            });
+        }
+    }
+    /**
+     * 跳转
+     * @param layer 图层对象
+     * @param mapParams 地图对象
+     * @param is2DMap 当前地图模式
+     * @param layerExtent 自定义的图层范围（目前只给数据流图层使用）
+     * @returns 图层范围是否超出经纬度范围
+     */
+    fitBoundByLayer(layer, mapParams, is2DMap, layerExtent) {
+        const { viewer, map, Cesium, vueCesium } = mapParams;
+        const sceneController = Objects.SceneController.getInstance(Cesium, vueCesium, viewer);
+        const { type } = layer;
+        let fullExtent = null;
+        let fullExtentJWD = {
+            xmin: 0.0,
+            ymin: 0.0,
+            xmax: 0.0,
+            ymax: 0.0
+        };
+        // 1.获取图层全图范围
+        if (type !== LayerType.IGSScene) {
+            /**
+             * @修改说明 针对数据流图层直接用传入的范围
+             * @修改人 龚瑞强
+             * @date 2021/11/23
+             */
+            if (type === LayerType.DataFlow) {
+                fullExtent = layerExtent;
+            }
+            else {
+                // 1.1 非三维图层直接从图层上取范围
+                fullExtent = layer.fullExtent;
+            }
+        }
+        else {
+            // 1.2 三维图层的范围需要单独计算范围
+            // 1.2.1 三维模型缓存子图层中记录的是模型在局部坐标系下的范围,需要转换为经纬度下的范围。
+            // 1.2.2 三维地形子图层直接采用子图层中记录的范围。
+            const activeScene = layer.activeScene;
+            if (activeScene) {
+                let range = null;
+                activeScene.sublayers.forEach((item) => {
+                    switch (item.type) {
+                        case IGSSceneSublayerType.elevation:
+                            range = item.range;
+                            break;
+                        case IGSSceneSublayerType.modelCache:
+                            range = sceneController.layerExtentToGlobelExtent(item, activeScene.sceneMode);
+                            break;
+                        default:
+                            break;
+                    }
+                });
+                fullExtent = range;
+            }
+        }
+        // 2.将全图范围统一转换为经纬度
+        if (layer.spatialReference &amp;&amp;
+            layer.spatialReference.wkid === CoordinateSystemType.webMercator) {
+            const xminYminConverted = CoordinateTransformation.mercatorToWGS84([
+                fullExtent.xmin,
+                fullExtent.ymin
+            ]);
+            const xmaxYmaxConverted = CoordinateTransformation.mercatorToWGS84([
+                fullExtent.xmax,
+                fullExtent.ymax
+            ]);
+            fullExtentJWD.xmin = xminYminConverted[0];
+            fullExtentJWD.ymin = xminYminConverted[1];
+            fullExtentJWD.xmax = xmaxYmaxConverted[0];
+            fullExtentJWD.ymax = xmaxYmaxConverted[1];
+        }
+        else {
+            fullExtentJWD = fullExtent;
+        }
+        const isOutOfRange = this.outOfRange(fullExtentJWD);
+        if (isOutOfRange) {
+            fullExtentJWD = {
+                xmax: 180,
+                xmin: -180,
+                ymax: 90,
+                ymin: -90
+            };
+        }
+        // 3.根据图层类型的不同,进行不同的复位操作。
+        // a.瓦片图层(IGSTile、ArcGISTile、OGCWMTS)将视图跳转到以图层全图范围为中心，以尽量能完全显示瓦片的级别为级别的视图下。
+        // b.其它图层，将当前视图跳转到以图层全图范围为范围的视图下。
+        let fitLevel;
+        switch (type) {
+            case LayerType.ArcGISTile:
+            case LayerType.IGSTile:
+                fitLevel = this.getFitZoom(layer.tileInfo, fullExtent, mapParams, is2DMap);
+                if (is2DMap) {
+                    this.fitBound2D(fullExtentJWD, mapParams, fitLevel);
+                }
+                else {
+                    this.fitBound3D(fullExtentJWD, mapParams, fitLevel);
+                }
+                break;
+            case LayerType.OGCWMTS:
+                const tileMatrixSet = layer.activeLayer.tileMatrixSet;
+                fitLevel = this.getFitZoom(tileMatrixSet.tileInfo, fullExtent, mapParams, is2DMap);
+                if (is2DMap) {
+                    this.fitBound2D(fullExtentJWD, mapParams, fitLevel);
+                }
+                else {
+                    this.fitBound3D(fullExtentJWD, mapParams, fitLevel);
+                }
+                break;
+            default:
+                if (is2DMap) {
+                    this.fitBound2D(fullExtentJWD, mapParams);
+                }
+                else {
+                    this.fitBound3D(fullExtentJWD, mapParams);
+                }
+                break;
+        }
+        return isOutOfRange;
+    }
+    /**
+     * 通过范围计算分辨率，通过分辨率查找瓦片图层最适合的显示级别
+     * @param tileInfo 瓦片信息
+     * @param fullExtent  图层范围
+     * @param mapParams
+     * @param is2DMap 是否为二维
+     * @returns 瓦片图层最适合的显示级别
+     */
+    getFitZoom(tileInfo, fullExtent, mapParams, is2DMap) {
+        let fitLevel = tileInfo.lods[0].levelValue;
+        // 1.通过数据范围计算得到对应的分辨率
+        let resolution = this.getResolutionForExtent(fullExtent, mapParams, is2DMap);
+        if (is2DMap) {
+            // 2.mapboxgl地图引擎显示瓦片的大小固定为512，如果数据是256的瓦片，则会被拉伸显示，分辨率会降低。
+            // 比如数据是256的瓦片，数据第9级的图片，在mapboxgl里会被拉伸，看起来像是第10级图片对应的范围(分辨率降低了)。
+            // 如果想在mapboxgl里看第9级图片对应的范围，则只能拿第8级的数据去显示。
+            const tileSize = tileInfo.size[0];
+            const scale = tileSize / 512;
+            // 3.计算在mapboxgl里显示的实际分辨率
+            const mapboxglResolution = resolution / scale;
+            resolution = mapboxglResolution;
+        }
+        // 4.使用mapboxgl里显示的实际分辨率去查找数据对应级别
+        if (tileInfo.lods.length > 1) {
+            for (let i = 0; i &lt; tileInfo.lods.length - 1; i++) {
+                const iResolution = tileInfo.lods[i].resolution;
+                if (i == 0) {
+                    // 如果分辨率比第一个分辨率大，则直接取第一个的级别
+                    if (resolution > tileInfo.lods[i].resolution) {
+                        fitLevel = tileInfo.lods[i].level;
+                    }
+                }
+                else if (i == tileInfo.lods.length - 2) {
+                    // 如果分辨率比最后一个分辨率小，则直接取最后一个的级别，这里i最大能取到tileInfo.lods.length - 2
+                    if (resolution &lt; tileInfo.lods[i].resolution) {
+                        fitLevel = tileInfo.lods[i + 1].level;
+                    }
+                }
+                else {
+                    // 级别向下取，比如，如果分辨率对应级别是8.5，则取级别8
+                    if (resolution &lt; tileInfo.lods[i].resolution &amp;&amp;
+                        resolution > tileInfo.lods[i + 1].resolution) {
+                        fitLevel = tileInfo.lods[i].level;
+                    }
+                }
+            }
+        }
+        // 由于三维ArcGISTile、IGSTile没有设置瓦片的偏移量，所以这里不需要计算
+        if (is2DMap) {
+            const zoomOffset = ComputeZoomOffset.getZoomOffsetByTileInfo(tileInfo, !is2DMap);
+            // 修改说明：由于Tile设置了偏移量zoomOffset,为了保证刚好缩放到Tile的起始级别，需要将fitLevel-zoomOffset
+            fitLevel -= zoomOffset;
+        }
+        return fitLevel;
+    }
+    /**
+     * 范围是否超出最大经纬度范围
+     * @param fullExtentJWD
+     * @returns 范围是否超出最大经纬度范围
+     */
+    outOfRange(fullExtentJWD) {
+        const { ymax, ymin, xmax, xmin } = fullExtentJWD;
+        if (ymax &amp;&amp; ymin &amp;&amp; xmax &amp;&amp; xmin) {
+            return (Number(xmax) &lt; -180 ||
+                Number(xmax) > 180 ||
+                Number(xmin) &lt; -180 ||
+                Number(xmin) > 180 ||
+                Number(ymax) &lt; -90 ||
+                Number(ymax) > 90 ||
+                Number(ymin) &lt; -90 ||
+                Number(ymin) > 90);
+        }
+        return false;
+    }
+    /**
+     * 根据范围计算对应的分辨率
+     * @param bound 图层范围
+     * @param mapParams
+     * @param is2DMap 是否是二维
+     * @returns 分辨率
+     */
+    getResolutionForExtent(bound, mapParams, is2DMap) {
+        const { viewer, map, Cesium } = mapParams;
+        const devicePixelRatio = window.devicePixelRatio || 1;
+        let width;
+        let height;
+        if (is2DMap) {
+            width = parseInt(map.getCanvas().style.width) * devicePixelRatio;
+            height = parseInt(map.getCanvas().style.height) * devicePixelRatio;
+        }
+        else {
+            width =
+                parseInt(viewer.canvas.width) ||
+                    parseInt(viewer.container.offsetWidth) * devicePixelRatio;
+            height =
+                parseInt(viewer.canvas.height) ||
+                    parseInt(viewer.container.offsetHeight) * devicePixelRatio;
+        }
+        const { xmin, ymin, xmax, ymax } = bound;
+        const xlength = xmax - xmin;
+        const ylength = ymax - ymin;
+        const length = xlength - ylength > 0 ? xlength : ylength;
+        const xResolution = length / width;
+        const yResolution = length / height;
+        // console.log(xResolution)
+        // console.log(yResolution)
+        return xResolution - yResolution &lt; 0 ? yResolution : xResolution;
+    }
+    /**
+     * 根据分辨率计算范围
+     * @param bound 图层范围
+     * @param mapParams
+     * @param resolution 分辨率
+     * @param is2DMap
+     * @returns 范围
+     */
+    getBoundForResolution(bound, mapParams, resolution, is2DMap) {
+        const { viewer, map, Cesium } = mapParams;
+        const devicePixelRatio = window.devicePixelRatio || 1;
+        let width;
+        let height;
+        if (is2DMap) {
+            width = parseInt(map.getCanvas().style.width) * devicePixelRatio;
+            height = parseInt(map.getCanvas().style.height) * devicePixelRatio;
+        }
+        else {
+            width =
+                parseInt(viewer.canvas.width) ||
+                    parseInt(viewer.container.offsetWidth) * devicePixelRatio;
+            height =
+                parseInt(viewer.canvas.height) ||
+                    parseInt(viewer.container.offsetHeight) * devicePixelRatio;
+        }
+        const { xmin, ymin, xmax, ymax } = bound;
+        const xCenter = (xmax + xmin) / 2;
+        const yCenter = (ymax + ymin) / 2;
+        const xLength = resolution * width;
+        const yLength = resolution * height;
+        const nXmin = xCenter - xLength / 2;
+        const nXmax = xCenter + xLength / 2;
+        const nYmin = yCenter - yLength / 2;
+        const nYmax = yCenter + yLength / 2;
+        // console.log(xmin, ymin, xmax, ymax)
+        // console.log(nXmin, nYmin, nXmax, nYmax)
+        return [nXmin, nYmin, nXmax, nYmax];
+    }
+}
+export default new FitBound();
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>文档生成<a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a></p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+</body>
+</html>

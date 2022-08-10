@@ -1,0 +1,645 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> document/layer/ogc-wms-layer.js</title>
+
+  <script src="../cdn/run_prettify.js"></script>
+  <script src="../cdn/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="../cdn/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="../cdn/googleapis.css" rel="stylesheet">
+  <link href="../cdn/prettify.css" rel="stylesheet">
+  <link rel="stylesheet" href="../cdn/all.css" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="../cdn/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="../cdn/mapgis.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="../cdn/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+             
+                <a class="image" href="/">
+                    <img class="mapgis-webclient-logo" src="../images/mapgis_blue.png" alt="logo">
+                </a>
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            <div>
+                <span class="mapgis-api-document-span"><a href="index.html">API文档</a></span>
+            </div>
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="搜索文档..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <div class="category"><div class="mapgis-menu-span">类名</div><ul class="mapgis-sidebar-menus"><li><a href="AMapMercatorEMapLayer.html">AMapMercatorEMapLayer</a></li><li><a href="AMapMercatorEMapLayer.exports.AMapMercatorEMapLayer.html">exports.AMapMercatorEMapLayer</a></li><li><a href="AMapMercatorSatelliteAnnMapLayer.html">AMapMercatorSatelliteAnnMapLayer</a></li><li><a href="AMapMercatorSatelliteAnnMapLayer.exports.AMapMercatorSatelliteAnnMapLayer.html">exports.AMapMercatorSatelliteAnnMapLayer</a></li><li><a href="AMapMercatorSatelliteMapLayer.html">AMapMercatorSatelliteMapLayer</a></li><li><a href="AMapMercatorSatelliteMapLayer.exports.AMapMercatorSatelliteMapLayer.html">exports.AMapMercatorSatelliteMapLayer</a></li><li><a href="ArcGISMapImageLayer.html">ArcGISMapImageLayer</a></li><li><a href="ArcGISMapImageLayer.exports.ArcGISMapImageLayer.html">exports.ArcGISMapImageLayer</a></li><li><a href="ArcGISSublayer.html">ArcGISSublayer</a></li><li><a href="ArcGISTileLayer.html">ArcGISTileLayer</a></li><li><a href="ArcGISTileLayer.exports.ArcGISTileLayer.html">exports.ArcGISTileLayer</a></li><li><a href="CoordinateTransformation.html">CoordinateTransformation</a></li><li><a href="DataFlowLayer.exports.DataFlowLayer.html">exports.DataFlowLayer</a></li><li><a href="Document.html">Document</a></li><li><a href="ElevationInfo.html">ElevationInfo</a></li><li><a href="FeatureExpressionInfo.html">FeatureExpressionInfo</a></li><li><a href="FeatureLayer.html">FeatureLayer</a></li><li><a href="FeatureLayer.exports.FeatureLayer.html">exports.FeatureLayer</a></li><li><a href="FeatureLayer.exports.IGSFeatureLayer.html">exports.IGSFeatureLayer</a></li><li><a href="GeoJsonLayer.html">GeoJsonLayer</a></li><li><a href="GeoJsonLayer.exports.GeoJsonLayer.html">exports.GeoJsonLayer</a></li><li><a href="GraphicsLayer.html">GraphicsLayer</a></li><li><a href="GraphicsLayer.exports.GraphicsLayer.html">exports.GraphicsLayer</a></li><li><a href="GroupLayer.html">GroupLayer</a></li><li><a href="GroupLayer.exports.GroupLayer.html">exports.GroupLayer</a></li><li><a href="IGSMapImageLayer.exports.IGSMapImageLayer.html">exports.IGSMapImageLayer</a></li><li><a href="IGSSceneLayer.html">IGSSceneLayer</a></li><li><a href="IGSSceneLayer.exports.IGSSceneLayer.html">exports.IGSSceneLayer</a></li><li><a href="IGSSublayer.html">IGSSublayer</a></li><li><a href="IGSTileLayer.html">IGSTileLayer</a></li><li><a href="IGSTileLayer.exports.IGSTileLayer.html">exports.IGSTileLayer</a></li><li><a href="IGSVectorLayer.exports.IGSVectorLayer.html">exports.IGSVectorLayer</a></li><li><a href="Layer.html">Layer</a></li><li><a href="Layer3D.html">Layer3D</a></li><li><a href="Layer.exports.Layer.html">exports.Layer</a></li><li><a href="LOD.html">LOD</a></li><li><a href="Map.html">Map</a></li><li><a href="MapImageLayer.html">MapImageLayer</a></li><li><a href="ModelCacheLayer.html">ModelCacheLayer</a></li><li><a href="ModelCacheLayer.exports.ModelCacheLayer.html">exports.ModelCacheLayer</a></li><li><a href="OGCWMSLayer.html">OGCWMSLayer</a></li><li><a href="OGCWMSLayer.exports.OGCWMSLayer.html">exports.OGCWMSLayer</a></li><li><a href="OGCWMTSLayer.html">OGCWMTSLayer</a></li><li><a href="OGCWMTSLayer.exports.OGCWMTSLayer.html">exports.OGCWMTSLayer</a></li><li><a href="Point3D.html">Point3D</a></li><li><a href="Point3D.exports.Point3D.html">exports.Point3D</a></li><li><a href="Rectangle3D.html">Rectangle3D</a></li><li><a href="Rectangle3D.exports.Rectangle3D.html">exports.Rectangle3D</a></li><li><a href="SceneLayer.html">SceneLayer</a></li><li><a href="SceneLayer.exports.SceneLayer.html">exports.SceneLayer</a></li><li><a href="Size.html">Size</a></li><li><a href="SpatialReference.html">SpatialReference</a></li><li><a href="SpatialReference.exports.SpatialReference.html">exports.SpatialReference</a></li><li><a href="STKTerrainLayer.html">STKTerrainLayer</a></li><li><a href="STKTerrainLayer.exports.STKTerrainLayer.html">exports.STKTerrainLayer</a></li><li><a href="Sublayer.html">Sublayer</a></li><li><a href="TileInfo.html">TileInfo</a></li><li><a href="TileLayer.html">TileLayer</a></li><li><a href="TileLayer.exports.MapImageLayer.html">exports.MapImageLayer</a></li><li><a href="TileLayer.exports.TileLayer.html">exports.TileLayer</a></li><li><a href="TileMatrixSet.html">TileMatrixSet</a></li><li><a href="VectorTileLayer.exports.VectorTileLayer.html">exports.VectorTileLayer</a></li><li><a href="WebTileLayer.html">WebTileLayer</a></li><li><a href="WebTileLayer.exports.WebTileLayer.html">exports.WebTileLayer</a></li><li><a href="WMSSublayer.html">WMSSublayer</a></li><li><a href="WMTSStyle.html">WMTSStyle</a></li><li><a href="WMTSSublayer.html">WMTSSublayer</a></li></ul><div class="mapgis-menu-span">全局</div><ul class="mapgis-sidebar-menus"><li><a href="global.html#CoordinateSystemType">CoordinateSystemType</a></li><li><a href="global.html#CoordinateSystemType%255Bundefined%255D">CoordinateSystemType[undefined]</a></li><li><a href="global.html#dataStoreEsGeoCode">dataStoreEsGeoCode</a></li><li><a href="global.html#dataStorePgQueryFeature">dataStorePgQueryFeature</a></li><li><a href="global.html#disposeDocInfo">disposeDocInfo</a></li><li><a href="global.html#ElevationMode">ElevationMode</a></li><li><a href="global.html#ElevationMode%255Bundefined%255D">ElevationMode[undefined]</a></li><li><a href="global.html#featureGeoJSONTofeatureIGS">featureGeoJSONTofeatureIGS</a></li><li><a href="global.html#featureIGSToFeatureGeoJSON">featureIGSToFeatureGeoJSON</a></li><li><a href="global.html#getDataBase">getDataBase</a></li><li><a href="global.html#getDataSource">getDataSource</a></li><li><a href="global.html#getDocs">getDocs</a></li><li><a href="global.html#getGDBData">getGDBData</a></li><li><a href="global.html#getGeoJSONFeatureBound">getGeoJSONFeatureBound</a></li><li><a href="global.html#getGeoJSONFeatureCenter">getGeoJSONFeatureCenter</a></li><li><a href="global.html#getGeoJSONFeaturesCenter">getGeoJSONFeaturesCenter</a></li><li><a href="global.html#getLayerFileds">getLayerFileds</a></li><li><a href="global.html#getLayerIndexesByNames">getLayerIndexesByNames</a></li><li><a href="global.html#getLayerIndexesByNamesOrCodes">getLayerIndexesByNamesOrCodes</a></li><li><a href="global.html#getLayerInfo">getLayerInfo</a></li><li><a href="global.html#getLayersByExtentOrName">getLayersByExtentOrName</a></li><li><a href="global.html#getLayersByIndexes">getLayersByIndexes</a></li><li><a href="global.html#getLayerUrlsByNamesOrCodes">getLayerUrlsByNamesOrCodes</a></li><li><a href="global.html#getMapInfoService">getMapInfoService</a></li><li><a href="global.html#getMapServiceInfo">getMapServiceInfo</a></li><li><a href="global.html#getTiles">getTiles</a></li><li><a href="global.html#getTotal">getTotal</a></li><li><a href="global.html#igsCombineQueryFeature">igsCombineQueryFeature</a></li><li><a href="global.html#igsQuery">igsQuery</a></li><li><a href="global.html#igsQuery3DFeature">igsQuery3DFeature</a></li><li><a href="global.html#igsQueryFeature">igsQueryFeature</a></li><li><a href="global.html#IGSSceneSublayerType">IGSSceneSublayerType</a></li><li><a href="global.html#LayerType">LayerType</a></li><li><a href="global.html#LayerType%255Bundefined%255D">LayerType[undefined]</a></li><li><a href="global.html#LengthUnit">LengthUnit</a></li><li><a href="global.html#LengthUnit%255Bundefined%255D">LengthUnit[undefined]</a></li><li><a href="global.html#LoadStatus">LoadStatus</a></li><li><a href="global.html#LoadStatus%255Bundefined%255D">LoadStatus[undefined]</a></li><li><a href="global.html#ModelCacheFormat">ModelCacheFormat</a></li><li><a href="global.html#ModelCacheFormat%255Bundefined%255D">ModelCacheFormat[undefined]</a></li><li><a href="global.html#query">query</a></li><li><a href="global.html#statisticField">statisticField</a></li><li><a href="global.html#statisticFieldByDS">statisticFieldByDS</a></li><li><a href="global.html#update">update</a></li><li><a href="global.html#uuid">uuid</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <span class="page-title-sub">document/layer/ogc-wms-layer.js</span>
+                    <span class="page-title-main">Source</span>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { Rectangle } from '@mapgis/webclient-es6-service/common/Rectangle';
+import * as Zondy from '@mapgis/webclient-es6-service';
+import axios from 'axios';
+import { LoadStatus, LayerType, Layer } from './layer';
+import { ObjectTool } from '../../utils/object-tool';
+import { SpatialReference } from '../spatial-reference';
+/**
+ * OGCWMSLayer的子图层
+ *
+ * @date 30/03/2021
+ * @export
+ * @class WMSSublayer
+ */
+export class WMSSublayer {
+    /**
+     * 描述
+     *
+     * @date 30/03/2021
+     * @memberof WMSSublayer
+     */
+    description = '';
+    /**
+     * 全图范围
+     *
+     * @date 30/03/2021
+     * @type {Rectangle}
+     * @memberof WMSSublayer
+     */
+    fullExtent;
+    /**
+     * id
+     *
+     * @date 30/03/2021
+     * @memberof WMSSublayer
+     */
+    id = '';
+    /**
+     * 该WMSSublayer所属的OGCWMSLayer
+     *
+     * @date 30/03/2021
+     * @type {OGCWMSLayer}
+     * @memberof WMSSublayer
+     */
+    layer;
+    /**
+     * 是否显示在图例中
+     *
+     * @date 30/03/2021
+     * @memberof WMSSublayer
+     */
+    legendEnabled = true;
+    /**
+     * 图例的URL
+     *
+     * @date 30/03/2021
+     * @memberof WMSSublayer
+     */
+    legendUrl = '';
+    /**
+     * 名称
+     *
+     * @date 30/03/2021
+     * @memberof WMSSublayer
+     */
+    name = '';
+    /**
+     * 是否参与查询
+     *
+     * @date 30/03/2021
+     * @memberof WMSSublayer
+     */
+    queryable = true;
+    /**
+     * 空间参照系列表
+     *
+     * @date 30/03/2021
+     * @type {number[]}
+     * @memberof WMSSublayer
+     */
+    spatialReferences = [];
+    /**
+     * 子图层列表
+     *
+     * @date 30/03/2021
+     * @type {Array&lt;WMSSublayer>}
+     * @memberof WMSSublayer
+     */
+    sublayers = [];
+    /**
+     * 标题
+     * 用于在图层列表或图例中标识该子图层
+     *
+     * @date 30/03/2021
+     * @memberof WMSSublayer
+     */
+    title = '';
+    /**
+     * 是否显示
+     *
+     * @date 30/03/2021
+     * @memberof WMSSublayer
+     */
+    visible = true;
+    /**
+     * 通过json对象初始化该对象
+     *
+     * @date 30/03/2021
+     * @param {Record&lt;string, any>} jsonObject
+     * @memberof WMSSublayer
+     */
+    fromJSON(jsonObject) {
+        if (jsonObject.Abstract)
+            this.description = jsonObject.Abstract;
+        if (jsonObject.BoundingBox &amp;&amp; jsonObject.BoundingBox.length > 0) {
+            const { extent } = jsonObject.BoundingBox[0];
+            this.fullExtent = new Rectangle(extent[0], extent[1], extent[2], extent[3]);
+        }
+        if (jsonObject.Name)
+            this.name = jsonObject.Name;
+        if (jsonObject.SRS) {
+            jsonObject.SRS.forEach((element) => {
+                const epsgCode = element.split(':');
+                this.spatialReferences.push(parseInt(epsgCode[1]));
+            });
+        }
+        if (jsonObject.Title)
+            this.title = jsonObject.Title;
+        if (jsonObject.queryable)
+            this.queryable = jsonObject.queryable;
+        if (jsonObject.Layer) {
+            if (Array.isArray(jsonObject.Layer)) {
+                jsonObject.Layer.forEach((element, index) => {
+                    const sublayer = new WMSSublayer();
+                    sublayer.layer = this.layer;
+                    sublayer.id = `${this.id}-${index}`;
+                    sublayer.fromJSON(element);
+                    this.sublayers.push(sublayer);
+                });
+            }
+            else {
+                const sublayer = new WMSSublayer();
+                sublayer.layer = this.layer;
+                sublayer.fromJSON(jsonObject.Layer);
+                this.sublayers.push(sublayer);
+            }
+        }
+        // 设置默认参数
+        if (!this.fullExtent) {
+            if (this.sublayers.length > 0) {
+                this.fullExtent = this.sublayers[0].fullExtent;
+            }
+        }
+    }
+    /**
+     * 将该对象转换为json对象
+     *
+     * @date 30/03/2021
+     * @return {*}  {Record&lt;string, any>}
+     * @memberof WMSSublayer
+     */
+    toJSON() {
+        return {};
+    }
+    /**
+     * 创建一个深度克隆的WMSSublayer
+     *
+     * @date 02/04/2021
+     * @return {*}  {WMSSublayer}
+     * @memberof WMSSublayer
+     */
+    clone() {
+        const result = new WMSSublayer();
+        Object.entries(this).forEach((element) => {
+            const key = element[0];
+            const valueIndex = 1;
+            if (key === 'layer') {
+                result[key] = element[valueIndex];
+            }
+            else if (key === 'sublayers') {
+                const sublayers = element[valueIndex];
+                const sublayersCopy = [];
+                let sublayerCopy;
+                sublayers.forEach((sublayer) => {
+                    sublayerCopy = sublayer.clone();
+                    if (sublayerCopy) {
+                        sublayerCopy.layer = result.layer;
+                        sublayersCopy.push(sublayerCopy);
+                    }
+                });
+                result[key] = sublayersCopy;
+            }
+            else {
+                result[key] = ObjectTool.deepClone(element[valueIndex]);
+            }
+        });
+        return result;
+    }
+}
+/**
+ * OGCWMS服务图层
+ *
+ * @date 30/03/2021
+ * @export
+ * @class OGCWMSLayer
+ * @extends {Layer}
+ */
+export class OGCWMSLayer extends Layer {
+    clone() {
+        const result = new OGCWMSLayer();
+        Object.entries(this).forEach((element) => {
+            const key = element[0];
+            const valueIndex = 1;
+            if (key === '_allSublayers') {
+            }
+            else if (key === 'sublayers') {
+                const sublayers = element[valueIndex];
+                const sublayersCopy = [];
+                let sublayerCopy;
+                sublayers.forEach((sublayer) => {
+                    sublayerCopy = sublayer.clone();
+                    if (sublayerCopy) {
+                        sublayerCopy.layer = result;
+                        sublayersCopy.push(sublayerCopy);
+                    }
+                });
+                result[key] = sublayersCopy;
+            }
+            else {
+                result[key] = this._deepClone(element[valueIndex]);
+            }
+        });
+        // 给所有的sublayers设置layer属性的值
+        result.allSublayers.forEach((sublayer) => {
+            sublayer.layer = result;
+        });
+        return result;
+    }
+    /**
+     * Creates an instance of OGCWMSLayer.
+     *
+     * @date 22/03/2021
+     * @param {Record&lt;string, any>} properties
+     * @memberof OGCWMSLayer
+     */
+    constructor(properties) {
+        super(properties);
+        this.type = LayerType.OGCWMS;
+        if (!properties)
+            return;
+        if (properties.url)
+            this.url = properties.url;
+        if (properties.maxScale)
+            this.maxScale = properties.maxScale;
+        if (properties.minScale)
+            this.minScale = properties.minScale;
+        if (properties.tokenKey)
+            this.tokenKey = properties.tokenKey;
+        if (properties.tokenValue)
+            this.tokenValue = properties.tokenValue;
+    }
+    /**
+     * 所有的子图层
+     * 包括子图层的子图层
+     *
+     * @date 01/04/2021
+     * @type {Array&lt;WMSSublayer>}
+     * @memberof OGCWMSLayer
+     */
+    get allSublayers() {
+        if (this._allSublayers.length === 0) {
+            this.sublayers.forEach((element) => {
+                this.getSubLayers(element, this._allSublayers);
+            });
+        }
+        return this._allSublayers;
+    }
+    /**
+     * 描述
+     *
+     * @date 30/03/2021
+     * @memberof OGCWMSLayer
+     */
+    description = '';
+    /**
+     * 当前请求的图片格式（MIME type）
+     *
+     * @date 30/03/2021
+     * @memberof OGCWMSLayer
+     */
+    imageFormat = '';
+    /**
+     * 支持的图片格式列表
+     * 从GetCapabilities请求中获取的该图层支持的图片格式列表
+     *
+     * @date 30/03/2021
+     * @memberof OGCWMSLayer
+     */
+    imageFormats = [];
+    /**
+     * 图片背景是否透明
+     *
+     * @date 30/03/2021
+     * @memberof OGCWMSLayer
+     */
+    imageTransparency = true;
+    /**
+     * 图层显示的最大比例尺:在地图视图中超出该比例尺,图层将不再显示。
+     * 默认值：0. 0表示该图层的显示不受最大比例尺的限制，可以无限放大。
+     * maxScale &lt; minScale
+     * sample
+     * The layer will not be visible when the view is zoomed in beyond a scale of 1:2,000
+     * layer.maxScale = 2000;
+     *
+     * @date 30/03/2021
+     * @memberof OGCWMSLayer
+     */
+    maxScale = 0;
+    /**
+     * 图层显示的最小比例尺:在地图视图中超出该比例尺,图层将不再显示。
+     * 默认值：0. 0表示该图层的显示不受最小比例尺的限制，可以无限缩小。
+     *
+     * @date 30/03/2021
+     * @memberof OGCWMSLayer
+     */
+    minScale = 0;
+    /**
+     * 子图层列表
+     *
+     * @date 30/03/2021
+     * @type {Array&lt;WMSSublayer>}
+     * @memberof OGCWMSLayer
+     */
+    sublayers = [];
+    /**
+     * token的参数名
+     *
+     * @date 30/03/2021
+     * @memberof OGCWMSLayer
+     */
+    tokenKey = '';
+    /**
+     * token的参数值
+     *
+     * @date 30/03/2021
+     * @memberof OGCWMSLayer
+     */
+    tokenValue = '';
+    /**
+     * 服务基地址
+     * 约定URL格式如下：
+     * MapGIS:http://[ip]:[port]/igs/rest/ogc/doc/北京市/WMSServer
+     * ArcGIS:http://[ip]/arcgis/services/10wanZH/MapServer/WMSServer
+     * 吉威：
+     * @date 30/03/2021
+     * @memberof OGCWMSLayer
+     */
+    url = '';
+    /**
+     * wms标准的版本
+     *
+     * @date 31/03/2021
+     * @memberof OGCWMSLayer
+     */
+    version = '';
+    /**
+     * 空间参数信息
+     *
+     * @date 28/04/2021
+     * @memberof OGCWMSLayer
+     */
+    spatialReference = new SpatialReference();
+    /**
+     * 根据id获取对应的子图层
+     *
+     * @date 30/03/2021
+     * @return {*}  {WMTSSublayer}
+     * @memberof OGCWMSLayer
+     */
+    findSublayerById(id) {
+        let sublayer;
+        this.allSublayers.forEach((element) => {
+            if (element.id === id) {
+                sublayer = element;
+            }
+        });
+        return sublayer;
+    }
+    load() {
+        // 只有加载状态是没有加载过时，才会真正进行请求。
+        if (this.loadStatus !== LoadStatus.notLoaded) {
+            return new Promise((resolve) => {
+                resolve(this);
+            }).then((data) => {
+                return this;
+            });
+        }
+        // 1.通过url(基地址)生成获取元数据的URL
+        let getCapabilitiesURL = OGCWMSLayer.generateGetCapabilitiesURL(this.url);
+        // 加入token
+        if (this.tokenValue != '')
+            getCapabilitiesURL += `&amp;${this.tokenKey}=${this.tokenValue}`;
+        // 2.发起网络请求
+        const promise = new Promise((resolve, reject) => {
+            this.loadStatus = LoadStatus.loading;
+            axios.get(getCapabilitiesURL).then((res) => {
+                const { data } = res;
+                if (!data) {
+                    resolve(undefined);
+                }
+                else {
+                    const parser = new Zondy.OGC.WMSCapabilities();
+                    const result = parser.read(data);
+                    // 3.解析请求结果
+                    // 3.1 Capability
+                    // 3.1.1 Layer
+                    if (result.Capability.Layer) {
+                        if (Array.isArray(result.Capability.Layer)) {
+                            result.Capability.Layer.forEach((element, index) => {
+                                const sublayer = new WMSSublayer();
+                                sublayer.layer = this;
+                                sublayer.id = `${index}`;
+                                sublayer.fromJSON(element);
+                                this.sublayers.push(sublayer);
+                            });
+                        }
+                        else {
+                            const sublayer = new WMSSublayer();
+                            sublayer.layer = this;
+                            sublayer.id = '0';
+                            sublayer.fromJSON(result.Capability.Layer);
+                            this.sublayers.push(sublayer);
+                        }
+                    }
+                    // 3.1.2 Request
+                    if (result.Capability.Request) {
+                        // 3.1.2.1 GetMap
+                        if (result.Capability.Request.GetMap) {
+                            // 3.1.2.1.1 Format
+                            if (result.Capability.Request.GetMap.Format) {
+                                this.imageFormats = result.Capability.Request.GetMap.Format;
+                            }
+                        }
+                    }
+                    // 3.2 Service
+                    if (result.Service) {
+                        // 3.2.1 Abstract
+                        if (result.Service.Abstract)
+                            this.description = result.Service.Abstract;
+                    }
+                    // 3.3 version
+                    if (result.version)
+                        this.version = result.version;
+                    // 4.设置默认参数
+                    // 4.1
+                    if (this.imageFormats.length > 0) {
+                        // 默认获取png格式的图片,不支持png格式图片的话，取第0个。
+                        const pngFormat = this.imageFormats.find((item) => item.includes('png'));
+                        if (pngFormat) {
+                            this.imageFormat = pngFormat;
+                        }
+                        else {
+                            ;
+                            [this.imageFormat] = this.imageFormats;
+                        }
+                    }
+                    // 4.2
+                    if (this.sublayers.length > 0) {
+                        this.fullExtent = this.sublayers[0].fullExtent;
+                    }
+                    // 4.3 获取所有子图层(包含子图层的子图层)
+                    this.sublayers.forEach((element) => {
+                        this.getSubLayers(element, this.allSublayers);
+                    });
+                    this.loadStatus = LoadStatus.loaded;
+                    resolve(result);
+                }
+            }, (error) => {
+                this.loadStatus = LoadStatus.failed;
+                reject(error);
+            });
+        });
+        return promise.then((data) => {
+            return this;
+        });
+    }
+    /**
+     * 生成获取wms服务元数据信息的url
+     *
+     * @param {string} url wms服务基地址
+     * @return {*}获取wmts服务元数据信息的url
+     * @memberof QueryOGCInfo
+     */
+    static generateGetCapabilitiesURL(url) {
+        let tempUrl = url;
+        if (url.includes('?')) {
+            tempUrl = url.split('?')[0];
+        }
+        else {
+            tempUrl = url;
+        }
+        tempUrl += '?';
+        if (url.toLowerCase().includes('ime-cloud')) {
+            // 吉威的数据
+            tempUrl += 'service=WMS&amp;REQUEST=GetCapabilities&amp;version=1.1.1';
+        }
+        else {
+            tempUrl += 'service=WMS&amp;request=GetCapabilities&amp;version=1.1.1';
+        }
+        return tempUrl;
+    }
+    // 所有的子图层,包括子图层的子图层
+    _allSublayers = [];
+    getSubLayers(subLayer, sublayers) {
+        sublayers.push(subLayer);
+        if (subLayer.sublayers.length > 0) {
+            subLayer.sublayers.forEach((element) => {
+                this.getSubLayers(element, sublayers);
+            });
+        }
+    }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>文档生成<a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a></p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+</body>
+</html>
