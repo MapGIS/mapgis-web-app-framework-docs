@@ -42,6 +42,8 @@
     "settingUiComponent": "",
     // 确定widget的窗口大小，默认为normal，可设置为normal（常规的，由panel决定）、max（最大化），可不设置
     "windowSize": "max",
+    // 自定义widget面板的宽度，Number格式，工具条微件默认为320，左侧微件默认为280，,可不设置（最大化），可不设置
+    "customWidth": 280
     // 确定widget的窗口是否有边距，默认为true，可设置为false，可不设置
     "hasPadding": false
   }
