@@ -61,7 +61,7 @@ module.exports = {
             link: '/zh/guide/'
           },
           {
-            text: '微件规范',
+            text: '应用规范',
             link: '/zh/config/base'
           },
           {
@@ -102,7 +102,7 @@ module.exports = {
           ],
           '/zh/config/': [
             {
-              title: '微件规范',
+              title: '应用规范',
               children: getSidebarByCategory('config', 'zh')
             }
           ],

@@ -31,7 +31,10 @@
     "customStyle": {
       "color": "#1890ff",
       "theme": "night"
-    }
+    },
+
+    // 可选，如果没有设置，默认指向主题清单manifest.json
+    "manifest": {}
   },
 
   // 地图widgets
@@ -89,7 +92,10 @@
         "visible": false,
 
         // 可选，表示是否是占位微件，默认为false，占位微件一般在主题布局中定义，在搭建时进行定义
-        "placeholder": true
+        "placeholder": true,
+
+        // 可选，如果没有设置，默认指向widget配置manifest.json
+        "manifest": {},
       }
     ]
   },
@@ -200,7 +206,11 @@
         }
       }
     ]
-  }
+  },
+  // 数据目录，支持嵌套
+  "data": [
+    {}
+  ]
 }
 ```
 

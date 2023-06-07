@@ -1,6 +1,6 @@
-# Widget
+# 微件
 
-## widget 类型
+## 微件类型
 
 支持两种类型的 widget：in-panel 和 off-panel，每个 widget 都有一个 openAtStart 控制其是否初始打开。
 
@@ -11,7 +11,7 @@
 
 一般情况下，一个 widget 只有 1 个 manifest 文件。
 
-## Widget manifest
+## 微件 manifest
 
 ```javascript
 {
@@ -42,15 +42,17 @@
     "settingUiComponent": "",
     // 确定widget的窗口大小，默认为normal，可设置为normal（常规的，由panel决定）、max（最大化），可不设置
     "windowSize": "max",
-    // 自定义widget面板的宽度，Number格式，工具条微件默认为320，左侧微件默认为280，,可不设置（最大化），可不设置
+    // 自定义widget面板的宽度，Number格式，在经典主题下工具条微件所属面板默认为320，左侧微件所属面板默认为280，可不设置
     "customWidth": 280
     // 确定widget的窗口是否有边距，默认为true，可设置为false，可不设置
-    "hasPadding": false
+    "hasPadding": false,
+    // 设置微件是否懒加载，默认为false，当为true的时候，会在打开微件面板时才会去加载微件，可通过此特性控制初始加载的微件数和内存大小
+    "lazyload": false
   }
 }
 ```
 
-## 使 Widget 可配置
+## 使微件可配置
 
 要使 widget 可配置，需要两个步骤
 
