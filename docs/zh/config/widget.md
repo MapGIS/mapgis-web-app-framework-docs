@@ -47,7 +47,9 @@
     // 确定widget的窗口是否有边距，默认为true，可设置为false，可不设置
     "hasPadding": false,
     // 设置微件是否懒加载，默认为false，当为true的时候，会在打开微件面板时才会去加载微件，可通过此特性控制初始加载的微件数和内存大小
-    "lazyload": false
+    "lazyload": false,
+    // 设置微件是否有UI，默认为true，当inPanel为false且hasUi也为false时，会自动加载该微件，并由内容区域负责该微件的标识和响应
+    "hasUi": true
   }
 }
 ```
