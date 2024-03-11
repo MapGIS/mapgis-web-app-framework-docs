@@ -4,31 +4,17 @@
 
 ## props
 
-### widgets
-
-- **类型**：`Array<Object>`
-- **描述**：微件列表
-- **默认值**：[]。
-
-### relativeTo
-
-- **类型**：`string`
-- **描述**：指定弹出面板相对的元素（map/content）。
-- **默认值**：`map`
-
-### mode
-
-- **类型**：`string`
-- **描述**：显示模式（single/multi），只有 relativeTo 为 map 才有效。
-- **默认值**：`single`
-
-### position
-
-- **类型**：`Object`
-- **描述**：面板弹出位置，只有 relativeTo 为 map 才有效。可参考 [app.json](/zh/config/app.html)
-- **默认值**
+| 参数            | 说明                                                                                | 类型   | 可选值 | 默认值 | 版本 |
+| --------------- | ----------------------------------------------------------------------------------- | ------ | ------ | ------ | ---- |
+| widgets         | 微件列表。                                                                          | array  |        | []     |      |
+| widgetStructure | 微件结构。                                                                          | array  |        |        |      |
+| relativeTo      | 指定弹出面板相对的元素（map/content）。                                             | string |        | map    |      |
+| mode            | 显示模式（single/multi），只有 relativeTo 为 map 才有效。                           | string |        | single |      |
+| position        | 面板弹出位置，只有 relativeTo 为 map 才有效。可参考 [app.json](/zh/config/app.html) | object |        |        |      |
+| styles          | 面板样式。可参考 [app.json](/zh/config/app.html)                                    | object |        |        |      |
 
 ```js
+// position示例
 {
   anchor: 'top-right',
   horizontalOffset: 0,
@@ -36,15 +22,8 @@
   top: 0,
   bottom: 0
 }
-```
 
-### styles
-
-- **类型**：`Object`
-- **描述**：面板样式。可参考 [app.json](/zh/config/app.html)
-- **默认值**：
-
-```js
+// styles示例
 {
   expand: false,
   width: null,
@@ -89,6 +68,10 @@ v-for="widget in widgetsInPanel('content')"
   | :----- | :----------------------------------------------- | :----- | :----- |
   | widget | 微件对象                                         | Object | -      |
   | rel    | 弹出面板相对的元素（map/content），同 relativeTo | Object | string |
+
+### widgetStructureSider
+
+- **返回值**：侧边栏微件结构。
 
 ## methods
 

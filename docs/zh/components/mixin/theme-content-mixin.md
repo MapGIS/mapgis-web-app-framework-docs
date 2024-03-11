@@ -4,54 +4,23 @@
 
 ## props
 
-### content
-
-- **类型**：`string`
-- **描述**：内容区域名称。
-
-### widgets
-
-- **类型**：`Array<Object>`
-- **描述**：微件列表。
-
-### widgetStructure
-
-- **类型**：`Array<Object>`
-- **描述**：微件结构。
-
-### panel
-
-- **类型**：`Object`
-- **描述**：面板对象。
-
-### mapInitialized
-
-- **类型**：`boolean`
-- **描述**：地图是否初始完毕。
-- **默认值**：`false`
-- **用法**：可根据地图初始的情况做一些额外的工作。
+| 参数            | 说明               | 类型    | 可选值 | 默认值 | 版本 |
+| --------------- | ------------------ | ------- | ------ | ------ | ---- |
+| content         | 内容区域名称。     | string  |        |        |      |
+| widgets         | 微件列表。         | array   |        |        |      |
+| widgetStructure | 微件结构。         | array   |        |        |      |
+| panel           | 面板对象。         | object  |        |        |      |
+| mapInitialized  | 地图是否初始完毕。 | boolean |        | false  |      |
 
 ## computed
 
-### widgets2d
-
-- **类型**：`Array<Object>`
-- **描述**：2D 微件列表。
-
-### widgets3d
-
-- **类型**：`Array<Object>`
-- **描述**：3D 微件列表。
-
-### widgetStructure2d
-
-- **类型**：`Array<Object>`
-- **描述**：2D 微件结构。
-
-### widgetStructure3d
-
-- **类型**：`Array<Object>`
-- **描述**：3D 微件结构。
+| 参数                 | 说明                         | 类型  | 可选值 | 默认值 | 版本 |
+| -------------------- | ---------------------------- | ----- | ------ | ------ | ---- |
+| widgets2d            | 2D 微件列表。                | array |        |        |      |
+| widgets3d            | 3D 微件列表。                | array |        |        |      |
+| widgetStructure2d    | 2D 微件结构。                | array |        |        |      |
+| widgetStructure3d    | 3D 微件结构。                | array |        |        |      |
+| widgetStructureSider | 侧边栏微件结构。比如收藏夹。 | array |        |        |      |
 
 ## methods
 

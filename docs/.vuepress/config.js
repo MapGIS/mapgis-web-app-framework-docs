@@ -70,7 +70,7 @@ module.exports = {
           },
           {
             text: 'API',
-            link: apiBaseUrl + '/api/index.html'
+            link: '/zh/api/reference/document/document'
           }
         ],
         sidebar: {
@@ -108,37 +108,57 @@ module.exports = {
           ],
           '/zh/api/': [
             {
+              title: '介绍',
+              children: getSidebarByCategory('api-start', 'zh')
+            },
+            {
+              title: '服务',
+              children: getSidebarByCategory('api-service', 'zh')
+            },
+            {
+              title: '配置',
+              children: getSidebarByCategory('api-config', 'zh')
+            },
+            {
+              title: '管理',
+              children: getSidebarByCategory('api-manager', 'zh')
+            },
+            {
+              title: '工具',
+              children: getSidebarByCategory('api-util', 'zh')
+            },
+            {
               title: '文档',
               children: getSidebarByCategory('document', 'zh')
             },
             {
               title: '展示',
               children: getSidebarByCategory('exhibition', 'zh')
-            },
-            {
-              title: '要素',
-              children: getSidebarByCategory('feature', 'zh')
-            },
-            {
-              title: '元数据',
-              children: getSidebarByCategory('metadata', 'zh')
-            },
-            {
-              title: '覆盖物',
-              children: getSidebarByCategory('overlay', 'zh')
-            },
-            {
-              title: '工具',
-              children: getSidebarByCategory('utils', 'zh')
-            },
-            {
-              title: '对象',
-              children: getSidebarByCategory('objects', 'zh')
-            },
-            {
-              title: '分析',
-              children: getSidebarByCategory('analysis', 'zh')
             }
+            // {
+            //   title: '要素',
+            //   children: getSidebarByCategory('feature', 'zh')
+            // },
+            // {
+            //   title: '元数据',
+            //   children: getSidebarByCategory('metadata', 'zh')
+            // },
+            // {
+            //   title: '覆盖物',
+            //   children: getSidebarByCategory('overlay', 'zh')
+            // },
+            // {
+            //   title: '工具',
+            //   children: getSidebarByCategory('utils', 'zh')
+            // },
+            // {
+            //   title: '对象',
+            //   children: getSidebarByCategory('objects', 'zh')
+            // },
+            // {
+            //   title: '分析',
+            //   children: getSidebarByCategory('analysis', 'zh')
+            // }
           ],
           '/zh/components/': [
             {
@@ -152,10 +172,6 @@ module.exports = {
             {
               title: '地图组件',
               children: getSidebarByCategory('map-components', 'zh')
-            },
-            {
-              title: '常规组件',
-              children: getSidebarByCategory('common-components', 'zh')
             }
           ]
         }

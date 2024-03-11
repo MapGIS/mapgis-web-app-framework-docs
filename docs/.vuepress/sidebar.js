@@ -1,12 +1,7 @@
 const sidebar = {
   introduction: ['/guide/'],
   start: ['/guide/start/start'],
-  development: [
-    '/guide/development/base',
-    '/guide/development/exhibition',
-    '/guide/development/style',
-    '/guide/development/svg'
-  ],
+  development: ['/guide/development/base', '/guide/development/exhibition'],
   advanced: [
     '/guide/advanced/theme-custom',
     '/guide/advanced/widget-custom',
@@ -16,6 +11,14 @@ const sidebar = {
   version: ['/guide/version/change-log'],
   other: ['/guide/other/faq', '/guide/other/from-community'],
   config: ['/config/base', '/config/app', '/config/theme', '/config/widget'],
+  'api-start': ['/api/reference/'],
+  'api-service': ['/api/reference/service/api'],
+  'api-config': ['/api/reference/config/base'],
+  'api-manager': ['/api/reference/manager/data-catalog'],
+  'api-util': [
+    // '/api/reference/util/projection-transformation-util',
+    '/api/reference/util/event-bus'
+  ],
   utils: [
     '/api/reference/utils/common-util',
     '/api/reference/utils/string-util',
@@ -35,27 +38,27 @@ const sidebar = {
     '/api/reference/document/document',
     '/api/reference/document/map',
     '/api/reference/document/layer/3d-layer',
-    '/api/reference/document/layer/arcgis-map-image-layer',
-    '/api/reference/document/layer/arcgis-tile-layer',
-    '/api/reference/document/layer/data-flow-layer',
-    '/api/reference/document/layer/feature-layer',
-    '/api/reference/document/layer/geo-json-layer',
-    '/api/reference/document/layer/graphics-layer',
-    '/api/reference/document/layer/group-layer',
-    '/api/reference/document/layer/igs-feature-layer',
-    '/api/reference/document/layer/igs-map-image-layer',
-    '/api/reference/document/layer/igs-scene-layer',
-    '/api/reference/document/layer/igs-tile-layer',
-    '/api/reference/document/layer/igs-vector-layer',
-    '/api/reference/document/layer/layer',
-    '/api/reference/document/layer/map-image-layer',
-    '/api/reference/document/layer/model-cache-layer',
-    '/api/reference/document/layer/ogc-wms-layer',
-    '/api/reference/document/layer/ogc-wmts-layer',
-    '/api/reference/document/layer/scene-layer',
-    '/api/reference/document/layer/tile-layer',
-    '/api/reference/document/layer/vector-tile-layer',
-    '/api/reference/document/layer/web-tile-layer'
+    // '/api/reference/document/layer/arcgis-map-image-layer',
+    // '/api/reference/document/layer/arcgis-tile-layer',
+    // '/api/reference/document/layer/data-flow-layer',
+    // '/api/reference/document/layer/feature-layer',
+    // '/api/reference/document/layer/geo-json-layer',
+    // '/api/reference/document/layer/graphics-layer',
+    // '/api/reference/document/layer/group-layer',
+    // '/api/reference/document/layer/igs-feature-layer',
+    // '/api/reference/document/layer/igs-map-image-layer',
+    // '/api/reference/document/layer/igs-scene-layer',
+    // '/api/reference/document/layer/igs-tile-layer',
+    // '/api/reference/document/layer/igs-vector-layer',
+    '/api/reference/document/layer/layer'
+    // '/api/reference/document/layer/map-image-layer',
+    // '/api/reference/document/layer/model-cache-layer',
+    // '/api/reference/document/layer/ogc-wms-layer',
+    // '/api/reference/document/layer/ogc-wmts-layer',
+    // '/api/reference/document/layer/scene-layer',
+    // '/api/reference/document/layer/tile-layer',
+    // '/api/reference/document/layer/vector-tile-layer',
+    // '/api/reference/document/layer/web-tile-layer'
   ],
   feature: [
     '/api/reference/feature/feature-query',
@@ -90,7 +93,8 @@ const sidebar = {
     '/components/mixin/widget-info-mixin',
     '/components/mixin/widget-mixin',
     '/components/mixin/exhibition-mixin',
-    '/components/mixin/exhibition-controller-mixin'
+    '/components/mixin/exhibition-controller-mixin',
+    '/components/mixin/display-mode-mixin'
   ],
   'common-components': [
     '/components/common/icon',

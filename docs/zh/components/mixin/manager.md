@@ -54,9 +54,13 @@ AppManager.getInstance().loadConfig(
 - **描述**：返回基于 `baseAPI` 的请求对象。
 - **返回值**：请求对象（axios）。
 
+### saveConfig
+
+- **描述**：保存配置。
+
 ## WidgetManager
 
-微件管理，负责微件状态的管理，应用全局只有一个微件处于激活状态。
+微件管理，负责微件状态的管理。
 
 ```js
 import { WidgetManager } from '@mapgis/web-app-framework'
@@ -127,3 +131,51 @@ WidgetManager.getInstance()
   | 参数   | 描述 | 类型   | 默认值 |
   | :----- | :--- | :----- | :----- |
   | widget | 微件 | Object | -      |
+
+  ### operateWidget
+
+- **描述**：操作微件。
+- **参数**
+
+  | 参数     | 描述              | 类型   | 默认值 |
+  | :------- | :---------------- | :----- | :----- |
+  | widgets  | 微件集合          | Array  | -      |
+  | activeId | 需要激活的微件 ID | string | -      |
+
+## PanelManager
+
+负责展示面板管理。
+
+```js
+import { PanelManager } from '@mapgis/web-app-framework'
+```
+
+### getInstance
+
+- **描述**： 获取全局单例。
+
+```js
+PanelManager.getInstance()
+```
+
+### addPanel
+
+- **描述**：添加面板。
+- **参数**
+
+  | 参数  | 描述 | 类型   | 默认值 |
+  | :---- | :--- | :----- | :----- |
+  | panel | 面板 | Object | -      |
+
+### removePanel
+
+- **描述**：移除面板。
+- **参数**
+
+  | 参数  | 描述 | 类型   | 默认值 |
+  | :---- | :--- | :----- | :----- |
+  | panel | 面板 | Object | -      |
+
+  ### getPanels
+
+- **描述**：获取面板集合。

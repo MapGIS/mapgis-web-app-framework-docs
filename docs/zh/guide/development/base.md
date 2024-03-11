@@ -26,30 +26,30 @@
 
 <script>
 import { AppManager } from '@mapgis/web-app-framework'
-import { getAppInfo } from '@/services/user'
-import { BASE_URL } from '@/services/api'
-import { request } from '@/utils/request'
 
 export default {
+  props: {
+    baseAPI: String,
+    appConfigPath: String,
+    appAssetsPath: String
+  },
   data() {
     return {
       application: {}
     }
   },
   async created() {
-    try {
-      const appInfo = await getAppInfo()
-      await AppManager.getInstance().loadConfig(
-        BASE_URL,
-        appInfo.data.configPath,
-        appInfo.data.assetsPath,
-        request
-      )
-      // 通过 AppManager 获取应用全局配置，并赋值给 application 参数
-      this.application = AppManager.getInstance().getApplication()
-    } catch (error) {
-      console.log(error)
-    }
+    const appManager = AppManager.getInstance()
+
+    // 加载应用
+    await appManager.loadConfig(
+      this.baseAPI,
+      this.appConfigPath,
+      this.appAssetsPath
+    )
+
+    // 获取应用（解析后的应用对象）
+    this.application = appManager.getApplication()
   }
 }
 </script>

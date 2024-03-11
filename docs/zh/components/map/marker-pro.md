@@ -30,11 +30,14 @@
 
 #### 属性
 
-| 参数         | 说明                                 | 类型   | 默认值 |
-| ------------ | ------------------------------------ | ------ | ------ |
-| marker       | 标注                                 | Object | -      |
-| anchor       | 锚点位置                             | String | bottom |
-| fieldConfigs | 字段配置，描述如何展示标注的属性信息 | Array  | -      |
+| 参数             | 说明                                                                                             | 类型    | 可选值                                       | 默认值           | 版本 |
+| ---------------- | ------------------------------------------------------------------------------------------------ | ------- | -------------------------------------------- | ---------------- | ---- |
+| marker           | 标注                                                                                             | object  |                                              |                  |      |
+| anchor           | 锚点位置                                                                                         | string  |                                              | bottom           |      |
+| fieldConfigs     | 字段配置，描述如何展示标注的属性信息                                                             | array   |                                              |                  |      |
+| defaultShowPopup | 是否默认显示弹框                                                                                 | boolean |                                              | false            |      |
+| popupAnchor      | 弹框位置，以图标左上角为原点，增量方式与 mapboxgl 弹框的 offset 保持一致，x 往右递增，y 往下递增 | object  |                                              | { x: 0.5, y: 0 } |      |
+| popupToggleType  | 弹框激活方式                                                                                     | string  | click(鼠标点击弹框)/mouseenter(鼠标移入弹框) | mouseenter       |      |
 
 #### 事件
 
@@ -53,20 +56,26 @@
 
 #### 属性
 
-| 参数            | 说明                                       | 类型   | 默认值 |
-| --------------- | ------------------------------------------ | ------ | ------ |
-| marker          | 标注                                       | Object | -      |
-| anchor          | 锚点位置                                   | String | bottom |
-| fieldConfigs    | 字段配置，描述如何展示标注的属性信息       | Array  | -      |
-| currentMarkerId | 当前弹出 popup 标注的 id，当一组标注时有用 | String | -      |
+| 参数             | 说明                                                                                             | 类型    | 可选值                                       | 默认值           | 版本 |
+| ---------------- | ------------------------------------------------------------------------------------------------ | ------- | -------------------------------------------- | ---------------- | ---- |
+| marker           | 标注                                                                                             | object  |                                              |                  |      |
+| anchor           | 锚点位置                                                                                         | string  |                                              | bottom           |      |
+| fieldConfigs     | 字段配置，描述如何展示标注的属性信息                                                             | array   |                                              |                  |      |
+| currentMarkerId  | 当前弹出 popup 标注的 id，当一组标注时有用                                                       | string  |                                              |
+| defaultShowPopup | 是否默认显示弹框                                                                                 | boolean |                                              | false            |      |
+| popupAnchor      | 弹框位置，以图标左上角为原点，增量方式与 mapboxgl 弹框的 offset 保持一致，x 往右递增，y 往下递增 | object  |                                              | { x: 0.5, y: 0 } |      |
+| popupToggleType  | 弹框激活方式                                                                                     | string  | click(鼠标点击弹框)/mouseenter(鼠标移入弹框) | mouseenter       |      |
 
 #### 事件
 
-| 事件名称   | 说明                                | 回调参数                |
-| ---------- | ----------------------------------- | ----------------------- |
-| mouseenter | 鼠标移动到标注图标上触发            | (markerId) => {}        |
-| mouseleave | 鼠标移动到标注图标上触发            | (markerId) => {}        |
-| change     | 当前弹出 popup 的标注发生变化是触发 | (currentMarkerId) => {} |
+| 事件名称            | 说明                                   | 回调参数                |
+| ------------------- | -------------------------------------- | ----------------------- |
+| mouseenter          | 鼠标移动到标注图标上触发               | (markerId) => {}        |
+| mouseleave          | 鼠标移动到标注图标上触发               | (markerId) => {}        |
+| change              | 当前弹出 popup 的标注发生变化是触发    | (currentMarkerId) => {} |
+| popupload           | popup 已加载                           | (markerId) => {}        |
+| marker-id           | 点击标注事件                           | (markerId) => {}        |
+| events.MARKER_CLICK | 点击标注事件，向全局 eventBus 发出事件 | (marker) => {}          |
 
 #### 插槽
 

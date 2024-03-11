@@ -1,5 +1,13 @@
 # ExhibitionMixin
 
+展示面板混入。
+
+## data
+
+| 参数               | 说明                   | 类型    | 可选值 | 默认值 | 版本 |
+| ------------------ | ---------------------- | ------- | ------ | ------ | ---- |
+| isExhibitionActive | 展示面板是否为激活状态 | boolean |        | true   |      |
+
 ## methods
 
 ### resizeExhibition

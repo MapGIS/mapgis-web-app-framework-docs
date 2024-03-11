@@ -34,8 +34,11 @@ export default {
 
 #### 属性
 
-| 参数        | 说明                           | 类型   | 默认值    |
-| ----------- | ------------------------------ | ------ | --------- |
-| queryParams | 查询参数                       | Object | -         |
-| beginColor  | 起始颜色(用于计算渐变颜色数组) | String | '#ff0000' |
-| endColor    | 结束颜色(用于计算渐变颜色数组) | String | '#0000ff' |
+| 参数                | 说明                           | 类型   | 可选值                                                               | 默认值    | 版本 |
+| ------------------- | ------------------------------ | ------ | -------------------------------------------------------------------- | --------- | ---- |
+| queryParams         | 查询参数                       | object |                                                                      |           |      |
+| beginColor          | 起始颜色(用于计算渐变颜色数组) | string |                                                                      | '#ff0000' |      |
+| endColor            | 结束颜色(用于计算渐变颜色数组) | string |                                                                      | '#0000ff' |      |
+| groupFieldProp      | 分组字段                       | string |                                                                      |           |      |
+| statisticsFieldProp | 统计字段                       | string |                                                                      |           |      |
+| statisticsTypeProp  | 统计类型                       | string | sum(求和)/avg(平均值)/ max(最大值)/min(最小值)/count(计数)/var(方差) | sum       |      |

@@ -4,27 +4,10 @@
 
 ## inject
 
-### map
-
-- **类型**：`Object`
-- **描述**：二维地图对象。
-
-### mapbox
-
-- **类型**：`Object`
-- **描述**：MapBox 库。
-
-### viewer
-
-- **类型**：`Object`
-- **描述**：三维场景对象。
-
-### Cesium
-
-- **类型**：`Object`
-- **描述**：Ceisum 库。
-
-### vueCesium
-
-- **类型**：`Object`
-- **描述**：Ceisum vue 对象。
+| 参数      | 说明            | 类型   | 可选值 | 默认值 | 版本 |
+| --------- | --------------- | ------ | ------ | ------ | ---- |
+| map       | 二维地图对象    | object |        |        |      |
+| mapbox    | MapBox 库       | object |        |        |      |
+| viewer    | 三维场景对象    | object |        |        |      |
+| Cesium    | Ceisum 库       | object |        |        |      |
+| vueCesium | Ceisum vue 对象 | object |        |        |      |

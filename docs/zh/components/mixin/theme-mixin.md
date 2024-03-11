@@ -4,34 +4,61 @@
 
 ## provide
 
-提供 map、mapbox、viewer、Cesium,vueCesium 给所有的子组件使用，通常微件会混入[MapMixin](/zh/components/mixin/map-mixin.html)，这样可以直接拿到这几个对象。
+提供 map、mapbox、viewer、Cesium、vueCesium 给所有的子组件使用，通常微件会混入[MapMixin](/zh/components/mixin/map-mixin.html)，这样可以直接拿到这几个对象。
 
-### map
+| 参数      | 说明            | 类型   | 可选值 | 默认值 | 版本 |
+| --------- | --------------- | ------ | ------ | ------ | ---- |
+| map       | 二维地图对象    | object |        |        |      |
+| mapbox    | MapBox 库       | object |        |        |      |
+| viewer    | 三维场景对象    | object |        |        |      |
+| Cesium    | Ceisum 库       | object |        |        |      |
+| vueCesium | Ceisum vue 对象 | object |        |        |      |
 
-- **类型**：`Object`
-- **描述**：二维地图对象。
+## data
 
-### mapbox
+| 参数              | 说明                | 类型    | 可选值 | 默认值  | 版本 |
+| ----------------- | ------------------- | ------- | ------ | ------- | ---- |
+| mapboxInitialized | mapboxgl 是否已加载 | boolean |        | false   |      |
+| cesiumInitialized | cesium 是否已加载   | boolean |        | false   |      |
+| mapInitialized    | 底图是否已初始化    | boolean |        | false   |      |
+| refSuffix         | 参考后缀            | string  |        | Content |      |
 
-- **类型**：`Object`
-- **描述**：MapBox 库。
-
-### viewer
-
-- **类型**：`Object`
-- **描述**：三维场景对象。
-
-### Cesium
-
-- **类型**：`Object`
-- **描述**：Ceisum 库。
-
-### vueCesium
-
-- **类型**：`Object`
-- **描述**：Ceisum vue 对象。
+###
 
 ## methods
+
+### onUpdateWidgetState
+
+- **描述**：更新微件状态。
+- **参数**
+
+  | 参数        | 描述                                                                                            | 类型   | 默认值 |
+  | :---------- | :---------------------------------------------------------------------------------------------- | :----- | :----- |
+  | contentName | 内容名称                                                                                        | string | -      |
+  | e           | 微件状态,WidgetState={OPENED: 'opened',ACTIVE: 'active', DEACTIVE: 'deActive',CLOSED: 'closed'} | string | -      |
+
+- **用法**：在主题组件里，可通过该方法控制相应内容区域里的微件的状态。
+
+```js
+<template>
+  <mp-pan-spatial-map-side-panel
+    v-if="maxSidePanelWidth && mapInitialized"
+    v-bind="left.panel"
+    :widgets="left.widgets"
+    :widgetStructure="left.widgetStructure"
+    :max-width="maxSidePanelWidth"
+    @update-widget-state="onUpdateWidgetState('left', $event)"
+  />
+</template>
+
+<script>
+import { ThemeMixin } from '@mapgis/web-app-framework'
+
+export default {
+  mixins: [ThemeMixin],
+}
+</script>
+```
 
 ### parseContentComponent
 

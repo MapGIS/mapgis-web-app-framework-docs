@@ -32,8 +32,8 @@ export default {
 
 #### 属性
 
-| 参数          | 说明         | 类型    | 默认值 |
-| ------------- | ------------ | ------- | ------ |
-| maxViewHeight | 视图最大高度 | Number  | -      |
-| initOpen      | 是否默认展开 | Boolean | -      |
-| closeable     | 是否可关闭   | Boolean | -      |
+| 参数          | 说明         | 类型    | 可选值 | 默认值 | 版本 |
+| ------------- | ------------ | ------- | ------ | ------ | ---- |
+| maxViewHeight | 视图最大高度 | number  |        | 400    |      |
+| initOpen      | 是否默认展开 | boolean |        | false  |      |
+| closeable     | 是否可关闭   | boolean |        | true   |      |

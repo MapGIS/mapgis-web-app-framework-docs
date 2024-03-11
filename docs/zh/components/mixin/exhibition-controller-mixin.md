@@ -1,5 +1,13 @@
 # ExhibitionControllerMixin
 
+展示面板控制器混入。
+
+## data
+
+| 参数           | 说明             | 类型   | 可选值 | 默认值                 | 版本 |
+| -------------- | ---------------- | ------ | ------ | ---------------------- | ---- |
+| exhibitionList | 展示面板列表对象 | object |        | exhibitionListInstance |      |
+
 ## computed
 
 ### exhibitions
