@@ -2,11 +2,11 @@
 
 ## 框架混入关系图
 
-<img :src="$withBase('/images/framework框架混入关系图.png')" alt="框架混入关系图">
+<img :src="$withBase('/images/framework-mixin-relationship-diagram.png')" alt="框架混入关系图">
 
 ## 应用流程
 
-<img :src="$withBase('/images/framework框架应用流程图.png')" alt="框架应用流程图">
+<img :src="$withBase('/images/framework-application-process-diagram.png')" alt="框架应用流程图">
 
 ### 应用流程解析
 

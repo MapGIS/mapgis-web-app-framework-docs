@@ -4,7 +4,7 @@ MapGIS Web App Framework 是一个 WebGIS 应用的的解决方案，它基于 [
 
 MapGIS Web App Framework 使用了最新的前端技术栈，提供了基于微件技术的应用框架和丰富的地图功能组件，它可以帮助你快速搭建 WebGIS 应用。
 
-<img :src="$withBase('/images/MapGIS-Web-App-Framework产品架构图.png')" alt="MapGIS-Web-App-Framework产品架构图">
+<img :src="$withBase('/images/product-framework-diagram.png')" alt="MapGIS-Web-App-Framework产品架构图">
 
 ## 功能
 

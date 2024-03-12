@@ -70,7 +70,7 @@ module.exports = {
           },
           {
             text: 'API',
-            link: '/zh/api/reference/document/document'
+            link: '/zh/api/reference/'
           }
         ],
         sidebar: {
