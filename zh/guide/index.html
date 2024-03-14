@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>写在前面 | MapGIS Web App Framework</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/mapgis-web-app-framework-docs/favicon.ico">
+    <meta name="description" content="Web应用框架">
+    <meta name="keywords" content="mapgis,waf,webgis,开源,免费,Web应用框架,应用框架">
+    
+    <link rel="preload" href="/mapgis-web-app-framework-docs/assets/css/0.styles.8c3b7c95.css" as="style"><link rel="preload" href="/mapgis-web-app-framework-docs/assets/js/app.250c6469.js" as="script"><link rel="preload" href="/mapgis-web-app-framework-docs/assets/js/2.e932ffa5.js" as="script"><link rel="preload" href="/mapgis-web-app-framework-docs/assets/js/122.fe93e4f4.js" as="script"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/10.588e1222.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/100.19522d7c.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/101.1d3252e9.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/102.e6b3af9e.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/103.d7b60854.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/104.fa872b3d.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/105.02491c1a.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/106.80994466.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/107.35943945.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/108.e2686ecf.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/109.418b5c55.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/11.8334dd0d.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/110.49dd4b44.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/111.2f23bf2a.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/112.f18a1007.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/113.49612806.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/114.8b39e340.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/115.375ff2ca.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/116.34ff76fe.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/117.cb4339cd.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/118.769fa4f7.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/119.38754c58.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/12.1308ede3.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/120.20f16fcd.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/121.aa44180f.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/123.043028a9.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/124.42f5ae39.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/125.5fe1e7a7.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/126.f0a45869.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/127.3b25cc9e.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/128.500f708e.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/129.5ca03944.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/13.6fa7cb7c.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/130.7e4c6cb4.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/131.ba8d3947.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/132.88099a14.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/133.6e426e09.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/134.52fe40f8.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/135.a3fa65ee.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/136.e00c6853.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/137.8e2236f4.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/14.1e7db342.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/15.0134caa8.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/16.0e3e5dfc.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/17.b8a9f13c.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/18.1f9a991a.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/19.b29b8ad6.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/20.21eb24d5.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/21.40706320.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/22.766ee39e.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/23.16598a3e.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/24.c60f82be.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/25.de98ee97.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/26.c0d68bb0.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/27.8269f79c.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/28.de861ab6.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/29.3c9468fd.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/3.8b3ed1fd.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/30.9abc0cf8.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/31.d45a3918.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/32.988929eb.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/33.6e92dffd.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/34.6b23b368.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/35.1b9de19a.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/36.f2bb6bb8.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/37.692abd9d.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/38.05eb6e2c.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/39.09e089ed.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/4.d772e167.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/40.4d423707.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/41.b0c42906.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/42.38911073.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/43.97577db5.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/44.0c1736c6.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/45.97c2de54.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/46.ac3e2eab.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/47.f4ac6c85.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/48.63905237.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/49.d737eab0.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/5.41b07602.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/50.dc4f3fde.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/51.41536526.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/52.56809701.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/53.d531e1e0.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/54.b7b3daaf.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/55.d83b93f1.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/56.28b516fa.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/57.a90b8ecf.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/58.0ef2acbc.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/59.a83544dc.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/6.62097e26.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/60.e1e68434.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/61.f840916b.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/62.bd446ba3.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/63.1b5894cf.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/64.026d5a95.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/65.b45718b0.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/66.60b171cd.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/67.20f0da4b.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/68.3fe42a17.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/69.638edb51.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/7.6f73f432.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/70.869b0a3d.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/71.0502b507.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/72.d9118f87.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/73.475a50c3.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/74.713ca470.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/75.6c2836db.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/76.a01706cc.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/77.c95f4105.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/78.6f245a08.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/79.829b86be.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/8.9bd08b65.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/80.35c1b3e7.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/81.1ab0ab2a.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/82.32edb7a0.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/83.1e7f352b.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/84.6869ea8a.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/85.397e96bf.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/86.e4fae130.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/87.036eb436.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/88.b59955de.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/89.bcd8060b.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/9.a7619cd8.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/90.c2648714.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/91.5ccf087f.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/92.ff8b3c53.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/93.5fb2f745.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/94.b9026f66.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/95.92ead525.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/96.4e71280c.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/97.7f4c1d13.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/98.432bb43b.js"><link rel="prefetch" href="/mapgis-web-app-framework-docs/assets/js/99.b308d7fe.js">
+    <link rel="stylesheet" href="/mapgis-web-app-framework-docs/assets/css/0.styles.8c3b7c95.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mapgis-web-app-framework-docs/zh/" class="home-link router-link-active"><img src="/mapgis-web-app-framework-docs/logo.png" alt="MapGIS Web App Framework" class="logo"> <span class="site-name can-hide">MapGIS Web App Framework</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mapgis-web-app-framework-docs/zh/guide/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/mapgis-web-app-framework-docs/zh/config/base.html" class="nav-link">
+  应用规范
+</a></div><div class="nav-item"><a href="/mapgis-web-app-framework-docs/zh/components/builder/app-loader.html" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/mapgis-web-app-framework-docs/zh/api/reference/" class="nav-link">
+  API
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mapgis-web-app-framework-docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/mapgis-web-app-framework-docs/zh/guide/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/mapgis/mapgis-web-app-framework" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mapgis-web-app-framework-docs/zh/guide/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/mapgis-web-app-framework-docs/zh/config/base.html" class="nav-link">
+  应用规范
+</a></div><div class="nav-item"><a href="/mapgis-web-app-framework-docs/zh/components/builder/app-loader.html" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/mapgis-web-app-framework-docs/zh/api/reference/" class="nav-link">
+  API
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Select language" class="dropdown-title"><span class="title">选择语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Select language" class="mobile-dropdown-title"><span class="title">选择语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mapgis-web-app-framework-docs/" class="nav-link">
+  English
+</a></li><li class="dropdown-item"><!----> <a href="/mapgis-web-app-framework-docs/zh/guide/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  简体中文
+</a></li></ul></div></div> <a href="https://github.com/mapgis/mapgis-web-app-framework" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>产品介绍</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/mapgis-web-app-framework-docs/zh/guide/" aria-current="page" class="active sidebar-link">写在前面</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mapgis-web-app-framework-docs/zh/guide/#写在前面" class="sidebar-link">写在前面</a></li><li class="sidebar-sub-header"><a href="/mapgis-web-app-framework-docs/zh/guide/#功能" class="sidebar-link">功能</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>入门</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开发</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>进阶</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>版本</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="写在前面"><a href="#写在前面" class="header-anchor">#</a> 写在前面</h2> <p>MapGIS Web App Framework 是一个 WebGIS 应用的的解决方案，它基于 <a href="https://github.com/vuejs/vue" target="_blank" rel="noopener noreferrer">vue<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>, <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">typescript<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>, <a href="https://github.com/vueComponent/ant-design-vue" target="_blank" rel="noopener noreferrer">ant-design-vue<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>和<a href="https://github.com/MapGIS/WebClient-JavaScript" target="_blank" rel="noopener noreferrer">MapGIS Client for JavaScript<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>实现。</p> <p>MapGIS Web App Framework 使用了最新的前端技术栈，提供了基于微件技术的应用框架和丰富的地图功能组件，它可以帮助你快速搭建 WebGIS 应用。</p> <img src="/mapgis-web-app-framework-docs/images/product-framework-diagram.png" alt="MapGIS-Web-App-Framework产品架构图"> <h2 id="功能"><a href="#功能" class="header-anchor">#</a> 功能</h2> <div class="language-txt extra-class"><pre class="language-text"><code>- 框架组件
+  - 应用加载器(mp-app-loader)
+  - 应用搭建器(mp-app-builder)
+  - 地图容器(mp-map-container)
+  - 微件指示器(map-widget-indicator)
+    - 微件按钮(mp-map-widget-button)
+  - 地图面板(map-panel)
+    - 地图面板(mp-map-widget-panel)
+    - 内容面板(mp-content-widget-panel)
+  - 窗口容器(mp-window-wrapper)
+  - 展示面板(mp-exhibition-panel)
+- 应用管理(managers)
+  - 配置加载(app-manager)
+  - 微件管理(widget-manager)
+- 混入(mixins)
+  - 应用混入(app-mixin)
+  - 主题混入(theme-mixin)
+  - 主题区域混入(theme-content-mixin)
+  - 面板混入(panel-mixin)
+  - 微件信息混入(widget-info-mixin)
+  - 微件混入(widget-mixin)
+  - 地图混入(map-mixin)
+  - 展示面板混入(exhibition-mixin)
+  - 展示面板控制器混入(exhibition-controller-mixin)
+- 工具(utils)
+  - 微件状态(widget-state)
+  - 地图渲染(map-render)
+
+- 模型
+  - 对象(objects)
+    - 角度转换(AngleConvert)
+    - 投影变换(ProjectionTransformation)
+    - 范围(Bound)
+    - 几何(GeometryExp)
+    - 场景控制器(SceneController)
+  - 文档(document)
+    - 地图文档对象(Document)
+    - 地图对象(Map)
+    - 图层(layer)
+      - 图层(layer)
+        - 图层(Layer)
+        - 图层类型(LayerType)
+        - 图层加载状态(LoadStatus)
+        - 图层渲染类型(RenderType)
+      - 瓦片图层(tile-layer)
+        - 瓦片图层(TileLayer)
+        - 瓦片级别信息(LOD)
+        - 瓦片切片信息(TileInfo)
+      - 地图服务图层(map-image-layer)
+        - 地图服务图层(MapImageLayer)
+        - 子图层(Sublayer)
+      - IGS瓦片服务图层(IGSTileLayer)
+      - IGS地图服务图层(igs-map-image-layer)
+        - IGS地图服务图层(IGSMapImageLayer)
+        - 子图层(IGSSublayer)
+      -IGS全景图图层(igs-panoramic-layer)
+        - IGS全景图图层(IGSPanoramicLayer)
+        - IGS全景图节点信息(PanoramicNodeInfo)
+      - IGS地图服务矢量图层(IGSVectorLayer)
+      - IGS地图服务三维图层(IGSVector3DLayer)
+      - 数据流图层(DataFlowLayer)
+      - OGCWMTS服务图层(ogc-wmts-layer)
+        - OGCWMTS服务图层(OGCWMTSLayer)
+        - OGCWMTS服务图层子图层(WMTSSublayer)
+        - 瓦片矩阵集(TileMatrixSet)
+        - WMTSSublayer的样式信息(WMTSStyle)
+        - 发布WMTS的厂商信息(WMTSCorporation)
+      - OGCWMS服务图层(ogc-wms-layer)
+        - OGCWMS服务图层(OGCWMSLayer)
+        - OGCWMS服务图层子图层(WMSSublayer)
+      - ArcGIS瓦片服务图层(ArcGISTileLayer)
+      - ArcGIS地图服务图层(arcgis-map-image-layer)
+        - ArcGIS地图服务图层(ArcGISMapImageLayer)
+        - ArcGIS地图服务图层子图层(ArcGISSublayer)
+      - 高德墨卡托地图服务图层(amap-layer)
+        - 高德墨卡托电子地图图层(AMapMercatorEMapLayer)
+        - 高德墨卡托卫星地图图层(AMapMercatorSatelliteMapLayer)
+        - 高德墨卡托卫星注记地图图层(AMapMercatorSatelliteAnnMapLayer)
+      - 矢量瓦片图层(VectorTileLayer)
+      - 三维图层(3d-layer)
+        - 三维包围盒(Rectangle3D)
+        - 三维点(Point3D)
+        - 三维图层抽像类(Layer3D)
+      - IGS发布的三维场景服务(igs-scene-layer)
+        - IGS发布的三维场景服务(IGSSceneLayer)
+        - 三维场景服务图层子图层渲染类型枚举(IGSSceneSublayerRenderType)
+        - 三维场景服务图层子图层类型枚举(IGSSceneSublayerType)
+        - 三维场景服务对象(Scene)
+        - 三维场景服务图层子图层(IGSSceneSublayer)
+      - 三维模型缓存图层(model-cache-layer)
+        - 三维模型缓存图层(ModelCacheLayer)
+        - 三维模型缓存格式(ModelCacheFormat)
+      - 要素图层(feature-layer)
+        - 高程模式(ElevationMode)
+        - 要素表达式信息(FeatureExpressionInfo)
+        - 距离单位(LengthUnit)
+        - 高程信息类(ElevationInfo)
+        - 要素图层(FeatureLayer)
+      - IGS矢量要素图层(IGSFeatureLayer)
+      - GeoJSON图层(GeoJsonLayer)
+      - GraphicsLayer图层(GraphicsLayer)
+      - STK地形图层(STKTerrainLayer)
+      - 行业标绘图层(PlotLayer)
+      - KML图层(KMLLayer)
+      - KMZ图层(KMZLayer)
+      - CZML图层(CZMLLayer)
+      - OSM图层(OSMLayer)
+      - OGCWFS(OGCWFSLayer)
+  - 结果集设置(result-set)
+    - 结果集当前激活页内容(ActiveResultSet)
+    - 结果集所有高亮的集合(SelectedResultSet)
+  - 数据流(data-flow)
+    - 数据流列表(DataFlowList)
+  - 应用程序接口(api)
+  - 配置信息(config)
+    - 应用基础配置(baseConfigInstance)
+    - 下载配置(loadConfigs)
+  - 数据目录(data-catalog)
+    - 数据目录对象实例(dataCatalogManagerInstance)
+    - 数据目录对象(DataCatalogManager)
+    - 数据目录工具(DataCatalogUtil)
+    - 数据目录配置信息(TreeConfig)
+    - GeoJSON图层节点实例(LayerNodeToGeoJsonInstance)
+    - 要素图层编辑(LayerFeatureEdit)
+  - 目录(catalog)
+    - 数据源(DataSourceCatalog)
+    - 系统库(SystemLibraryCatalog)
+    - 文档(DocumentCatalog)
+    - 地图文档信息查询参数结构(DocInfoQueryParam)
+    - 地图图层信息查询参数结构(LayerInfoQueryParam)
+    - 地图文档信息CatalogLayer结构(MapInfoCatalogLayer)
+    - 地图文档信息MapInfo结构(DocInfoMapInfo)
+    - 地图文档信息结构(DocInfo)
+  - 要素(feature)
+    - IGS查询结果结构(feature)
+      - XY结构(XY)
+      - Arc结构(Arc)
+      - Ring结构(Ring)
+      - PntGeom结构(PntGeom)
+      - LinGeom结构(LinGeom)
+      - RegGeom结构(RegGeom)
+      - FGeom结构(FGeom)
+      - SFEleArray结构(FeatureIGSSFEle)
+      - AttStruct结构(FeatureIGSAttStruct)
+      - IGS查询结果结构(FeatureIGS)
+    - GeoJSON结构(feature-geojson)
+      - SpatialAttr结构(GMetaInfoGeoSpatialAttr)
+      - MetaInfo Geometry结构(GMetaInfoGeometry)
+      - MetaInfo结构(GMetaInfo)
+      - CRS结构(GeoCRS)
+      - Geometry结构(GGeometry)
+      - Feature结构(GFeature)
+      - GeoJSON结构(FeatureGeoJSON)
+      - 获取GeoJSON要素的中心点坐标(getGeoJSONFeatureCenter)
+      - 获取一组要素的中心(getGeoJSONFeaturesCenter)
+      - 获取GeoJSON的外包矩形(getGeoJSONFeatureBound)
+    - 要素转换(feature-convert)
+    - 要素查询(feature-query)
+      - 要素查询(FeatureQuery)
+      - 要素查询参数结构(FeatureQueryParam)
+      - 地名地址查询结果要素(GeoCodeFeature)
+      - 地名地址查询结果要素集合(ESGeoCodeFeatures)
+    - 要素编辑(FeatureEdit)
+    - ArcGIS要素查询(arcgis-feature-query)
+      - ArcGIS查询参数结构(ArcGISQueryParam)
+      - ArcGIS要素查询(ArcGISFeatureQuery)
+  - 元数据(metadata)
+    - IGS元数据查询(metadata-query)
+      - IGS元数据查询MetaDataQuery)
+      - 元数据查询参数结构(MetadataQueryParam)
+      - 元数据图层列表结构(LayerList)
+      - 元数据图层结构(LayerTable)
+      - 元数据结构(Metadata)
+    - OGC元数据查询(OGCMetadataQuery)
+    - ArcGIS元数据查询(ArcGISMetadataQuery)
+    - 矢量瓦片元数据查询(VectorTileMetadataQuery)
+    - 云管元数据查询(CloudMetaDataQuery)
+  - 分析(analysis)
+    - 属性统计(AttributeStatistic)
+    - 工作流(workflow-analysis)
+      - 工作流(WorkflowAnalysis)
+      - 工作流执行参数结构(ExecuteWorkflowParam)
+      - 工作流执行状态参数结构(WorkflowStatusParam)
+  - 展示面板(exhibition)
+    - 展示面板(exhibitionListInstance)
+    - 展示面板结构(IExhibition)
+    - 字段结构(IFields)
+    - 属性表查询参数结构(IAttributeTableOption)
+    - 属性表展示面板结构(IAttributeTableExhibition)
+    - 属性表列表展示面板结构(IAttributeTableListExhibition)
+    - 属性表展示面板(AttributeTableExhibition)
+    - 属性表列表展示面板(AttributeTableListExhibition)
+    - 展示列表(ExhibitionList)
+  - 覆盖层(overlay)
+    - 场景覆盖层(SceneOverlays)
+  - 模型拾取控制器(ModelPickController)
+  - 标注图标实例(markerIconInstance)
+  - 投放管理对象(ProjectorManager)
+  - 左侧内容展示区多微件控制器(MultiChildController)
+  - 底图管理控制器(BaseMapController)
+  - 工具类(utils)
+    - UUID(UUID)
+    - 坐标转换(CoordinateTransformation)
+    - 自适应范围(FitBound)
+    - 请求对象(getRequest)
+    - 坐标系转换(ProjectionTransformationUtil)
+    - 添加图层(addLayer)
+    - 移除图层(removeLayer)
+    - 勾选数据目录节点(checkDataCatalogNodes)
+    - 取消勾选数据目录节点(uncheckDataCatalogNodes)
+
+- 工具
+  - 常规工具(common-util)
+  - 字符串工具(string-util)
+  - 数组工具(array-util)
+  - 对象工具(object-util)
+  - 时间工具(time-util)
+  - 颜色工具(color-util)
+  - DOM工具(dom-util)
+  - url工具(url-util)
+
+- 地图组件
+  - 地图(map-pro)
+    - 地图(mp-web-map-pro)
+    - 场景(mp-web-scene-pro)
+  - 绘制(draw-pro)
+    - 绘制(mp-mp-draw-pro)
+    - 3d绘制(mp-3d-draw-pro)
+  - 标注(marker-pro)
+    - 标注(mp-marker-pro)
+    - 标注集(mp-marker-set-pro)
+    - 3d标注(mp-3d-marker-pro)
+    - 3d标注集(mp-3d-marker-set-pro)
+  - 标绘(marker-plotting)
+    - 标绘(mp-marker-plotting)
+    - 3d标绘(mp-3d-marker-plotting)
+  - 属性统计(mp-attribute-statistics)
+  - 自定义查询(mp-field-calculator)
+  - 过滤器(mp-filter)
+  - 属性统计设置(mp-statistics-setting)
+  - 属性统计图表(mp-statistics-echarts)
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/mapgis/mapgis-web-app-framework-docs/edit/master/docs/zh/guide/README.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2024/3/12 14:25:39</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/mapgis-web-app-framework-docs/zh/guide/start/start.html">
+        快速上手
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><div class="my-popup" style="display:none;" data-v-3414bdeb><div class="my-popup-container" data-v-3414bdeb><div class="my-popup-exit" data-v-3414bdeb></div> <img src="" alt data-v-3414bdeb></div></div></div></div>
+    <script src="/mapgis-web-app-framework-docs/assets/js/app.250c6469.js" defer></script><script src="/mapgis-web-app-framework-docs/assets/js/2.e932ffa5.js" defer></script><script src="/mapgis-web-app-framework-docs/assets/js/122.fe93e4f4.js" defer></script>
+  </body>
+</html>
