@@ -2,6 +2,8 @@
 
 继承自 [AppMixin](/zh/components/mixin/app-mixin.html)，主题内容区域混入，提供内容区域对象、该内容区域微件列表、微件结构、展示版面和微件的图标与名称等功能，并能根据当前地图的模式自动关闭与模式不匹配的微件（比如：某个微件只能在 3D 模式下使用，当切换到 2D 时，会自动关闭）。
 
+一般在主题的子组件中混入 ThemeContentMixin，这些组件可以直接使用 AppMixin 和 ThemeContentMixin 里的属性、方法和钩子函数。比如一张图经典主题里的子组件 mp-pan-spatial-map-classic-left。
+
 ## props
 
 | 参数            | 说明               | 类型    | 可选值 | 默认值 | 版本 |

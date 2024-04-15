@@ -2,6 +2,8 @@
 
 应用基础混入，提供 applicaiton（应用对象）、designTime（设计时状态）、document（文档）、theme（主题）、mapRender（渲染引擎）、地图模式切换、属性表开关等功能。
 
+如果微件中需要上述内容，可以引入该混入，就可以在微件中直接使用混入中的属性、方法、钩子函数。比如图层列表微件等。
+
 ## data
 
 | 参数         | 说明              | 类型   | 可选值 | 默认值 | 版本 |
@@ -43,6 +45,77 @@ const props3 = this.mergeProps(props1, props2)
 
 - **描述**：切换地图模式（在二维和三维之间切换，当前模式是在 MapBox 地图引擎和 Cesium 地图引擎下切换）。
 
+- **用法**：在组件里，可通过该方法进行地图模式切换。比如在二维地图模式下，勾选加载三维模型数据时，可通过该方法直接切换到场景视图模式。
+
+```vue
+<template>
+  <div />
+</template>
+
+<script>
+import { AppMixin } from '@mapgis/web-app-framework'
+
+export default {
+  mixins: [AppMixin],
+  data() {
+    return {
+      is2DMapMode: fasle
+    }
+  },
+  methods: {
+    onShowData(item) {
+      // 地图模型需要切换时，直接调用switchMapMode方法
+      if (this.is2DMapMode !== item.is2DMapMode) {
+        this.switchMapMode()
+      }
+    }
+  }
+}
+</script>
+```
+
 ### onMapModeChanged
 
-- **描述**：地图模式发生改变后调用，混入者可覆盖该方法实现自己的业务。
+- **描述**：钩子函数，在地图模式发生改变后调用，混入者可覆盖该方法实现自己的业务。
+
+- **示例**
+
+```vue
+<template>
+  <div />
+</template>
+
+<script>
+import { AppMixin } from '@mapgis/web-app-framework'
+
+export default {
+  mixins: [AppMixin],
+  data() {
+    return {
+      is2DMapMode: fasle,
+      center: [114, 30],
+      zoom: 5
+    }
+  },
+  methods: {
+    onMapModeChanged() {
+      if (!this.is2DMapMode) {
+        const { lng, lat } = this.center
+        this.sceneController.cameraSetView({
+          destination: this.sceneController.getCartesian3FromDegrees(
+            lng,
+            lat,
+            this.height
+          )
+        })
+      } else {
+        this.map.jumpTo({
+          center: this.center,
+          zoom: this.zoom - 1
+        })
+      }
+    }
+  }
+}
+</script>
+```

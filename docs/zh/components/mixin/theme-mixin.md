@@ -2,9 +2,11 @@
 
 继承自 [AppMixin](/zh/components/mixin/app-mixin.html)，主题混入，提供内容区域列表、内容区域组件和内容区域属性等功能。
 
+一般在主题组件中混入 ThemeMixin，这些组件可以直接使用 AppMixin 、DisplayModeMixin、ThemeMixin 里的属性、方法和钩子函数。比如一张图经典主题里的 mp-pan-spatial-map-classic-theme。
+
 ## provide
 
-提供 map、mapbox、viewer、Cesium、vueCesium 给所有的子组件使用，通常微件会混入[MapMixin](/zh/components/mixin/map-mixin.html)，这样可以直接拿到这几个对象。
+提供 map、mapbox、viewer、Cesium、vueCesium 给所有的子孙组件使用，通常微件会混入[MapMixin](/zh/components/mixin/map-mixin.html)，这样可以直接拿到这几个对象。
 
 | 参数      | 说明            | 类型   | 可选值 | 默认值 | 版本 |
 | --------- | --------------- | ------ | ------ | ------ | ---- |
@@ -39,7 +41,7 @@
 
 - **用法**：在主题组件里，可通过该方法控制相应内容区域里的微件的状态。
 
-```js
+```vue
 <template>
   <mp-pan-spatial-map-side-panel
     v-if="maxSidePanelWidth && mapInitialized"
@@ -55,7 +57,7 @@
 import { ThemeMixin } from '@mapgis/web-app-framework'
 
 export default {
-  mixins: [ThemeMixin],
+  mixins: [ThemeMixin]
 }
 </script>
 ```
@@ -86,7 +88,7 @@ this.parseContentComponent('header')
 
 - **示例**
 
-```js
+```vue
 <template>
   <component
     :is="headerContentComponent"
@@ -101,7 +103,7 @@ import { ThemeMixin } from '@mapgis/web-app-framework'
 export default {
   mixins: [ThemeMixin],
   props: {
-    header: Object,
+    header: Object
   },
   computed: {
     headerContentComponent() {

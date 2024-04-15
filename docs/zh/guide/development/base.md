@@ -4,6 +4,26 @@
 
 <img :src="$withBase('/images/framework-mixin-relationship-diagram.png')" alt="框架混入关系图">
 
+[AppMin](/zh/components/mixin/app-mixin.html)：应用基础混入。提供框架运行所需信息，主要包含 application 对象（主题、微件、document 对象、logo、标题等信息）、地图渲染方式、地图切换方法等。
+
+[MapMixin](/zh/components/mixin/map-mixin.html)：地图混入。通过**inject**的方式获取地图对象(map)、场景视图对象(viewer)、地图引擎对象(mapbox、cesium),以及 vueCesium 对象(vueCesium)。
+
+[DisplayModeMixin](/zh/components/mixin/display-mode-mixin.html)： 地图加载模式混入。提供当前地图加载模式(二维模式、三维模式或者二三维一体模式)。
+
+[ThemeMixin](/zh/components/mixin/theme-mixin.html)： 主题混入，继承自 AppMin 和 DisplayModeMixin。通过**provide**的方式给子孙组件提供地图对象(map)、场景视图对象(viewer)、地图引擎对象(mapbox、cesium),以及 vueCesium 对象(vueCesium)；提供微件状态更新、微件对应区域内容解析等方法。
+
+[ThemeContentMixin](/zh/components/mixin/theme-content-mixin.html)：主题内容区域混入，继承自 AppMin。提供主题内容区域内微件的解析以及控制微件的显示隐藏等方法。
+
+[PanelMixin](/zh/components/mixin/panel-mixin.html)：面板混入，继承自 AppMin 和 DisplayModeMixin。提供展示面板的微件集合、模式、位置、微件的状态和可见性控制等功能
+
+[WidgetInfoMixin](/zh/components/mixin/widget-info-mixin.html)：微件信息混入，继承自 AppMin。提供微件的基础信息。
+
+[WidgetMixin](/zh/components/mixin/widget-mixin.html)：微件混入，继承自 WidgetInfoMixin 和 MapMixin。提供微件的状态管理，通过微件状态的变化自定义了钩子函数，可以在钩子函数内处理业务逻辑。
+
+[ExhibitionControllerMixin](/zh/components/mixin/exhibition-controller-mixin.html)：展示面板控制器混入。提供控制面板的打开关闭等操作方法。
+
+[ExhibitionMixin](/zh/components/mixin/exhibition-mixin.html)：展示面板混入。提供控制面板内容加载等相关操作方法。
+
 ## 应用流程
 
 <img :src="$withBase('/images/framework-application-process-diagram.png')" alt="框架应用流程图">

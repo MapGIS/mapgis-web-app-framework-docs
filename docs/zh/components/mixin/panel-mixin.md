@@ -2,6 +2,8 @@
 
 继承自 [AppMixin](/zh/components/mixin/app-mixin.html)，面板混入，提供展示的微件集合、模式、位置、微件的状态和可见性控制等功能。
 
+一般在主题的子组件中混入 PanelMixin，这些组件可以直接使用 AppMixin 、 PanelMixin、DisplayModeMixin 里的属性、方法和钩子函数。比如一张图经典主题里的子组件 mp-pan-spatial-map-side-panel。
+
 ## props
 
 | 参数            | 说明                                                                                | 类型   | 可选值 | 默认值 | 版本 |

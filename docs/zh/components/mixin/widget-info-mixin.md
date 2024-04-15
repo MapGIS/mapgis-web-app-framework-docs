@@ -2,6 +2,8 @@
 
 继承自 [AppMixin](/zh/components/mixin/app-mixin.html)，微件信息混入，提供微件的基础信息。
 
+一般在主题的子组件中混入 WidgetInfoMixin，这些组件可以直接使用 AppMixin 和 WidgetInfoMixin 里的属性、方法和钩子函数。比如一张图经典主题左侧展开面板里的子组件 mp-pan-spatial-map-toolbar-card。
+
 ## props
 
 | 参数   | 说明   | 类型   | 可选值 | 默认值 | 版本 |
@@ -119,3 +121,23 @@
   | :--- | :------- | :----- | :----- |
   | url  | 微件对象 | object | -      |
   | id   | 微件对象 | object | -      |
+
+- **示例**
+
+```vue
+<template>
+  <div class="card-command" @click="$emit('click')">
+    <mapgis-ui-icon :icon="widgetInfo.icon" class="icon" />
+    <div class="label">{{ widgetInfo.label }}</div>
+  </div>
+</template>
+
+<script>
+import { WidgetInfoMixin } from '@mapgis/web-app-framework'
+
+export default {
+  name: 'MpPanSpatialMapToolbarCard',
+  mixins: [WidgetInfoMixin]
+}
+</script>
+```

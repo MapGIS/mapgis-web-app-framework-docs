@@ -2,6 +2,8 @@
 
 继承自 [WidgetInfoMixin](/zh/components/mixin/widget-info-mixin.html) 和 [MapMixin](/zh/components/mixin/map-mixin.html)，微件混入，提供微件的状态管理功能。
 
+一般在微件中混入 WidgetMixin，这些微件可以直接使用 MapMixin、WidgetInfoMixin 和 AppMixin 里的属性、方法和钩子函数。比如测量、要素查询等微件。
+
 ## events
 
 ### update-widget-state
