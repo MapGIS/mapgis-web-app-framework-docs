@@ -1,5 +1,7 @@
 # 展示模型
 
+支持自定义展示面板里的内容，可参考@mapgis/mapgis-pan-spatial-map-widgets 里的 [AttributeTable.vue](https://gitee.com/osmapgis/MapGIS-Pan-Spatial-Map-Widgets/blob/10.6.8.10/src/components/AttributeTable/AttributeTable.vue)
+
 ## IFields
 
 ```js
@@ -17,7 +19,7 @@
 
 ```js
 {
-  // 唯一标识
+ // 唯一标识
   id?: string
   // 名称
   name: string
@@ -25,6 +27,8 @@
   description?: string
   // 全局组件名
   component?: string
+  // 气泡框配置信息
+  popupOption?: any
 }
 ```
 
@@ -36,6 +40,14 @@
   id?: string
   // 名称
   name: string
+  // dataStore库名
+  libName?: string
+  // 是否是大数据查询
+  isDataStoreQuery?: boolean
+  // 是否是大数据查询
+  DNSName?: string
+  // 服务域名
+  domain?: string
   // 服务IP
   ip?: string
   // 服务PORT
@@ -44,6 +56,8 @@
   serverType?: string
   // 服务名称
   serverName?: string
+  // 搜索服务类型
+  searchServiceType?: string
   // 服务路径
   serverUrl?: string
   // gdbp地址，图层查询
@@ -56,7 +70,43 @@
   geometry?: Record<string, unknown>
   // 字段信息
   fields?: IFields[]
+  // 查询结果类型
+  f?: string
+  // 是否是绑定二维地图文档的三维服务
+  is3dBind2dData?: boolean
 }
+```
+
+```js
+/**
+ * 查看属性
+ */
+async attributes(layer,parent) {
+  const exhibition = { // 对应IExhibition
+    id: `${parent.title} ${layer.title} ${layer.id}`,
+    name: `${layer.title} 属性表`,
+    description: `${parent.title} ${layer.title}`,
+    option: { // 对应IAttributeTableOption
+      id: layer.id,
+      name: layer.title,
+      isDataStoreQuery,
+      DNSName,
+      domain,
+      ...ipPortObj,
+      serverType: parent.type,
+      layerIndex: layer.id,
+      gdbp: layer.url,
+      serverName: docName,
+      serverUrl: parent.url,
+      f: '',
+    },
+    popupOption: parent.extend?.popupOption,
+  }
+  if (exhibition) {
+    this.addExhibition(new AttributeTableExhibition(exhibition))
+    this.openExhibitionPanel()
+  }
+},
 ```
 
 ## IAttributeTableExhibition

@@ -14,7 +14,12 @@ const sidebar = {
   'api-start': ['/api/reference/'],
   'api-service': ['/api/reference/service/api'],
   'api-config': ['/api/reference/config/base'],
-  'api-manager': ['/api/reference/manager/data-catalog'],
+  'api-manager': [
+    '/api/reference/manager/app-manager',
+    '/api/reference/manager/widget-manager',
+    '/api/reference/manager/panel-manager',
+    '/api/reference/manager/data-catalog'
+  ],
   'api-util': [
     // '/api/reference/util/projection-transformation-util',
     '/api/reference/util/event-bus'
@@ -84,7 +89,6 @@ const sidebar = {
   overlay: ['/api/reference/overlay/overlay'],
   exhibition: ['/api/reference/exhibition/exhibition'],
   mixin: [
-    '/components/mixin/manager',
     '/components/mixin/app-mixin',
     '/components/mixin/map-mixin',
     '/components/mixin/theme-mixin',

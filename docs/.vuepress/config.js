@@ -116,12 +116,12 @@ module.exports = {
               children: getSidebarByCategory('api-service', 'zh')
             },
             {
-              title: '配置',
-              children: getSidebarByCategory('api-config', 'zh')
-            },
-            {
               title: '管理',
               children: getSidebarByCategory('api-manager', 'zh')
+            },
+            {
+              title: '配置',
+              children: getSidebarByCategory('api-config', 'zh')
             },
             {
               title: '工具',

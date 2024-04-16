@@ -18,10 +18,13 @@
   - eventBus
 
 - 文档
-  - eventBus
-
-- 展示
   - Document
   - Map
   - Layer
+
+- 展示
+  - exhibitionListInstance
+  - AttributeTableExhibition,
+  - AttributeTableListExhibition,
+  - ExhibitionList
 ```

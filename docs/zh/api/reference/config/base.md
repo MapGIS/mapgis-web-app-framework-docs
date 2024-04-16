@@ -3,7 +3,7 @@
 ## config
 
 - **类型** `Object`
-- **详细** 获取基本配置
+- **详细** 获取[基本配置](https://osmapgis.gitee.io/mapgis-pan-spatial-map-docs/zh/config/common/base.html)
 
 ```js
   // 引用
@@ -16,6 +16,6 @@
 
   // 从微件配置里获取port
   get port() {
-    return this.widgetInfo.config.port || baseConfigInstance.config.ip
+    return this.widgetInfo.config.port || baseConfigInstance.config.port
   }
 ```

@@ -9,10 +9,26 @@ import {
 } from '@mapgis/web-app-framework'
 ```
 
+## getLayerConfigByID
+
+- **类型** `Function`
+- **详细** 根据节点的 id 获取对应的服务图层配置信息
+- **参数**
+
+  | 参数 | 说明                    | 类型   | 默认值 |
+  | ---- | ----------------------- | ------ | ------ |
+  | id   | 数据目录配置项中的 guid | string | -      |
+
+- **用法**
+
+```js
+const layerConfig = dataCatalogManagerInstance.getLayerConfigByID(layer.id)
+```
+
 ## generateLayerByConfig
 
 - **类型** `Function`
-- **详细** 静态方法，根据数据目录中图层节点的配置信息生成 webclient-store 对应的图层
+- **详细** 静态方法，根据数据目录中图层节点的配置信息生成图层对象
 - **参数**
 
   | 参数        | 说明         | 类型 | 默认值 |
@@ -40,30 +56,22 @@ const layer = dataCatalogManagerInstance.generateLayerByConfig(layerConfig)
 - **用法**
 
 ```js
-const treeConfig = await api.getWidgetConfig('data-catalog')
-dataCatalogManagerInstance.init(treeConfig)
+const config = await api.getWidgetConfig('data-catalog')
+const appConfig = await AppManager.getInstance().getRequest()({
+  url: this.application.appConfigPath,
+  method: 'get'
+})
+// 使用新的app.json中的规范，判断this.application.data是否有且有值就替换this.widgetInfo.config.treeConfig.treeData
+if (appConfig.data && appConfig.data.length > 0) {
+  config.treeConfig.treeData = appConfig.data
+}
+dataCatalogManagerInstance.init(config)
 ```
 
 ## update
 
 - **类型** `Function`
 - **详细** 更新数据目录。数据目录有过滤功能,会过滤掉不可用配置项。当服务更新后,可通过该接口更新数据目录。
-
-## getLayerConfigByID
-
-- **类型** `Function`
-- **详细** 根据节点的 id 获取对应的服务图层配置信息
-- **参数**
-
-  | 参数 | 说明                    | 类型   | 默认值 |
-  | ---- | ----------------------- | ------ | ------ |
-  | id   | 数据目录配置项中的 guid | string | -      |
-
-- **用法**
-
-```js
-const layerConfig = dataCatalogManagerInstance.getLayerConfigByID(layer.id)
-```
 
 ## getLayerConfigByName
 
@@ -78,7 +86,7 @@ const layerConfig = dataCatalogManagerInstance.getLayerConfigByID(layer.id)
 - **用法**
 
 ```js
-const layerConfig = dataCatalogManagerInstance.getLayerConfigByID(layer.name)
+const layerConfig = dataCatalogManagerInstance.getLayerConfigByName(layer.name)
 ```
 
 ## getLayerConfigByServerUrlAndType
