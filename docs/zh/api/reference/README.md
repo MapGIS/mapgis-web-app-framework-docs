@@ -8,11 +8,14 @@
 - 服务
   - api
 
+- 管理
+  - AppManager
+  - WidgetManager
+  - PanelManager
+  - DataCatalogManager
+
 - 配置
   - baseConfigInstance
-
-- 管理
-  - DataCatalogManager
 
 - 工具
   - eventBus
